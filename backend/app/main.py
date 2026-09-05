@@ -70,23 +70,30 @@ if DOCS_DIR:
 
 @app.middleware("http")
 async def vercel_rewrite_middleware(request: Request, call_next):
-    path = request.scope.get("path", "")
+    # 1. Check if Vercel passed the path in query params (?path=$1)
+    q_path = request.query_params.get("path") or request.query_params.get("__path")
+    if q_path:
+        clean = "/" + q_path.lstrip("/")
+        if not clean.startswith("/api") and not clean.startswith("/screens"):
+            clean = "/api" + clean
+        request.scope["path"] = clean
+    else:
+        path = request.scope.get("path", "")
+        # 2. If Vercel stripped /api prefix (e.g. /health, /dashboard/overview)
+        if not path.startswith("/api") and not path.startswith("/screens") and not path.startswith("/screenshots"):
+            if path == "/health":
+                request.scope["path"] = "/api/health"
+            elif any(path.startswith(p) for p in ["/dashboard", "/records", "/intake", "/copilot"]):
+                request.scope["path"] = "/api" + path
 
-    # 1. If Vercel stripped /api prefix (e.g. /health, /dashboard/overview)
-    if not path.startswith("/api") and not path.startswith("/screens") and not path.startswith("/screenshots"):
-        if path == "/health":
-            request.scope["path"] = "/api/health"
-        elif any(path.startswith(p) for p in ["/dashboard", "/records", "/intake", "/copilot"]):
-            request.scope["path"] = "/api" + path
-
-    # 2. If Vercel internal rewrite passed /api/index.py
-    if path.startswith("/api/index.py") or path.startswith("/api/index"):
-        matched = request.headers.get("x-matched-path")
-        if matched:
-            request.scope["path"] = matched
-        else:
-            sub = path.replace("/api/index.py", "").replace("/api/index", "")
-            request.scope["path"] = sub if sub else "/"
+        # 3. If Vercel internal rewrite passed /api/index.py
+        if path.startswith("/api/index.py") or path.startswith("/api/index"):
+            matched = request.headers.get("x-matched-path")
+            if matched:
+                request.scope["path"] = matched
+            else:
+                sub = path.replace("/api/index.py", "").replace("/api/index", "")
+                request.scope["path"] = sub if sub else "/"
 
     return await call_next(request)
 
