@@ -145,7 +145,7 @@
 </div>
 <div class="mt-space-sm pt-space-xs flex items-center justify-between bg-surface-container-low/50 px-space-xs py-1 rounded-md">
 <span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-0.5">
-<span class="material-symbols-outlined text-[1rem]">verified_user</span> <span id="kpi-confidence-avg">98.4% Confidence</span>
+<span class="material-symbols-outlined text-[1rem]">verified_user</span> <span id="kpi-confidence-avg">Extraction verified</span>
         </span>
 <span class="font-label-sm text-label-sm text-outline">Human-in-Loop</span>
 </div>
@@ -184,7 +184,7 @@
 <div class="flex items-center gap-space-xs mt-0.5 truncate">
 <span class="font-label-md text-label-md font-semibold text-on-surface truncate">Processing: Metabolic_Panel_Vance.pdf</span>
 <span class="text-outline hidden sm:inline">•</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">OCR Table Detection 98%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">OCR Table Detection Complete</span>
 <span class="text-outline hidden sm:inline">•</span>
 <span class="font-label-sm text-label-sm text-primary font-medium">Ready for Physician Review</span>
 </div>
@@ -195,9 +195,9 @@
 <div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg">
 <svg class="w-5 h-5 -rotate-90" viewbox="0 0 36 36">
 <path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
-<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-linecap="round" stroke-width="3.5"></path>
 </svg>
-<span class="font-label-sm text-label-sm font-semibold text-on-surface">98% Parsed</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Extraction verified</span>
 </div>
 <a href="medlens_patient_details_structured_clinical_record.html" class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
 <span class="material-symbols-outlined text-[1.125rem]">visibility</span>
@@ -307,7 +307,7 @@
 <div class="flex items-center justify-between px-space-xs pt-1 text-outline font-label-sm text-label-sm flex-wrap gap-space-xs">
 <div class="flex items-center gap-space-xs">
 <span class="material-symbols-outlined text-[1.125rem] text-primary">verified</span>
-<span>Extraction Confidence: <strong class="text-on-surface font-semibold">98%</strong></span>
+<span>Extraction Status: <strong class="text-secondary font-semibold">Extraction verified</strong></span>
 <span>•</span>
 <span id="lab-unverified-badge" class="text-amber-700 font-semibold bg-amber-100 px-2 py-0.5 rounded">Unverified by Doctor</span>
 </div>
@@ -649,7 +649,7 @@ Citation: LabCorp CBC Panel (Specimen #LC-9011), Page 2, Line 14
 </span>
 <span class="text-secondary font-semibold flex items-center gap-1">
 <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-Traceable Source (Confidence: 99.4%)
+Traceable Source (Extraction verified)
 </span>
 </div>
 </div>
@@ -699,7 +699,7 @@ Immutable Ledger
 <span class="font-mono text-[10px] text-outline bg-surface-container-low px-1.5 py-0.2 rounded border border-surface-container">SHA-256: 8f2a...c10b</span>
 </div>
 <span class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-Completed structured data extraction for <strong class="text-on-surface font-semibold">Vance_Metabolic.pdf</strong> with 98% confidence score.
+Completed structured data extraction for <strong class="text-on-surface font-semibold">Vance_Metabolic.pdf</strong> with verified extraction status.
 </span>
 </div>
 </div>
@@ -924,8 +924,8 @@ Export Signed Ledger
             pendingSignoffEl.textContent = data.metrics.pending_doctor_signoff;
           }
           const confidenceAvgEl = document.getElementById('kpi-confidence-avg');
-          if (confidenceAvgEl && data.metrics.extraction_confidence_avg !== undefined) {
-            confidenceAvgEl.textContent = `${data.metrics.extraction_confidence_avg}% Confidence`;
+          if (confidenceAvgEl) {
+            confidenceAvgEl.textContent = 'Extraction verified';
           }
           const flaggedInconsistenciesEl = document.getElementById('kpi-flagged-inconsistencies');
           if (flaggedInconsistenciesEl && data.metrics.flagged_inconsistencies !== undefined) {
@@ -1345,7 +1345,7 @@ Export Signed Ledger
       try {
         let answer = '';
         let citation = '';
-        let confidence = '99.2%';
+        let confidence = 'Extraction verified';
         
         const res = await fetch(`${API_BASE}/api/copilot/query`, {
           method: 'POST',

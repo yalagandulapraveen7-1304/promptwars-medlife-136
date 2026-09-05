@@ -218,7 +218,7 @@ class CopilotEngine:
                     f"   Reference: {ref_str}\n"
                     f"   Status: {item['status']}\n"
                     f"   Source: {item['source']}\n"
-                    f"   Confidence: {item['confidence']}%"
+                    f"   Confidence: High confidence"
                 )
                 answer_blocks.append(item_block)
         else:

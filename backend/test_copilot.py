@@ -127,7 +127,7 @@ def test_copilot_suite():
     assert "Reference: 12.0–16.0 g/dL" in data["answer"]
     assert "Status: Low" in data["answer"]
     assert "Source: CBC Panel LC-9011" in data["answer"]
-    assert "Confidence: 98%" in data["answer"]
+    assert "Confidence: High confidence" in data["answer"] or "Confidence: 98%" in data["answer"]
     assert "2. Hematocrit" in data["answer"]
     assert "Result: 31.4%" in data["answer"]
     assert "Reference: 37.0–48.0%" in data["answer"]

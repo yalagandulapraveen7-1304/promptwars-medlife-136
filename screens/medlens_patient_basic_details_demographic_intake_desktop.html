@@ -908,7 +908,7 @@ PATIENT PROVIDED
           const data = await res.json();
           populateForm(data);
           updateCompletenessMeter();
-          showToast('EHR Synced', `Pulled verified records from Epic/Cerner FHIR Gateway (99.4% confidence).`);
+          showToast('EHR Synced', `Pulled verified records from Epic/Cerner FHIR Gateway (Extraction verified).`);
           epicBtn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem]">done_all</span><span>EHR Synced</span>';
           setTimeout(() => { epicBtn.innerHTML = origHtml; }, 2000);
           return;

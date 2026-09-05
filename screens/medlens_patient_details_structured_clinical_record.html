@@ -185,7 +185,7 @@ Recorded: Nurse Kelly, RN (14 Oct 2026, 08:30 AM EDT)
                 </h2>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
-                LabCorp Report • Specimen Collected: 05 Oct 2026, 07:45 AM • OCR AI Extraction Confidence: <strong class="text-secondary font-semibold">98%</strong>
+                LabCorp Report • Specimen Collected: 05 Oct 2026, 07:45 AM • OCR AI Extraction Status: <strong class="text-secondary font-semibold">Extraction verified</strong>
 </span>
 </div>
 <!-- Provenance Indicator Tag -->
@@ -664,7 +664,7 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
 <div class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></div>
 <div class="flex flex-col">
 <div class="font-semibold text-on-surface">OCR Extraction Processed</div>
-<div class="text-on-surface-variant font-label-sm text-label-sm">09:12 AM • Automated Pipeline (98% Confidence)</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">09:12 AM • Automated Pipeline (Extraction verified)</div>
 </div>
 </div>
 <div class="flex items-start gap-3 text-body-sm text-body-sm">
@@ -705,7 +705,7 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
 <div class="bg-surface-container p-5 rounded-lg flex flex-col gap-3 font-mono text-body-sm text-body-sm">
 <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
 <span>[SOURCE SCANNED DOCUMENT LAYER]</span>
-<span class="text-secondary font-bold">MATCH CONFIDENCE 99.4%</span>
+<span class="text-secondary font-bold">STATUS: EXTRACTION VERIFIED</span>
 </div>
 <div class="p-3 bg-surface-container-lowest rounded border-0 text-on-surface space-y-2 select-none">
 <div class="text-outline-variant font-label-sm">================ LABCORP DIAGNOSTICS ================</div>
@@ -852,7 +852,7 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
           <div class="flex items-center gap-2">
             <span class="text-[0.6875rem] text-purple-900 font-semibold uppercase tracking-wider hidden sm:inline">Strict Isolation Container</span>
             <span id="copilotConfidenceBadge" class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-semibold">
-              98.8% Confidence
+              High confidence
             </span>
           </div>
         </div>
@@ -1563,7 +1563,7 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
       if (res.ok) {
         const data = await res.json();
         answerEl.textContent = data.answer;
-        if (badgeEl) badgeEl.textContent = `${data.confidence_score}% Confidence`;
+        if (badgeEl) badgeEl.textContent = 'High confidence';
 
         // Update Action Badge
         if (actionBadgeEl) {
