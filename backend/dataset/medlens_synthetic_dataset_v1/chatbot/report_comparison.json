@@ -1,0 +1,6402 @@
+[
+  {
+    "id": "CMP-00001",
+    "patient_id": "PAT-00001",
+    "previous_report_id": "REP-00001-01",
+    "current_report_id": "REP-00001-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.8,
+        "current_value": 10.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 80.1,
+        "current_value": 78.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.4,
+        "current_value": 0.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00002",
+    "patient_id": "PAT-00001",
+    "previous_report_id": "REP-00001-02",
+    "current_report_id": "REP-00001-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.5,
+        "current_value": 13.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 78.8,
+        "current_value": 79.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.5,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00003",
+    "patient_id": "PAT-00002",
+    "previous_report_id": "REP-00002-01",
+    "current_report_id": "REP-00002-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.7,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.8,
+        "current_value": 125.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.0,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00004",
+    "patient_id": "PAT-00002",
+    "previous_report_id": "REP-00002-02",
+    "current_report_id": "REP-00002-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 14.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.6,
+        "current_value": 123.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 3.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00005",
+    "patient_id": "PAT-00003",
+    "previous_report_id": "REP-00003-01",
+    "current_report_id": "REP-00003-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.2,
+        "current_value": 13.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 106.8,
+        "current_value": 104.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 1.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00006",
+    "patient_id": "PAT-00003",
+    "previous_report_id": "REP-00003-02",
+    "current_report_id": "REP-00003-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.4,
+        "current_value": 12.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 104.3,
+        "current_value": 107.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00007",
+    "patient_id": "PAT-00004",
+    "previous_report_id": "REP-00004-01",
+    "current_report_id": "REP-00004-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.0,
+        "current_value": 14.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 82.2,
+        "current_value": 81.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.8,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00008",
+    "patient_id": "PAT-00004",
+    "previous_report_id": "REP-00004-02",
+    "current_report_id": "REP-00004-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.8,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 81.2,
+        "current_value": 82.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00009",
+    "patient_id": "PAT-00005",
+    "previous_report_id": "REP-00005-01",
+    "current_report_id": "REP-00005-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.1,
+        "current_value": 16.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.1,
+        "current_value": 75.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.3,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00010",
+    "patient_id": "PAT-00005",
+    "previous_report_id": "REP-00005-02",
+    "current_report_id": "REP-00005-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.7,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.5,
+        "current_value": 74.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00011",
+    "patient_id": "PAT-00006",
+    "previous_report_id": "REP-00006-01",
+    "current_report_id": "REP-00006-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.8,
+        "current_value": 16.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 137.4,
+        "current_value": 134.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 3.1,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00012",
+    "patient_id": "PAT-00006",
+    "previous_report_id": "REP-00006-02",
+    "current_report_id": "REP-00006-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.6,
+        "current_value": 14.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 134.9,
+        "current_value": 135.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.1,
+        "current_value": 5.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00013",
+    "patient_id": "PAT-00007",
+    "previous_report_id": "REP-00007-01",
+    "current_report_id": "REP-00007-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.8,
+        "current_value": 10.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 126.2,
+        "current_value": 125.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 4.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00014",
+    "patient_id": "PAT-00007",
+    "previous_report_id": "REP-00007-02",
+    "current_report_id": "REP-00007-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.5,
+        "current_value": 12.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.8,
+        "current_value": 128.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.8,
+        "current_value": 4.8,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00015",
+    "patient_id": "PAT-00008",
+    "previous_report_id": "REP-00008-01",
+    "current_report_id": "REP-00008-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.4,
+        "current_value": 14.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 98.7,
+        "current_value": 97.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.0,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00016",
+    "patient_id": "PAT-00008",
+    "previous_report_id": "REP-00008-02",
+    "current_report_id": "REP-00008-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.1,
+        "current_value": 15.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 97.6,
+        "current_value": 99.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 3.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00017",
+    "patient_id": "PAT-00009",
+    "previous_report_id": "REP-00009-01",
+    "current_report_id": "REP-00009-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.3,
+        "current_value": 12.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 85.7,
+        "current_value": 87.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.4,
+        "current_value": 3.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00018",
+    "patient_id": "PAT-00009",
+    "previous_report_id": "REP-00009-02",
+    "current_report_id": "REP-00009-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.2,
+        "current_value": 14.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 87.7,
+        "current_value": 86.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 3.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00019",
+    "patient_id": "PAT-00010",
+    "previous_report_id": "REP-00010-01",
+    "current_report_id": "REP-00010-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.4,
+        "current_value": 11.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 140.9,
+        "current_value": 139.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.0,
+        "current_value": 1.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00020",
+    "patient_id": "PAT-00010",
+    "previous_report_id": "REP-00010-02",
+    "current_report_id": "REP-00010-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.5,
+        "current_value": 14.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 139.1,
+        "current_value": 141.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.3,
+        "current_value": 1.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00021",
+    "patient_id": "PAT-00011",
+    "previous_report_id": "REP-00011-01",
+    "current_report_id": "REP-00011-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.4,
+        "current_value": 14.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 98.1,
+        "current_value": 96.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.8,
+        "current_value": 1.8,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00022",
+    "patient_id": "PAT-00011",
+    "previous_report_id": "REP-00011-02",
+    "current_report_id": "REP-00011-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.2,
+        "current_value": 13.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 96.8,
+        "current_value": 94.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.8,
+        "current_value": 1.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00023",
+    "patient_id": "PAT-00012",
+    "previous_report_id": "REP-00012-01",
+    "current_report_id": "REP-00012-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.0,
+        "current_value": 15.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 140.9,
+        "current_value": 138.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.6,
+        "current_value": 2.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00024",
+    "patient_id": "PAT-00012",
+    "previous_report_id": "REP-00012-02",
+    "current_report_id": "REP-00012-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.1,
+        "current_value": 14.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 138.0,
+        "current_value": 139.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.4,
+        "current_value": 2.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00025",
+    "patient_id": "PAT-00013",
+    "previous_report_id": "REP-00013-01",
+    "current_report_id": "REP-00013-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.5,
+        "current_value": 16.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 116.8,
+        "current_value": 115.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00026",
+    "patient_id": "PAT-00013",
+    "previous_report_id": "REP-00013-02",
+    "current_report_id": "REP-00013-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.3,
+        "current_value": 13.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 115.2,
+        "current_value": 112.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00027",
+    "patient_id": "PAT-00014",
+    "previous_report_id": "REP-00014-01",
+    "current_report_id": "REP-00014-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 142.4,
+        "current_value": 141.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 3.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00028",
+    "patient_id": "PAT-00014",
+    "previous_report_id": "REP-00014-02",
+    "current_report_id": "REP-00014-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 141.3,
+        "current_value": 140.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.0,
+        "current_value": 4.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00029",
+    "patient_id": "PAT-00015",
+    "previous_report_id": "REP-00015-01",
+    "current_report_id": "REP-00015-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.8,
+        "current_value": 15.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 104.2,
+        "current_value": 105.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 1.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.9,
+        "current_value": 1.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00030",
+    "patient_id": "PAT-00015",
+    "previous_report_id": "REP-00015-02",
+    "current_report_id": "REP-00015-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.5,
+        "current_value": 13.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 105.2,
+        "current_value": 104.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 1.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00031",
+    "patient_id": "PAT-00016",
+    "previous_report_id": "REP-00016-01",
+    "current_report_id": "REP-00016-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.7,
+        "current_value": 14.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.0,
+        "current_value": 126.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.6,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00032",
+    "patient_id": "PAT-00016",
+    "previous_report_id": "REP-00016-02",
+    "current_report_id": "REP-00016-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.2,
+        "current_value": 11.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 126.2,
+        "current_value": 126.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 1.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00033",
+    "patient_id": "PAT-00017",
+    "previous_report_id": "REP-00017-01",
+    "current_report_id": "REP-00017-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 116.6,
+        "current_value": 114.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 2.1,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00034",
+    "patient_id": "PAT-00017",
+    "previous_report_id": "REP-00017-02",
+    "current_report_id": "REP-00017-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 114.9,
+        "current_value": 113.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 4.1,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00035",
+    "patient_id": "PAT-00018",
+    "previous_report_id": "REP-00018-01",
+    "current_report_id": "REP-00018-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.7,
+        "current_value": 14.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 117.8,
+        "current_value": 117.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.8,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00036",
+    "patient_id": "PAT-00018",
+    "previous_report_id": "REP-00018-02",
+    "current_report_id": "REP-00018-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.4,
+        "current_value": 14.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 117.6,
+        "current_value": 115.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 3.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00037",
+    "patient_id": "PAT-00019",
+    "previous_report_id": "REP-00019-01",
+    "current_report_id": "REP-00019-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.8,
+        "current_value": 13.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 67.7,
+        "current_value": 69.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.5,
+        "current_value": 2.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00038",
+    "patient_id": "PAT-00019",
+    "previous_report_id": "REP-00019-02",
+    "current_report_id": "REP-00019-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.5,
+        "current_value": 13.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 69.5,
+        "current_value": 69.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.0,
+        "current_value": 1.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00039",
+    "patient_id": "PAT-00020",
+    "previous_report_id": "REP-00020-01",
+    "current_report_id": "REP-00020-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.4,
+        "current_value": 15.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 144.6,
+        "current_value": 143.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.8,
+        "current_value": 3.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00040",
+    "patient_id": "PAT-00020",
+    "previous_report_id": "REP-00020-02",
+    "current_report_id": "REP-00020-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.3,
+        "current_value": 12.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.6,
+        "current_value": 145,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.0,
+        "current_value": 2.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00041",
+    "patient_id": "PAT-00021",
+    "previous_report_id": "REP-00021-01",
+    "current_report_id": "REP-00021-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.6,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 115.3,
+        "current_value": 112.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 4.9,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00042",
+    "patient_id": "PAT-00021",
+    "previous_report_id": "REP-00021-02",
+    "current_report_id": "REP-00021-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 112.7,
+        "current_value": 111.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.9,
+        "current_value": 2.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00043",
+    "patient_id": "PAT-00022",
+    "previous_report_id": "REP-00022-01",
+    "current_report_id": "REP-00022-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.1,
+        "current_value": 14.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 120.4,
+        "current_value": 119.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.0,
+        "current_value": 6.1,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00044",
+    "patient_id": "PAT-00022",
+    "previous_report_id": "REP-00022-02",
+    "current_report_id": "REP-00022-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.9,
+        "current_value": 15.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 119.1,
+        "current_value": 117.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.1,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00045",
+    "patient_id": "PAT-00023",
+    "previous_report_id": "REP-00023-01",
+    "current_report_id": "REP-00023-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.2,
+        "current_value": 10.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 87.1,
+        "current_value": 86.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.2,
+        "current_value": 3.6,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00046",
+    "patient_id": "PAT-00023",
+    "previous_report_id": "REP-00023-02",
+    "current_report_id": "REP-00023-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.4,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 86.4,
+        "current_value": 84.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.6,
+        "current_value": 2.8,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00047",
+    "patient_id": "PAT-00024",
+    "previous_report_id": "REP-00024-01",
+    "current_report_id": "REP-00024-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.3,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 117.0,
+        "current_value": 117.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 3.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00048",
+    "patient_id": "PAT-00024",
+    "previous_report_id": "REP-00024-02",
+    "current_report_id": "REP-00024-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 15.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 117.9,
+        "current_value": 118.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.4,
+        "current_value": 4.6,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00049",
+    "patient_id": "PAT-00025",
+    "previous_report_id": "REP-00025-01",
+    "current_report_id": "REP-00025-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.7,
+        "current_value": 14.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 93.7,
+        "current_value": 91.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.1,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00050",
+    "patient_id": "PAT-00025",
+    "previous_report_id": "REP-00025-02",
+    "current_report_id": "REP-00025-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.0,
+        "current_value": 13.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 91.4,
+        "current_value": 90.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 5.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00051",
+    "patient_id": "PAT-00026",
+    "previous_report_id": "REP-00026-01",
+    "current_report_id": "REP-00026-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.0,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.7,
+        "current_value": 114.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.2,
+        "current_value": 6.1,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00052",
+    "patient_id": "PAT-00026",
+    "previous_report_id": "REP-00026-02",
+    "current_report_id": "REP-00026-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 114.7,
+        "current_value": 115.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.1,
+        "current_value": 5.1,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00053",
+    "patient_id": "PAT-00027",
+    "previous_report_id": "REP-00027-01",
+    "current_report_id": "REP-00027-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.8,
+        "current_value": 10.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 65.0,
+        "current_value": 67.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.4,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00054",
+    "patient_id": "PAT-00027",
+    "previous_report_id": "REP-00027-02",
+    "current_report_id": "REP-00027-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.5,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 67.8,
+        "current_value": 68.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 4.8,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00055",
+    "patient_id": "PAT-00028",
+    "previous_report_id": "REP-00028-01",
+    "current_report_id": "REP-00028-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.7,
+        "current_value": 11.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.3,
+        "current_value": 126.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.6,
+        "current_value": 0.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00056",
+    "patient_id": "PAT-00028",
+    "previous_report_id": "REP-00028-02",
+    "current_report_id": "REP-00028-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.9,
+        "current_value": 13.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 126.5,
+        "current_value": 125.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.4,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00057",
+    "patient_id": "PAT-00029",
+    "previous_report_id": "REP-00029-01",
+    "current_report_id": "REP-00029-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.3,
+        "current_value": 13.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 142.7,
+        "current_value": 140.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00058",
+    "patient_id": "PAT-00029",
+    "previous_report_id": "REP-00029-02",
+    "current_report_id": "REP-00029-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.4,
+        "current_value": 12.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 140.6,
+        "current_value": 141.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 3.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00059",
+    "patient_id": "PAT-00030",
+    "previous_report_id": "REP-00030-01",
+    "current_report_id": "REP-00030-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.2,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 90.2,
+        "current_value": 88.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 4.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00060",
+    "patient_id": "PAT-00030",
+    "previous_report_id": "REP-00030-02",
+    "current_report_id": "REP-00030-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 88.7,
+        "current_value": 86.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 3.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00061",
+    "patient_id": "PAT-00031",
+    "previous_report_id": "REP-00031-01",
+    "current_report_id": "REP-00031-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.1,
+        "current_value": 13.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.6,
+        "current_value": 107.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 4.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00062",
+    "patient_id": "PAT-00031",
+    "previous_report_id": "REP-00031-02",
+    "current_report_id": "REP-00031-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.9,
+        "current_value": 13.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.6,
+        "current_value": 107.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.5,
+        "current_value": 4.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00063",
+    "patient_id": "PAT-00032",
+    "previous_report_id": "REP-00032-01",
+    "current_report_id": "REP-00032-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.5,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 88.0,
+        "current_value": 88.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 4.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00064",
+    "patient_id": "PAT-00032",
+    "previous_report_id": "REP-00032-02",
+    "current_report_id": "REP-00032-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 15.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 88.2,
+        "current_value": 86.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 6.1,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00065",
+    "patient_id": "PAT-00033",
+    "previous_report_id": "REP-00033-01",
+    "current_report_id": "REP-00033-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.1,
+        "current_value": 10.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 82.1,
+        "current_value": 83.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.0,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00066",
+    "patient_id": "PAT-00033",
+    "previous_report_id": "REP-00033-02",
+    "current_report_id": "REP-00033-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.9,
+        "current_value": 11.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 83.0,
+        "current_value": 81.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 5.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00067",
+    "patient_id": "PAT-00034",
+    "previous_report_id": "REP-00034-01",
+    "current_report_id": "REP-00034-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.0,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 63.2,
+        "current_value": 62,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.2,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00068",
+    "patient_id": "PAT-00034",
+    "previous_report_id": "REP-00034-02",
+    "current_report_id": "REP-00034-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 62,
+        "current_value": 64.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 5.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00069",
+    "patient_id": "PAT-00035",
+    "previous_report_id": "REP-00035-01",
+    "current_report_id": "REP-00035-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.7,
+        "current_value": 11.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.5,
+        "current_value": 105.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.1,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00070",
+    "patient_id": "PAT-00035",
+    "previous_report_id": "REP-00035-02",
+    "current_report_id": "REP-00035-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.8,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 105.3,
+        "current_value": 107.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 0.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 1.1,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00071",
+    "patient_id": "PAT-00036",
+    "previous_report_id": "REP-00036-01",
+    "current_report_id": "REP-00036-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.7,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 97.2,
+        "current_value": 94.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.0,
+        "current_value": 0.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00072",
+    "patient_id": "PAT-00036",
+    "previous_report_id": "REP-00036-02",
+    "current_report_id": "REP-00036-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 94.3,
+        "current_value": 94.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.3,
+        "current_value": 3.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00073",
+    "patient_id": "PAT-00037",
+    "previous_report_id": "REP-00037-01",
+    "current_report_id": "REP-00037-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.3,
+        "current_value": 12.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 120.7,
+        "current_value": 120.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.6,
+        "current_value": 1.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00074",
+    "patient_id": "PAT-00037",
+    "previous_report_id": "REP-00037-02",
+    "current_report_id": "REP-00037-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.6,
+        "current_value": 10.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 120.9,
+        "current_value": 122.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.0,
+        "current_value": 0.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00075",
+    "patient_id": "PAT-00038",
+    "previous_report_id": "REP-00038-01",
+    "current_report_id": "REP-00038-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.9,
+        "current_value": 11.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 74.1,
+        "current_value": 75.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.7,
+        "current_value": 2.8,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00076",
+    "patient_id": "PAT-00038",
+    "previous_report_id": "REP-00038-02",
+    "current_report_id": "REP-00038-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.3,
+        "current_value": 11.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.7,
+        "current_value": 76.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.8,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00077",
+    "patient_id": "PAT-00039",
+    "previous_report_id": "REP-00039-01",
+    "current_report_id": "REP-00039-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.2,
+        "current_value": 12.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 129.7,
+        "current_value": 126.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.4,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00078",
+    "patient_id": "PAT-00039",
+    "previous_report_id": "REP-00039-02",
+    "current_report_id": "REP-00039-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.4,
+        "current_value": 14.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 126.9,
+        "current_value": 129.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.6,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00079",
+    "patient_id": "PAT-00040",
+    "previous_report_id": "REP-00040-01",
+    "current_report_id": "REP-00040-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.5,
+        "current_value": 12.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 98.3,
+        "current_value": 97.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.8,
+        "current_value": 3.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00080",
+    "patient_id": "PAT-00040",
+    "previous_report_id": "REP-00040-02",
+    "current_report_id": "REP-00040-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.5,
+        "current_value": 13.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 97.6,
+        "current_value": 96.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.3,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00081",
+    "patient_id": "PAT-00041",
+    "previous_report_id": "REP-00041-01",
+    "current_report_id": "REP-00041-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.0,
+        "current_value": 12.0,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.9,
+        "current_value": 77.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.9,
+        "current_value": 5.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00082",
+    "patient_id": "PAT-00041",
+    "previous_report_id": "REP-00041-02",
+    "current_report_id": "REP-00041-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.0,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 77.9,
+        "current_value": 77.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.8,
+        "current_value": 3.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00083",
+    "patient_id": "PAT-00042",
+    "previous_report_id": "REP-00042-01",
+    "current_report_id": "REP-00042-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.5,
+        "current_value": 16.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 68.1,
+        "current_value": 69.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.6,
+        "current_value": 3.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00084",
+    "patient_id": "PAT-00042",
+    "previous_report_id": "REP-00042-02",
+    "current_report_id": "REP-00042-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.2,
+        "current_value": 13.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 69.7,
+        "current_value": 68.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.7,
+        "current_value": 3.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00085",
+    "patient_id": "PAT-00043",
+    "previous_report_id": "REP-00043-01",
+    "current_report_id": "REP-00043-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.2,
+        "current_value": 12.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 132.5,
+        "current_value": 130.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 0.8,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00086",
+    "patient_id": "PAT-00043",
+    "previous_report_id": "REP-00043-02",
+    "current_report_id": "REP-00043-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.5,
+        "current_value": 14.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 130.6,
+        "current_value": 130.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00087",
+    "patient_id": "PAT-00044",
+    "previous_report_id": "REP-00044-01",
+    "current_report_id": "REP-00044-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.0,
+        "current_value": 11.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 77.4,
+        "current_value": 77.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.1,
+        "current_value": 4.1,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00088",
+    "patient_id": "PAT-00044",
+    "previous_report_id": "REP-00044-02",
+    "current_report_id": "REP-00044-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.7,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 77.3,
+        "current_value": 77.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.1,
+        "current_value": 5.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00089",
+    "patient_id": "PAT-00045",
+    "previous_report_id": "REP-00045-01",
+    "current_report_id": "REP-00045-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.6,
+        "current_value": 12.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 133.5,
+        "current_value": 133.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 5.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00090",
+    "patient_id": "PAT-00045",
+    "previous_report_id": "REP-00045-02",
+    "current_report_id": "REP-00045-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.0,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 133.9,
+        "current_value": 135.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.4,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00091",
+    "patient_id": "PAT-00046",
+    "previous_report_id": "REP-00046-01",
+    "current_report_id": "REP-00046-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.3,
+        "current_value": 14.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 72.8,
+        "current_value": 75.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.6,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00092",
+    "patient_id": "PAT-00046",
+    "previous_report_id": "REP-00046-02",
+    "current_report_id": "REP-00046-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.0,
+        "current_value": 15.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.5,
+        "current_value": 75.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 6.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00093",
+    "patient_id": "PAT-00047",
+    "previous_report_id": "REP-00047-01",
+    "current_report_id": "REP-00047-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 62.7,
+        "current_value": 64.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.5,
+        "current_value": 3.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00094",
+    "patient_id": "PAT-00047",
+    "previous_report_id": "REP-00047-02",
+    "current_report_id": "REP-00047-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 64.1,
+        "current_value": 65.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.0,
+        "current_value": 0.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00095",
+    "patient_id": "PAT-00048",
+    "previous_report_id": "REP-00048-01",
+    "current_report_id": "REP-00048-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.3,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 85.8,
+        "current_value": 86.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 3.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00096",
+    "patient_id": "PAT-00048",
+    "previous_report_id": "REP-00048-02",
+    "current_report_id": "REP-00048-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 86.0,
+        "current_value": 84.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 4.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00097",
+    "patient_id": "PAT-00049",
+    "previous_report_id": "REP-00049-01",
+    "current_report_id": "REP-00049-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.6,
+        "current_value": 12.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.1,
+        "current_value": 77.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.2,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00098",
+    "patient_id": "PAT-00049",
+    "previous_report_id": "REP-00049-02",
+    "current_report_id": "REP-00049-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.8,
+        "current_value": 10.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 77.9,
+        "current_value": 77.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 2.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00099",
+    "patient_id": "PAT-00050",
+    "previous_report_id": "REP-00050-01",
+    "current_report_id": "REP-00050-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.5,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 132.5,
+        "current_value": 132.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.4,
+        "current_value": 4.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00100",
+    "patient_id": "PAT-00050",
+    "previous_report_id": "REP-00050-02",
+    "current_report_id": "REP-00050-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 132.0,
+        "current_value": 133.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.2,
+        "current_value": 4.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00101",
+    "patient_id": "PAT-00051",
+    "previous_report_id": "REP-00051-01",
+    "current_report_id": "REP-00051-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.5,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 69.6,
+        "current_value": 67.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.3,
+        "current_value": 1.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00102",
+    "patient_id": "PAT-00051",
+    "previous_report_id": "REP-00051-02",
+    "current_report_id": "REP-00051-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 67.2,
+        "current_value": 69.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.5,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00103",
+    "patient_id": "PAT-00052",
+    "previous_report_id": "REP-00052-01",
+    "current_report_id": "REP-00052-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.5,
+        "current_value": 15.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 69.3,
+        "current_value": 69.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.9,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.1,
+        "current_value": 2.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00104",
+    "patient_id": "PAT-00052",
+    "previous_report_id": "REP-00052-02",
+    "current_report_id": "REP-00052-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.3,
+        "current_value": 15.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 69.2,
+        "current_value": 67.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.4,
+        "current_value": 2.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00105",
+    "patient_id": "PAT-00053",
+    "previous_report_id": "REP-00053-01",
+    "current_report_id": "REP-00053-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.4,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 111.9,
+        "current_value": 109.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.2,
+        "current_value": 3.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00106",
+    "patient_id": "PAT-00053",
+    "previous_report_id": "REP-00053-02",
+    "current_report_id": "REP-00053-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 109.7,
+        "current_value": 112.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.2,
+        "current_value": 1.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00107",
+    "patient_id": "PAT-00054",
+    "previous_report_id": "REP-00054-01",
+    "current_report_id": "REP-00054-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.8,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 135.5,
+        "current_value": 135.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.0,
+        "current_value": 3.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00108",
+    "patient_id": "PAT-00054",
+    "previous_report_id": "REP-00054-02",
+    "current_report_id": "REP-00054-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 11.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 135.1,
+        "current_value": 137.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.3,
+        "current_value": 5.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00109",
+    "patient_id": "PAT-00055",
+    "previous_report_id": "REP-00055-01",
+    "current_report_id": "REP-00055-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.0,
+        "current_value": 12.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 85.4,
+        "current_value": 83.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.6,
+        "current_value": 3.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00110",
+    "patient_id": "PAT-00055",
+    "previous_report_id": "REP-00055-02",
+    "current_report_id": "REP-00055-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.0,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 83.6,
+        "current_value": 82.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.4,
+        "current_value": 2.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00111",
+    "patient_id": "PAT-00056",
+    "previous_report_id": "REP-00056-01",
+    "current_report_id": "REP-00056-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.1,
+        "current_value": 13.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.5,
+        "current_value": 115.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00112",
+    "patient_id": "PAT-00056",
+    "previous_report_id": "REP-00056-02",
+    "current_report_id": "REP-00056-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.9,
+        "current_value": 11.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 115.5,
+        "current_value": 115.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.6,
+        "current_value": 2.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00113",
+    "patient_id": "PAT-00057",
+    "previous_report_id": "REP-00057-01",
+    "current_report_id": "REP-00057-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.5,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 92.9,
+        "current_value": 93.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 2.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00114",
+    "patient_id": "PAT-00057",
+    "previous_report_id": "REP-00057-02",
+    "current_report_id": "REP-00057-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 11.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 93.5,
+        "current_value": 95.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.2,
+        "current_value": 0.4,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00115",
+    "patient_id": "PAT-00058",
+    "previous_report_id": "REP-00058-01",
+    "current_report_id": "REP-00058-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.1,
+        "current_value": 12.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 109.5,
+        "current_value": 107.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.1,
+        "current_value": 5.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00116",
+    "patient_id": "PAT-00058",
+    "previous_report_id": "REP-00058-02",
+    "current_report_id": "REP-00058-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.2,
+        "current_value": 10.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.5,
+        "current_value": 110.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.4,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00117",
+    "patient_id": "PAT-00059",
+    "previous_report_id": "REP-00059-01",
+    "current_report_id": "REP-00059-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 94.2,
+        "current_value": 95.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.6,
+        "current_value": 4.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00118",
+    "patient_id": "PAT-00059",
+    "previous_report_id": "REP-00059-02",
+    "current_report_id": "REP-00059-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 15.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 95.1,
+        "current_value": 95.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.0,
+        "current_value": 4.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00119",
+    "patient_id": "PAT-00060",
+    "previous_report_id": "REP-00060-01",
+    "current_report_id": "REP-00060-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.4,
+        "current_value": 14.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 66.8,
+        "current_value": 66.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.8,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00120",
+    "patient_id": "PAT-00060",
+    "previous_report_id": "REP-00060-02",
+    "current_report_id": "REP-00060-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.0,
+        "current_value": 12.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 66.1,
+        "current_value": 63.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 5.8,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00121",
+    "patient_id": "PAT-00061",
+    "previous_report_id": "REP-00061-01",
+    "current_report_id": "REP-00061-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.7,
+        "current_value": 12.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.7,
+        "current_value": 114.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.8,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00122",
+    "patient_id": "PAT-00061",
+    "previous_report_id": "REP-00061-02",
+    "current_report_id": "REP-00061-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.2,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 114.5,
+        "current_value": 112.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 2.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00123",
+    "patient_id": "PAT-00062",
+    "previous_report_id": "REP-00062-01",
+    "current_report_id": "REP-00062-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.8,
+        "current_value": 13.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 97.4,
+        "current_value": 99.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.5,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00124",
+    "patient_id": "PAT-00062",
+    "previous_report_id": "REP-00062-02",
+    "current_report_id": "REP-00062-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.8,
+        "current_value": 15.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 99.3,
+        "current_value": 101.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 6.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00125",
+    "patient_id": "PAT-00063",
+    "previous_report_id": "REP-00063-01",
+    "current_report_id": "REP-00063-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.7,
+        "current_value": 15.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 122.3,
+        "current_value": 120.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.0,
+        "current_value": 4.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00126",
+    "patient_id": "PAT-00063",
+    "previous_report_id": "REP-00063-02",
+    "current_report_id": "REP-00063-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.4,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 120.3,
+        "current_value": 121.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 4.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00127",
+    "patient_id": "PAT-00064",
+    "previous_report_id": "REP-00064-01",
+    "current_report_id": "REP-00064-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.8,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 91.5,
+        "current_value": 89.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.5,
+        "current_value": 1.1,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00128",
+    "patient_id": "PAT-00064",
+    "previous_report_id": "REP-00064-02",
+    "current_report_id": "REP-00064-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 12.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 89.6,
+        "current_value": 91.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.1,
+        "current_value": 3.6,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00129",
+    "patient_id": "PAT-00065",
+    "previous_report_id": "REP-00065-01",
+    "current_report_id": "REP-00065-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.9,
+        "current_value": 11.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 86.8,
+        "current_value": 89.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.5,
+        "current_value": 4.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00130",
+    "patient_id": "PAT-00065",
+    "previous_report_id": "REP-00065-02",
+    "current_report_id": "REP-00065-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.2,
+        "current_value": 13.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 89.7,
+        "current_value": 89.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.9,
+        "current_value": 6.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00131",
+    "patient_id": "PAT-00066",
+    "previous_report_id": "REP-00066-01",
+    "current_report_id": "REP-00066-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.9,
+        "current_value": 15.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 142.2,
+        "current_value": 143.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.4,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00132",
+    "patient_id": "PAT-00066",
+    "previous_report_id": "REP-00066-02",
+    "current_report_id": "REP-00066-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.4,
+        "current_value": 14.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.9,
+        "current_value": 141.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00133",
+    "patient_id": "PAT-00067",
+    "previous_report_id": "REP-00067-01",
+    "current_report_id": "REP-00067-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.4,
+        "current_value": 12.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.3,
+        "current_value": 112.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.7,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00134",
+    "patient_id": "PAT-00067",
+    "previous_report_id": "REP-00067-02",
+    "current_report_id": "REP-00067-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.1,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 112.2,
+        "current_value": 114.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 6.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00135",
+    "patient_id": "PAT-00068",
+    "previous_report_id": "REP-00068-01",
+    "current_report_id": "REP-00068-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.0,
+        "current_value": 15.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 94.2,
+        "current_value": 94.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.3,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00136",
+    "patient_id": "PAT-00068",
+    "previous_report_id": "REP-00068-02",
+    "current_report_id": "REP-00068-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.3,
+        "current_value": 13.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 94.2,
+        "current_value": 95.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00137",
+    "patient_id": "PAT-00069",
+    "previous_report_id": "REP-00069-01",
+    "current_report_id": "REP-00069-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.5,
+        "current_value": 12.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 132.7,
+        "current_value": 133.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 5.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00138",
+    "patient_id": "PAT-00069",
+    "previous_report_id": "REP-00069-02",
+    "current_report_id": "REP-00069-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.5,
+        "current_value": 11.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 133.7,
+        "current_value": 135.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 5.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00139",
+    "patient_id": "PAT-00070",
+    "previous_report_id": "REP-00070-01",
+    "current_report_id": "REP-00070-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.2,
+        "current_value": 14.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 144.9,
+        "current_value": 145,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.4,
+        "current_value": 0.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00140",
+    "patient_id": "PAT-00070",
+    "previous_report_id": "REP-00070-02",
+    "current_report_id": "REP-00070-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.9,
+        "current_value": 14.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 145,
+        "current_value": 142.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.5,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00141",
+    "patient_id": "PAT-00071",
+    "previous_report_id": "REP-00071-01",
+    "current_report_id": "REP-00071-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.4,
+        "current_value": 11.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 103.7,
+        "current_value": 101.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00142",
+    "patient_id": "PAT-00071",
+    "previous_report_id": "REP-00071-02",
+    "current_report_id": "REP-00071-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.3,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 101.4,
+        "current_value": 102.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00143",
+    "patient_id": "PAT-00072",
+    "previous_report_id": "REP-00072-01",
+    "current_report_id": "REP-00072-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.7,
+        "current_value": 13.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 133.3,
+        "current_value": 135.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.1,
+        "current_value": 0.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00144",
+    "patient_id": "PAT-00072",
+    "previous_report_id": "REP-00072-02",
+    "current_report_id": "REP-00072-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.3,
+        "current_value": 15.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 135.7,
+        "current_value": 136.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.6,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00145",
+    "patient_id": "PAT-00073",
+    "previous_report_id": "REP-00073-01",
+    "current_report_id": "REP-00073-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.9,
+        "current_value": 11.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 92.3,
+        "current_value": 93.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.7,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00146",
+    "patient_id": "PAT-00073",
+    "previous_report_id": "REP-00073-02",
+    "current_report_id": "REP-00073-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.1,
+        "current_value": 11.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 93.7,
+        "current_value": 95.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.7,
+        "current_value": 3.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00147",
+    "patient_id": "PAT-00074",
+    "previous_report_id": "REP-00074-01",
+    "current_report_id": "REP-00074-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.6,
+        "current_value": 14.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.0,
+        "current_value": 145,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.6,
+        "current_value": 5.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00148",
+    "patient_id": "PAT-00074",
+    "previous_report_id": "REP-00074-02",
+    "current_report_id": "REP-00074-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.7,
+        "current_value": 15.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 145,
+        "current_value": 145,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 3.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00149",
+    "patient_id": "PAT-00075",
+    "previous_report_id": "REP-00075-01",
+    "current_report_id": "REP-00075-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.8,
+        "current_value": 14.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 130.1,
+        "current_value": 132.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.1,
+        "current_value": 0.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00150",
+    "patient_id": "PAT-00075",
+    "previous_report_id": "REP-00075-02",
+    "current_report_id": "REP-00075-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.5,
+        "current_value": 16.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 132.3,
+        "current_value": 135.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00151",
+    "patient_id": "PAT-00076",
+    "previous_report_id": "REP-00076-01",
+    "current_report_id": "REP-00076-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.7,
+        "current_value": 12.7,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 133.5,
+        "current_value": 131.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 1.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.8,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00152",
+    "patient_id": "PAT-00076",
+    "previous_report_id": "REP-00076-02",
+    "current_report_id": "REP-00076-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.7,
+        "current_value": 14.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 131.6,
+        "current_value": 132.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00153",
+    "patient_id": "PAT-00077",
+    "previous_report_id": "REP-00077-01",
+    "current_report_id": "REP-00077-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.9,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 109.8,
+        "current_value": 107.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.9,
+        "current_value": 2.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00154",
+    "patient_id": "PAT-00077",
+    "previous_report_id": "REP-00077-02",
+    "current_report_id": "REP-00077-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.8,
+        "current_value": 109.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.3,
+        "current_value": 0.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00155",
+    "patient_id": "PAT-00078",
+    "previous_report_id": "REP-00078-01",
+    "current_report_id": "REP-00078-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.8,
+        "current_value": 11.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 81.0,
+        "current_value": 79.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.0,
+        "current_value": 1.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00156",
+    "patient_id": "PAT-00078",
+    "previous_report_id": "REP-00078-02",
+    "current_report_id": "REP-00078-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.8,
+        "current_value": 12.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 79.6,
+        "current_value": 79.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.8,
+        "current_value": 0.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00157",
+    "patient_id": "PAT-00079",
+    "previous_report_id": "REP-00079-01",
+    "current_report_id": "REP-00079-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.7,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.9,
+        "current_value": 114.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 1.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00158",
+    "patient_id": "PAT-00079",
+    "previous_report_id": "REP-00079-02",
+    "current_report_id": "REP-00079-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 14.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 114.7,
+        "current_value": 114.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00159",
+    "patient_id": "PAT-00080",
+    "previous_report_id": "REP-00080-01",
+    "current_report_id": "REP-00080-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.2,
+        "current_value": 14.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.5,
+        "current_value": 140.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 3.9,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00160",
+    "patient_id": "PAT-00080",
+    "previous_report_id": "REP-00080-02",
+    "current_report_id": "REP-00080-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.7,
+        "current_value": 12.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 140.8,
+        "current_value": 138.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 1.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00161",
+    "patient_id": "PAT-00081",
+    "previous_report_id": "REP-00081-01",
+    "current_report_id": "REP-00081-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.8,
+        "current_value": 14.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.1,
+        "current_value": 107.1,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.4,
+        "current_value": 4.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00162",
+    "patient_id": "PAT-00081",
+    "previous_report_id": "REP-00081-02",
+    "current_report_id": "REP-00081-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.0,
+        "current_value": 15.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 107.1,
+        "current_value": 104.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 1.9,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00163",
+    "patient_id": "PAT-00082",
+    "previous_report_id": "REP-00082-01",
+    "current_report_id": "REP-00082-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.6,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 130.2,
+        "current_value": 128.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.9,
+        "current_value": 5.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00164",
+    "patient_id": "PAT-00082",
+    "previous_report_id": "REP-00082-02",
+    "current_report_id": "REP-00082-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 128.4,
+        "current_value": 128.6,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.4,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00165",
+    "patient_id": "PAT-00083",
+    "previous_report_id": "REP-00083-01",
+    "current_report_id": "REP-00083-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.3,
+        "current_value": 10.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 62.5,
+        "current_value": 62,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.1,
+        "current_value": 2.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00166",
+    "patient_id": "PAT-00083",
+    "previous_report_id": "REP-00083-02",
+    "current_report_id": "REP-00083-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.4,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 62,
+        "current_value": 62,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.5,
+        "current_value": 1.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00167",
+    "patient_id": "PAT-00084",
+    "previous_report_id": "REP-00084-01",
+    "current_report_id": "REP-00084-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.6,
+        "current_value": 12.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 124.5,
+        "current_value": 126.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.8,
+        "current_value": 1.0,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00168",
+    "patient_id": "PAT-00084",
+    "previous_report_id": "REP-00084-02",
+    "current_report_id": "REP-00084-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.1,
+        "current_value": 10.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 126.1,
+        "current_value": 125.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.0,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00169",
+    "patient_id": "PAT-00085",
+    "previous_report_id": "REP-00085-01",
+    "current_report_id": "REP-00085-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.8,
+        "current_value": 15.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 63.9,
+        "current_value": 64.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.4,
+        "current_value": 1.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00170",
+    "patient_id": "PAT-00085",
+    "previous_report_id": "REP-00085-02",
+    "current_report_id": "REP-00085-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.5,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 64.1,
+        "current_value": 67.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.2,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00171",
+    "patient_id": "PAT-00086",
+    "previous_report_id": "REP-00086-01",
+    "current_report_id": "REP-00086-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.9,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 144.2,
+        "current_value": 142.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.6,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00172",
+    "patient_id": "PAT-00086",
+    "previous_report_id": "REP-00086-02",
+    "current_report_id": "REP-00086-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 142.6,
+        "current_value": 140.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00173",
+    "patient_id": "PAT-00087",
+    "previous_report_id": "REP-00087-01",
+    "current_report_id": "REP-00087-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.2,
+        "current_value": 13.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 64.2,
+        "current_value": 65.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.0,
+        "current_value": 2.5,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00174",
+    "patient_id": "PAT-00087",
+    "previous_report_id": "REP-00087-02",
+    "current_report_id": "REP-00087-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.4,
+        "current_value": 13.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 65.8,
+        "current_value": 67.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.5,
+        "current_value": 2.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00175",
+    "patient_id": "PAT-00088",
+    "previous_report_id": "REP-00088-01",
+    "current_report_id": "REP-00088-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.0,
+        "current_value": 13.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 104.9,
+        "current_value": 104.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.7,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.9,
+        "current_value": 3.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00176",
+    "patient_id": "PAT-00088",
+    "previous_report_id": "REP-00088-02",
+    "current_report_id": "REP-00088-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.5,
+        "current_value": 14.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 104.6,
+        "current_value": 105.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 3.8,
+        "current_value": 6.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00177",
+    "patient_id": "PAT-00089",
+    "previous_report_id": "REP-00089-01",
+    "current_report_id": "REP-00089-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.5,
+        "current_value": 14.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 112.5,
+        "current_value": 109.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.2,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00178",
+    "patient_id": "PAT-00089",
+    "previous_report_id": "REP-00089-02",
+    "current_report_id": "REP-00089-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.1,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 109.8,
+        "current_value": 110.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 6.2,
+        "current_value": 5.1,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00179",
+    "patient_id": "PAT-00090",
+    "previous_report_id": "REP-00090-01",
+    "current_report_id": "REP-00090-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.9,
+        "current_value": 13.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.9,
+        "current_value": 143.9,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.0,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.8,
+        "current_value": 4.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00180",
+    "patient_id": "PAT-00090",
+    "previous_report_id": "REP-00090-02",
+    "current_report_id": "REP-00090-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.0,
+        "current_value": 10.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 143.9,
+        "current_value": 144.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.5,
+        "current_value": 3.3,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00181",
+    "patient_id": "PAT-00091",
+    "previous_report_id": "REP-00091-01",
+    "current_report_id": "REP-00091-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.1,
+        "current_value": 13.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 127.1,
+        "current_value": 125.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.9,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 5.8,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00182",
+    "patient_id": "PAT-00091",
+    "previous_report_id": "REP-00091-02",
+    "current_report_id": "REP-00091-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.2,
+        "current_value": 12.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.0,
+        "current_value": 127.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.8,
+        "current_value": 6.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00183",
+    "patient_id": "PAT-00092",
+    "previous_report_id": "REP-00092-01",
+    "current_report_id": "REP-00092-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 14.9,
+        "current_value": 16.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 139.4,
+        "current_value": 137.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 1.4,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00184",
+    "patient_id": "PAT-00092",
+    "previous_report_id": "REP-00092-02",
+    "current_report_id": "REP-00092-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.5,
+        "current_value": 14.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 137.6,
+        "current_value": 136.1,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.4,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00185",
+    "patient_id": "PAT-00093",
+    "previous_report_id": "REP-00093-01",
+    "current_report_id": "REP-00093-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.8,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.6,
+        "current_value": 122.8,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.1,
+        "current_value": 1.7,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00186",
+    "patient_id": "PAT-00093",
+    "previous_report_id": "REP-00093-02",
+    "current_report_id": "REP-00093-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 11.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 122.8,
+        "current_value": 123.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.7,
+        "current_value": 3.4,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00187",
+    "patient_id": "PAT-00094",
+    "previous_report_id": "REP-00094-01",
+    "current_report_id": "REP-00094-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.9,
+        "current_value": 11.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 93.4,
+        "current_value": 93.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.7,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00188",
+    "patient_id": "PAT-00094",
+    "previous_report_id": "REP-00094-02",
+    "current_report_id": "REP-00094-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.7,
+        "current_value": 12.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 93.9,
+        "current_value": 96.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.2,
+        "direction": "unchanged"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00189",
+    "patient_id": "PAT-00095",
+    "previous_report_id": "REP-00095-01",
+    "current_report_id": "REP-00095-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 11.2,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 73.1,
+        "current_value": 75.7,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.5,
+        "current_value": 2.9,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00190",
+    "patient_id": "PAT-00095",
+    "previous_report_id": "REP-00095-02",
+    "current_report_id": "REP-00095-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.2,
+        "current_value": 10.2,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 75.7,
+        "current_value": 76.1,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 2.9,
+        "current_value": 4.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00191",
+    "patient_id": "PAT-00096",
+    "previous_report_id": "REP-00096-01",
+    "current_report_id": "REP-00096-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 13.6,
+        "current_value": 15.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 96.9,
+        "current_value": 99.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.9,
+        "current_value": 4.0,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00192",
+    "patient_id": "PAT-00096",
+    "previous_report_id": "REP-00096-02",
+    "current_report_id": "REP-00096-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.0,
+        "current_value": 13.5,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 99.8,
+        "current_value": 99.0,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 1.5,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.0,
+        "current_value": 1.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00193",
+    "patient_id": "PAT-00097",
+    "previous_report_id": "REP-00097-01",
+    "current_report_id": "REP-00097-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.8,
+        "current_value": 12.4,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 124.5,
+        "current_value": 127.2,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.1,
+        "current_value": 1.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.4,
+        "current_value": 5.3,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00194",
+    "patient_id": "PAT-00097",
+    "previous_report_id": "REP-00097-02",
+    "current_report_id": "REP-00097-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.4,
+        "current_value": 12.9,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 127.2,
+        "current_value": 127.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.3,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.3,
+        "current_value": 2.7,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00195",
+    "patient_id": "PAT-00098",
+    "previous_report_id": "REP-00098-01",
+    "current_report_id": "REP-00098-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.8,
+        "current_value": 10.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 125.4,
+        "current_value": 127.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.2,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 1.3,
+        "current_value": 0.6,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00196",
+    "patient_id": "PAT-00098",
+    "previous_report_id": "REP-00098-02",
+    "current_report_id": "REP-00098-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 10.6,
+        "current_value": 10.2,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 127.8,
+        "current_value": 128.0,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 1.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.6,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00197",
+    "patient_id": "PAT-00099",
+    "previous_report_id": "REP-00099-01",
+    "current_report_id": "REP-00099-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 12.9,
+        "current_value": 15.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 67.8,
+        "current_value": 65.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.8,
+        "current_value": 1.5,
+        "direction": "increased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 4.3,
+        "current_value": 5.2,
+        "direction": "increased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00198",
+    "patient_id": "PAT-00099",
+    "previous_report_id": "REP-00099-02",
+    "current_report_id": "REP-00099-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 15.5,
+        "current_value": 14.3,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 65.3,
+        "current_value": 64.9,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.5,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 5.2,
+        "current_value": 4.5,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00199",
+    "patient_id": "PAT-00100",
+    "previous_report_id": "REP-00100-01",
+    "current_report_id": "REP-00100-02",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.3,
+        "current_value": 16.8,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 116.3,
+        "current_value": 113.7,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 1.0,
+        "current_value": 0.6,
+        "direction": "decreased"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.5,
+        "current_value": 0.2,
+        "direction": "decreased"
+      }
+    ]
+  },
+  {
+    "id": "CMP-00200",
+    "patient_id": "PAT-00100",
+    "previous_report_id": "REP-00100-02",
+    "current_report_id": "REP-00100-03",
+    "expected_changes": [
+      {
+        "test_name": "Hemoglobin",
+        "previous_value": 16.8,
+        "current_value": 16.8,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "Glucose",
+        "previous_value": 113.7,
+        "current_value": 114.3,
+        "direction": "increased"
+      },
+      {
+        "test_name": "Creatinine",
+        "previous_value": 0.6,
+        "current_value": 0.6,
+        "direction": "unchanged"
+      },
+      {
+        "test_name": "TSH",
+        "previous_value": 0.2,
+        "current_value": 0.5,
+        "direction": "increased"
+      }
+    ]
+  }
+]

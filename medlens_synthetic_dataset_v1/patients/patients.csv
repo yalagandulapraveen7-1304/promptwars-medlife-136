@@ -1,0 +1,101 @@
+patient_id,name,age,sex,symptoms,existing_conditions,data_status
+PAT-00001,Nikhil Kumar,58,Male,['routine follow-up'],['hypertension'],synthetic
+PAT-00002,Priya Kumar,77,Male,['increased thirst'],['hyperlipidemia'],synthetic
+PAT-00003,Nandini Patel,47,Male,['abdominal discomfort'],[],synthetic
+PAT-00004,Nandini Kumar,22,Male,"['routine follow-up', 'increased thirst']",['hypothyroidism'],synthetic
+PAT-00005,Sneha Das,30,Female,['routine follow-up'],['type 2 diabetes'],synthetic
+PAT-00006,Kiran Rao,25,Male,"['dizziness', 'headache']",[],synthetic
+PAT-00007,Aditya Iyer,73,Male,"['cough', 'headache']",['asthma'],synthetic
+PAT-00008,Sanjay Verma,65,Male,['cough'],['hyperlipidemia'],synthetic
+PAT-00009,Rahul Iyer,57,Female,"['cough', 'headache']",['hyperlipidemia'],synthetic
+PAT-00010,Rahul Sharma,59,Female,"['increased thirst', 'cough']",['type 2 diabetes'],synthetic
+PAT-00011,Ananya Sharma,45,Female,"['abdominal discomfort', 'increased thirst']",['hypertension'],synthetic
+PAT-00012,Ananya Singh,53,Female,"['cough', 'abdominal discomfort']",['asthma'],synthetic
+PAT-00013,Sneha Verma,42,Female,"['dizziness', 'abdominal discomfort']",['asthma'],synthetic
+PAT-00014,Sneha Sharma,71,Male,['increased thirst'],[],synthetic
+PAT-00015,Nandini Rao,71,Male,"['abdominal discomfort', 'increased thirst']",['asthma'],synthetic
+PAT-00016,Ananya Nair,27,Male,"['routine follow-up', 'fatigue']",['asthma'],synthetic
+PAT-00017,Aisha Reddy,72,Female,['increased thirst'],['type 2 diabetes'],synthetic
+PAT-00018,Priya Singh,66,Male,['abdominal discomfort'],[],synthetic
+PAT-00019,Kavya Reddy,43,Female,['routine follow-up'],['type 2 diabetes'],synthetic
+PAT-00020,Ananya Nair,76,Female,['fatigue'],['hypertension'],synthetic
+PAT-00021,Diya Das,60,Female,"['fatigue', 'cough']",['type 2 diabetes'],synthetic
+PAT-00022,Aditya Patel,21,Male,"['cough', 'abdominal discomfort']",['type 2 diabetes'],synthetic
+PAT-00023,Kavya Nair,27,Male,"['routine follow-up', 'dizziness']",['type 2 diabetes'],synthetic
+PAT-00024,Sanjay Rao,39,Male,['cough'],['hyperlipidemia'],synthetic
+PAT-00025,Nikhil Rao,36,Female,"['abdominal discomfort', 'headache']",['type 2 diabetes'],synthetic
+PAT-00026,Nandini Verma,71,Male,['abdominal discomfort'],['hyperlipidemia'],synthetic
+PAT-00027,Aditya Sharma,63,Female,['fatigue'],['hypertension'],synthetic
+PAT-00028,Arjun Kumar,27,Female,"['cough', 'increased thirst']",['hypertension'],synthetic
+PAT-00029,Arjun Rao,69,Male,"['routine follow-up', 'abdominal discomfort']",['hyperlipidemia'],synthetic
+PAT-00030,Aisha Kumar,74,Female,"['cough', 'increased thirst']",[],synthetic
+PAT-00031,Vihaan Verma,64,Female,['dizziness'],['asthma'],synthetic
+PAT-00032,Tara Verma,21,Female,['abdominal discomfort'],['type 2 diabetes'],synthetic
+PAT-00033,Vikram Iyer,63,Male,['headache'],['hypothyroidism'],synthetic
+PAT-00034,Kavya Rao,52,Female,['abdominal discomfort'],['type 2 diabetes'],synthetic
+PAT-00035,Nikhil Nair,62,Female,['dizziness'],['hyperlipidemia'],synthetic
+PAT-00036,Priya Verma,73,Female,['routine follow-up'],['hypertension'],synthetic
+PAT-00037,Meera Verma,40,Female,['cough'],['hyperlipidemia'],synthetic
+PAT-00038,Kavya Reddy,34,Female,"['abdominal discomfort', 'cough']",['hyperlipidemia'],synthetic
+PAT-00039,Aarav Das,19,Female,"['abdominal discomfort', 'headache']",['hyperlipidemia'],synthetic
+PAT-00040,Sneha Verma,37,Male,"['increased thirst', 'routine follow-up']",['hyperlipidemia'],synthetic
+PAT-00041,Nikhil Nair,42,Male,['routine follow-up'],[],synthetic
+PAT-00042,Meera Iyer,69,Female,['routine follow-up'],[],synthetic
+PAT-00043,Diya Iyer,68,Male,['increased thirst'],['hyperlipidemia'],synthetic
+PAT-00044,Sanjay Reddy,26,Female,['cough'],['hypertension'],synthetic
+PAT-00045,Kavya Rao,65,Male,"['abdominal discomfort', 'fatigue']",['hypothyroidism'],synthetic
+PAT-00046,Diya Reddy,18,Male,"['headache', 'increased thirst']",[],synthetic
+PAT-00047,Rohan Singh,32,Female,"['cough', 'headache']",['hypertension'],synthetic
+PAT-00048,Aarav Nair,52,Male,['fatigue'],['asthma'],synthetic
+PAT-00049,Arjun Rao,69,Female,['increased thirst'],['hypothyroidism'],synthetic
+PAT-00050,Meera Sharma,64,Male,['dizziness'],['type 2 diabetes'],synthetic
+PAT-00051,Rohan Reddy,46,Female,['abdominal discomfort'],['asthma'],synthetic
+PAT-00052,Kavya Patel,31,Male,['dizziness'],['hypothyroidism'],synthetic
+PAT-00053,Kiran Nair,19,Female,['abdominal discomfort'],['hyperlipidemia'],synthetic
+PAT-00054,Tara Kumar,20,Male,['increased thirst'],['hyperlipidemia'],synthetic
+PAT-00055,Rohan Singh,74,Female,['headache'],['type 2 diabetes'],synthetic
+PAT-00056,Aisha Rao,61,Female,['increased thirst'],['hyperlipidemia'],synthetic
+PAT-00057,Tara Nair,29,Female,"['fatigue', 'increased thirst']",['asthma'],synthetic
+PAT-00058,Sneha Das,49,Female,"['cough', 'headache']",['type 2 diabetes'],synthetic
+PAT-00059,Isha Singh,27,Male,['routine follow-up'],['hypertension'],synthetic
+PAT-00060,Ananya Verma,73,Male,"['headache', 'cough']",['type 2 diabetes'],synthetic
+PAT-00061,Sneha Das,32,Male,['fatigue'],['type 2 diabetes'],synthetic
+PAT-00062,Kavya Rao,64,Male,"['increased thirst', 'fatigue']",['hypothyroidism'],synthetic
+PAT-00063,Aarav Das,22,Female,['routine follow-up'],[],synthetic
+PAT-00064,Tara Nair,72,Female,"['routine follow-up', 'abdominal discomfort']",['hypothyroidism'],synthetic
+PAT-00065,Nikhil Rao,74,Female,"['cough', 'abdominal discomfort']",['asthma'],synthetic
+PAT-00066,Isha Kumar,73,Male,"['routine follow-up', 'abdominal discomfort']",[],synthetic
+PAT-00067,Priya Verma,22,Male,['cough'],['asthma'],synthetic
+PAT-00068,Arjun Sharma,63,Female,['abdominal discomfort'],['hypertension'],synthetic
+PAT-00069,Nandini Patel,31,Female,['headache'],['type 2 diabetes'],synthetic
+PAT-00070,Aarav Das,64,Male,['abdominal discomfort'],[],synthetic
+PAT-00071,Arjun Das,59,Female,"['increased thirst', 'headache']",['hypothyroidism'],synthetic
+PAT-00072,Vikram Patel,70,Male,"['increased thirst', 'dizziness']",['hyperlipidemia'],synthetic
+PAT-00073,Ananya Verma,18,Female,"['fatigue', 'headache']",[],synthetic
+PAT-00074,Aditya Das,58,Female,"['headache', 'fatigue']",['asthma'],synthetic
+PAT-00075,Ananya Verma,42,Male,"['dizziness', 'abdominal discomfort']",[],synthetic
+PAT-00076,Kavya Reddy,40,Female,"['cough', 'routine follow-up']",[],synthetic
+PAT-00077,Priya Das,39,Female,"['cough', 'fatigue']",['hypothyroidism'],synthetic
+PAT-00078,Aarav Verma,77,Female,['fatigue'],['hyperlipidemia'],synthetic
+PAT-00079,Aditya Verma,32,Male,"['increased thirst', 'headache']",['hyperlipidemia'],synthetic
+PAT-00080,Rohan Kumar,75,Female,"['abdominal discomfort', 'increased thirst']",['asthma'],synthetic
+PAT-00081,Diya Patel,64,Male,"['fatigue', 'increased thirst']",['hypertension'],synthetic
+PAT-00082,Aarav Kumar,41,Male,"['abdominal discomfort', 'fatigue']",['hyperlipidemia'],synthetic
+PAT-00083,Kavya Verma,67,Female,['routine follow-up'],['hypothyroidism'],synthetic
+PAT-00084,Sneha Patel,37,Male,"['dizziness', 'routine follow-up']",['hypothyroidism'],synthetic
+PAT-00085,Nikhil Nair,66,Male,['abdominal discomfort'],['hypertension'],synthetic
+PAT-00086,Diya Singh,43,Male,"['headache', 'dizziness']",['hypertension'],synthetic
+PAT-00087,Rohan Patel,77,Female,['fatigue'],['type 2 diabetes'],synthetic
+PAT-00088,Aditya Rao,20,Female,"['increased thirst', 'cough']",['hyperlipidemia'],synthetic
+PAT-00089,Rohan Patel,67,Female,['fatigue'],['hypothyroidism'],synthetic
+PAT-00090,Meera Das,62,Female,['routine follow-up'],['hypothyroidism'],synthetic
+PAT-00091,Aisha Sharma,30,Female,['increased thirst'],['hypothyroidism'],synthetic
+PAT-00092,Rohan Das,73,Female,['headache'],['hypothyroidism'],synthetic
+PAT-00093,Priya Reddy,40,Female,"['dizziness', 'headache']",['hypothyroidism'],synthetic
+PAT-00094,Rohan Iyer,55,Female,['cough'],['hypothyroidism'],synthetic
+PAT-00095,Aisha Patel,45,Male,['dizziness'],[],synthetic
+PAT-00096,Sneha Rao,48,Male,['cough'],[],synthetic
+PAT-00097,Diya Sharma,58,Male,"['abdominal discomfort', 'fatigue']",['type 2 diabetes'],synthetic
+PAT-00098,Vihaan Nair,20,Male,['dizziness'],['hyperlipidemia'],synthetic
+PAT-00099,Ananya Verma,60,Female,['dizziness'],['hypothyroidism'],synthetic
+PAT-00100,Aditya Das,39,Male,"['routine follow-up', 'dizziness']",['asthma'],synthetic

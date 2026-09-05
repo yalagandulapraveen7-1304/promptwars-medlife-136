@@ -1,0 +1,1571 @@
+[
+  {
+    "note_id": "NOTE-00001",
+    "patient_id": "PAT-00001",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: hypertension. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00002",
+    "patient_id": "PAT-00002",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hyperlipidemia. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00003",
+    "patient_id": "PAT-00003",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: none documented. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00004",
+    "patient_id": "PAT-00004",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, increased thirst. Existing condition: hypothyroidism. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00005",
+    "patient_id": "PAT-00005",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00006",
+    "patient_id": "PAT-00006",
+    "note_text": "Follow-up visit. Patient reports dizziness, headache. Existing condition: none documented. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness",
+        "headache"
+      ],
+      "existing_conditions": [],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00007",
+    "patient_id": "PAT-00007",
+    "note_text": "Follow-up visit. Patient reports cough, headache. Existing condition: asthma. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "headache"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00008",
+    "patient_id": "PAT-00008",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: hyperlipidemia. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00009",
+    "patient_id": "PAT-00009",
+    "note_text": "Follow-up visit. Patient reports cough, headache. Existing condition: hyperlipidemia. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00010",
+    "patient_id": "PAT-00010",
+    "note_text": "Follow-up visit. Patient reports increased thirst, cough. Existing condition: type 2 diabetes. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "cough"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00011",
+    "patient_id": "PAT-00011",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, increased thirst. Existing condition: hypertension. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00012",
+    "patient_id": "PAT-00012",
+    "note_text": "Follow-up visit. Patient reports cough, abdominal discomfort. Existing condition: asthma. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00013",
+    "patient_id": "PAT-00013",
+    "note_text": "Follow-up visit. Patient reports dizziness, abdominal discomfort. Existing condition: asthma. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00014",
+    "patient_id": "PAT-00014",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: none documented. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00015",
+    "patient_id": "PAT-00015",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, increased thirst. Existing condition: asthma. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00016",
+    "patient_id": "PAT-00016",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, fatigue. Existing condition: asthma. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00017",
+    "patient_id": "PAT-00017",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: type 2 diabetes. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00018",
+    "patient_id": "PAT-00018",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: none documented. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00019",
+    "patient_id": "PAT-00019",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00020",
+    "patient_id": "PAT-00020",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: hypertension. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00021",
+    "patient_id": "PAT-00021",
+    "note_text": "Follow-up visit. Patient reports fatigue, cough. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue",
+        "cough"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00022",
+    "patient_id": "PAT-00022",
+    "note_text": "Follow-up visit. Patient reports cough, abdominal discomfort. Existing condition: type 2 diabetes. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00023",
+    "patient_id": "PAT-00023",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, dizziness. Existing condition: type 2 diabetes. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00024",
+    "patient_id": "PAT-00024",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: hyperlipidemia. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00025",
+    "patient_id": "PAT-00025",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, headache. Existing condition: type 2 diabetes. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "headache"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00026",
+    "patient_id": "PAT-00026",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: hyperlipidemia. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00027",
+    "patient_id": "PAT-00027",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: hypertension. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00028",
+    "patient_id": "PAT-00028",
+    "note_text": "Follow-up visit. Patient reports cough, increased thirst. Existing condition: hypertension. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00029",
+    "patient_id": "PAT-00029",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, abdominal discomfort. Existing condition: hyperlipidemia. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00030",
+    "patient_id": "PAT-00030",
+    "note_text": "Follow-up visit. Patient reports cough, increased thirst. Existing condition: none documented. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "increased thirst"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00031",
+    "patient_id": "PAT-00031",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: asthma. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00032",
+    "patient_id": "PAT-00032",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: type 2 diabetes. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00033",
+    "patient_id": "PAT-00033",
+    "note_text": "Follow-up visit. Patient reports headache. Existing condition: hypothyroidism. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00034",
+    "patient_id": "PAT-00034",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: type 2 diabetes. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00035",
+    "patient_id": "PAT-00035",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: hyperlipidemia. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00036",
+    "patient_id": "PAT-00036",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: hypertension. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00037",
+    "patient_id": "PAT-00037",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: hyperlipidemia. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00038",
+    "patient_id": "PAT-00038",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, cough. Existing condition: hyperlipidemia. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "cough"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00039",
+    "patient_id": "PAT-00039",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, headache. Existing condition: hyperlipidemia. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00040",
+    "patient_id": "PAT-00040",
+    "note_text": "Follow-up visit. Patient reports increased thirst, routine follow-up. Existing condition: hyperlipidemia. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00041",
+    "patient_id": "PAT-00041",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: none documented. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00042",
+    "patient_id": "PAT-00042",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: none documented. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00043",
+    "patient_id": "PAT-00043",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hyperlipidemia. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00044",
+    "patient_id": "PAT-00044",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: hypertension. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00045",
+    "patient_id": "PAT-00045",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, fatigue. Existing condition: hypothyroidism. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00046",
+    "patient_id": "PAT-00046",
+    "note_text": "Follow-up visit. Patient reports headache, increased thirst. Existing condition: none documented. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache",
+        "increased thirst"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00047",
+    "patient_id": "PAT-00047",
+    "note_text": "Follow-up visit. Patient reports cough, headache. Existing condition: hypertension. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00048",
+    "patient_id": "PAT-00048",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: asthma. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00049",
+    "patient_id": "PAT-00049",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00050",
+    "patient_id": "PAT-00050",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00051",
+    "patient_id": "PAT-00051",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: asthma. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00052",
+    "patient_id": "PAT-00052",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: hypothyroidism. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00053",
+    "patient_id": "PAT-00053",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: hyperlipidemia. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00054",
+    "patient_id": "PAT-00054",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hyperlipidemia. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00055",
+    "patient_id": "PAT-00055",
+    "note_text": "Follow-up visit. Patient reports headache. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00056",
+    "patient_id": "PAT-00056",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hyperlipidemia. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00057",
+    "patient_id": "PAT-00057",
+    "note_text": "Follow-up visit. Patient reports fatigue, increased thirst. Existing condition: asthma. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00058",
+    "patient_id": "PAT-00058",
+    "note_text": "Follow-up visit. Patient reports cough, headache. Existing condition: type 2 diabetes. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "headache"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00059",
+    "patient_id": "PAT-00059",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: hypertension. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00060",
+    "patient_id": "PAT-00060",
+    "note_text": "Follow-up visit. Patient reports headache, cough. Existing condition: type 2 diabetes. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache",
+        "cough"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00061",
+    "patient_id": "PAT-00061",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: type 2 diabetes. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00062",
+    "patient_id": "PAT-00062",
+    "note_text": "Follow-up visit. Patient reports increased thirst, fatigue. Existing condition: hypothyroidism. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00063",
+    "patient_id": "PAT-00063",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: none documented. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00064",
+    "patient_id": "PAT-00064",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, abdominal discomfort. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00065",
+    "patient_id": "PAT-00065",
+    "note_text": "Follow-up visit. Patient reports cough, abdominal discomfort. Existing condition: asthma. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00066",
+    "patient_id": "PAT-00066",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, abdominal discomfort. Existing condition: none documented. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00067",
+    "patient_id": "PAT-00067",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: asthma. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00068",
+    "patient_id": "PAT-00068",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: hypertension. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00069",
+    "patient_id": "PAT-00069",
+    "note_text": "Follow-up visit. Patient reports headache. Existing condition: type 2 diabetes. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00070",
+    "patient_id": "PAT-00070",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: none documented. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00071",
+    "patient_id": "PAT-00071",
+    "note_text": "Follow-up visit. Patient reports increased thirst, headache. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00072",
+    "patient_id": "PAT-00072",
+    "note_text": "Follow-up visit. Patient reports increased thirst, dizziness. Existing condition: hyperlipidemia. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00073",
+    "patient_id": "PAT-00073",
+    "note_text": "Follow-up visit. Patient reports fatigue, headache. Existing condition: none documented. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue",
+        "headache"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00074",
+    "patient_id": "PAT-00074",
+    "note_text": "Follow-up visit. Patient reports headache, fatigue. Existing condition: asthma. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00075",
+    "patient_id": "PAT-00075",
+    "note_text": "Follow-up visit. Patient reports dizziness, abdominal discomfort. Existing condition: none documented. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness",
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00076",
+    "patient_id": "PAT-00076",
+    "note_text": "Follow-up visit. Patient reports cough, routine follow-up. Existing condition: none documented. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "routine follow-up"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00077",
+    "patient_id": "PAT-00077",
+    "note_text": "Follow-up visit. Patient reports cough, fatigue. Existing condition: hypothyroidism. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00078",
+    "patient_id": "PAT-00078",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: hyperlipidemia. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00079",
+    "patient_id": "PAT-00079",
+    "note_text": "Follow-up visit. Patient reports increased thirst, headache. Existing condition: hyperlipidemia. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00080",
+    "patient_id": "PAT-00080",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, increased thirst. Existing condition: asthma. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00081",
+    "patient_id": "PAT-00081",
+    "note_text": "Follow-up visit. Patient reports fatigue, increased thirst. Existing condition: hypertension. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue",
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00082",
+    "patient_id": "PAT-00082",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, fatigue. Existing condition: hyperlipidemia. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00083",
+    "patient_id": "PAT-00083",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: hypothyroidism. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00084",
+    "patient_id": "PAT-00084",
+    "note_text": "Follow-up visit. Patient reports dizziness, routine follow-up. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness",
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00085",
+    "patient_id": "PAT-00085",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort. Existing condition: hypertension. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00086",
+    "patient_id": "PAT-00086",
+    "note_text": "Follow-up visit. Patient reports headache, dizziness. Existing condition: hypertension. Allergy history: Latex.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache",
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hypertension"
+      ],
+      "allergies": [
+        "Latex"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00087",
+    "patient_id": "PAT-00087",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: type 2 diabetes. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00088",
+    "patient_id": "PAT-00088",
+    "note_text": "Follow-up visit. Patient reports increased thirst, cough. Existing condition: hyperlipidemia. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst",
+        "cough"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00089",
+    "patient_id": "PAT-00089",
+    "note_text": "Follow-up visit. Patient reports fatigue. Existing condition: hypothyroidism. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00090",
+    "patient_id": "PAT-00090",
+    "note_text": "Follow-up visit. Patient reports routine follow-up. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00091",
+    "patient_id": "PAT-00091",
+    "note_text": "Follow-up visit. Patient reports increased thirst. Existing condition: hypothyroidism. Allergy history: Aspirin.",
+    "expected_extraction": {
+      "symptoms": [
+        "increased thirst"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Aspirin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00092",
+    "patient_id": "PAT-00092",
+    "note_text": "Follow-up visit. Patient reports headache. Existing condition: hypothyroidism. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "headache"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00093",
+    "patient_id": "PAT-00093",
+    "note_text": "Follow-up visit. Patient reports dizziness, headache. Existing condition: hypothyroidism. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness",
+        "headache"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00094",
+    "patient_id": "PAT-00094",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: hypothyroidism. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00095",
+    "patient_id": "PAT-00095",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: none documented. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00096",
+    "patient_id": "PAT-00096",
+    "note_text": "Follow-up visit. Patient reports cough. Existing condition: none documented. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "cough"
+      ],
+      "existing_conditions": [],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00097",
+    "patient_id": "PAT-00097",
+    "note_text": "Follow-up visit. Patient reports abdominal discomfort, fatigue. Existing condition: type 2 diabetes. Allergy history: no allergy documented.",
+    "expected_extraction": {
+      "symptoms": [
+        "abdominal discomfort",
+        "fatigue"
+      ],
+      "existing_conditions": [
+        "type 2 diabetes"
+      ],
+      "allergies": []
+    }
+  },
+  {
+    "note_id": "NOTE-00098",
+    "patient_id": "PAT-00098",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: hyperlipidemia. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hyperlipidemia"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00099",
+    "patient_id": "PAT-00099",
+    "note_text": "Follow-up visit. Patient reports dizziness. Existing condition: hypothyroidism. Allergy history: Sulfa drugs.",
+    "expected_extraction": {
+      "symptoms": [
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "hypothyroidism"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ]
+    }
+  },
+  {
+    "note_id": "NOTE-00100",
+    "patient_id": "PAT-00100",
+    "note_text": "Follow-up visit. Patient reports routine follow-up, dizziness. Existing condition: asthma. Allergy history: Penicillin.",
+    "expected_extraction": {
+      "symptoms": [
+        "routine follow-up",
+        "dizziness"
+      ],
+      "existing_conditions": [
+        "asthma"
+      ],
+      "allergies": [
+        "Penicillin"
+      ]
+    }
+  }
+]

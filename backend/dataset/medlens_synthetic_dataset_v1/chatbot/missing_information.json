@@ -1,0 +1,902 @@
+[
+  {
+    "id": "MIS-00001",
+    "patient_id": "PAT-00001",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00002",
+    "patient_id": "PAT-00002",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00003",
+    "patient_id": "PAT-00003",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00004",
+    "patient_id": "PAT-00004",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00005",
+    "patient_id": "PAT-00005",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00006",
+    "patient_id": "PAT-00006",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00007",
+    "patient_id": "PAT-00007",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00008",
+    "patient_id": "PAT-00008",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00009",
+    "patient_id": "PAT-00009",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00010",
+    "patient_id": "PAT-00010",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00011",
+    "patient_id": "PAT-00011",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00012",
+    "patient_id": "PAT-00012",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00013",
+    "patient_id": "PAT-00013",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00014",
+    "patient_id": "PAT-00014",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00015",
+    "patient_id": "PAT-00015",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00016",
+    "patient_id": "PAT-00016",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00017",
+    "patient_id": "PAT-00017",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00018",
+    "patient_id": "PAT-00018",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00019",
+    "patient_id": "PAT-00019",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00020",
+    "patient_id": "PAT-00020",
+    "missing_fields": [
+      "medication_start_date",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00021",
+    "patient_id": "PAT-00021",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00022",
+    "patient_id": "PAT-00022",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00023",
+    "patient_id": "PAT-00023",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00024",
+    "patient_id": "PAT-00024",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00025",
+    "patient_id": "PAT-00025",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00026",
+    "patient_id": "PAT-00026",
+    "missing_fields": [
+      "medication_start_date",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00027",
+    "patient_id": "PAT-00027",
+    "missing_fields": [
+      "medication_start_date",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00028",
+    "patient_id": "PAT-00028",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00029",
+    "patient_id": "PAT-00029",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00030",
+    "patient_id": "PAT-00030",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00031",
+    "patient_id": "PAT-00031",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00032",
+    "patient_id": "PAT-00032",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00033",
+    "patient_id": "PAT-00033",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00034",
+    "patient_id": "PAT-00034",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00035",
+    "patient_id": "PAT-00035",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00036",
+    "patient_id": "PAT-00036",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00037",
+    "patient_id": "PAT-00037",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00038",
+    "patient_id": "PAT-00038",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00039",
+    "patient_id": "PAT-00039",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00040",
+    "patient_id": "PAT-00040",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00041",
+    "patient_id": "PAT-00041",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00042",
+    "patient_id": "PAT-00042",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00043",
+    "patient_id": "PAT-00043",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00044",
+    "patient_id": "PAT-00044",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00045",
+    "patient_id": "PAT-00045",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00046",
+    "patient_id": "PAT-00046",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00047",
+    "patient_id": "PAT-00047",
+    "missing_fields": [
+      "previous_report",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00048",
+    "patient_id": "PAT-00048",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00049",
+    "patient_id": "PAT-00049",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00050",
+    "patient_id": "PAT-00050",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00051",
+    "patient_id": "PAT-00051",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00052",
+    "patient_id": "PAT-00052",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00053",
+    "patient_id": "PAT-00053",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00054",
+    "patient_id": "PAT-00054",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00055",
+    "patient_id": "PAT-00055",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00056",
+    "patient_id": "PAT-00056",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00057",
+    "patient_id": "PAT-00057",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00058",
+    "patient_id": "PAT-00058",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00059",
+    "patient_id": "PAT-00059",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00060",
+    "patient_id": "PAT-00060",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00061",
+    "patient_id": "PAT-00061",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00062",
+    "patient_id": "PAT-00062",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00063",
+    "patient_id": "PAT-00063",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00064",
+    "patient_id": "PAT-00064",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00065",
+    "patient_id": "PAT-00065",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00066",
+    "patient_id": "PAT-00066",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00067",
+    "patient_id": "PAT-00067",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00068",
+    "patient_id": "PAT-00068",
+    "missing_fields": [
+      "allergies",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00069",
+    "patient_id": "PAT-00069",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00070",
+    "patient_id": "PAT-00070",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00071",
+    "patient_id": "PAT-00071",
+    "missing_fields": [
+      "medication_start_date",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00072",
+    "patient_id": "PAT-00072",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00073",
+    "patient_id": "PAT-00073",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00074",
+    "patient_id": "PAT-00074",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00075",
+    "patient_id": "PAT-00075",
+    "missing_fields": [
+      "allergies",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00076",
+    "patient_id": "PAT-00076",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00077",
+    "patient_id": "PAT-00077",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00078",
+    "patient_id": "PAT-00078",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00079",
+    "patient_id": "PAT-00079",
+    "missing_fields": [
+      "medication_start_date",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00080",
+    "patient_id": "PAT-00080",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00081",
+    "patient_id": "PAT-00081",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00082",
+    "patient_id": "PAT-00082",
+    "missing_fields": [
+      "medication_start_date",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00083",
+    "patient_id": "PAT-00083",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00084",
+    "patient_id": "PAT-00084",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00085",
+    "patient_id": "PAT-00085",
+    "missing_fields": [
+      "symptom_duration",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00086",
+    "patient_id": "PAT-00086",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00087",
+    "patient_id": "PAT-00087",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00088",
+    "patient_id": "PAT-00088",
+    "missing_fields": [
+      "symptom_duration",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00089",
+    "patient_id": "PAT-00089",
+    "missing_fields": [
+      "medication_start_date",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00090",
+    "patient_id": "PAT-00090",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00091",
+    "patient_id": "PAT-00091",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00092",
+    "patient_id": "PAT-00092",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00093",
+    "patient_id": "PAT-00093",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00094",
+    "patient_id": "PAT-00094",
+    "missing_fields": [
+      "previous_report",
+      "medication_start_date"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00095",
+    "patient_id": "PAT-00095",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00096",
+    "patient_id": "PAT-00096",
+    "missing_fields": [
+      "previous_report",
+      "symptom_duration"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00097",
+    "patient_id": "PAT-00097",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00098",
+    "patient_id": "PAT-00098",
+    "missing_fields": [
+      "allergies",
+      "previous_report"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00099",
+    "patient_id": "PAT-00099",
+    "missing_fields": [
+      "symptom_duration",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  },
+  {
+    "id": "MIS-00100",
+    "patient_id": "PAT-00100",
+    "missing_fields": [
+      "previous_report",
+      "allergies"
+    ],
+    "expected_behavior": "Ask a context-aware clarification question or mark the field as unknown."
+  }
+]

@@ -898,9 +898,10 @@
 <!-- MedLens Patient Details Client-Side Controller -->
 <script>
 (function initMedLensStructuredRecordAPI() {
-  // Configuration: dynamically select localhost:8000 or relative path
-  const isLocalApi = window.location.origin.includes(':8000');
-  const API_BASE = isLocalApi ? `${window.location.origin}/api/records` : 'http://localhost:8000/api/records';
+  // Configuration: dynamically select localhost:8000, current origin (Vercel), or fallback
+  const isFile = window.location.protocol === 'file:';
+  const API_ROOT = isFile ? 'http://127.0.0.1:8000' : (window.location.origin.includes(':8000') ? window.location.origin : (window.location.origin || 'http://127.0.0.1:8000'));
+  const API_BASE = `${API_ROOT}/api/records`;
   const urlParams = new URLSearchParams(window.location.search);
   const PATIENT_MRN = urlParams.get('patient_id') || urlParams.get('mrn') || 'ML-9420';
 
@@ -1466,7 +1467,7 @@
     }
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/copilot/query', {
+      const res = await fetch(`${API_ROOT}/api/copilot/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ patient_id: selectedPatientId, query: query })

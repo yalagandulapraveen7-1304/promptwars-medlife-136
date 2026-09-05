@@ -1,0 +1,322 @@
+[
+  {
+    "conflict_id": "CON-00001",
+    "patient_id": "PAT-00005",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00002",
+    "patient_id": "PAT-00010",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00003",
+    "patient_id": "PAT-00015",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00004",
+    "patient_id": "PAT-00020",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00005",
+    "patient_id": "PAT-00025",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00006",
+    "patient_id": "PAT-00030",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00007",
+    "patient_id": "PAT-00035",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00008",
+    "patient_id": "PAT-00040",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00009",
+    "patient_id": "PAT-00045",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00010",
+    "patient_id": "PAT-00050",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00011",
+    "patient_id": "PAT-00055",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00012",
+    "patient_id": "PAT-00060",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00013",
+    "patient_id": "PAT-00065",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00014",
+    "patient_id": "PAT-00070",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00015",
+    "patient_id": "PAT-00075",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00016",
+    "patient_id": "PAT-00080",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00017",
+    "patient_id": "PAT-00085",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00018",
+    "patient_id": "PAT-00090",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00019",
+    "patient_id": "PAT-00095",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  },
+  {
+    "conflict_id": "CON-00020",
+    "patient_id": "PAT-00100",
+    "field": "allergies",
+    "source_a": {
+      "document": "patient_intake",
+      "value": "No known allergies"
+    },
+    "source_b": {
+      "document": "previous_report",
+      "value": "Penicillin"
+    },
+    "conflict_detected": true,
+    "resolution": "requires_human_verification",
+    "model_instruction": "Flag the conflict; never silently choose one value."
+  }
+]

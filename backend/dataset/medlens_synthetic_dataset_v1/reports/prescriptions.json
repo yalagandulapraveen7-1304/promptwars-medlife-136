@@ -1,0 +1,1002 @@
+[
+  {
+    "prescription_id": "RX-00001",
+    "patient_id": "PAT-00001",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00002",
+    "patient_id": "PAT-00002",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00003",
+    "patient_id": "PAT-00003",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00004",
+    "patient_id": "PAT-00004",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00005",
+    "patient_id": "PAT-00005",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00006",
+    "patient_id": "PAT-00006",
+    "medication": "ExampleMed-C",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00007",
+    "patient_id": "PAT-00007",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00008",
+    "patient_id": "PAT-00008",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00009",
+    "patient_id": "PAT-00009",
+    "medication": "ExampleMed-B",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00010",
+    "patient_id": "PAT-00010",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00011",
+    "patient_id": "PAT-00011",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00012",
+    "patient_id": "PAT-00012",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00013",
+    "patient_id": "PAT-00013",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00014",
+    "patient_id": "PAT-00014",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00015",
+    "patient_id": "PAT-00015",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00016",
+    "patient_id": "PAT-00016",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00017",
+    "patient_id": "PAT-00017",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00018",
+    "patient_id": "PAT-00018",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00019",
+    "patient_id": "PAT-00019",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00020",
+    "patient_id": "PAT-00020",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00021",
+    "patient_id": "PAT-00021",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00022",
+    "patient_id": "PAT-00022",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00023",
+    "patient_id": "PAT-00023",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00024",
+    "patient_id": "PAT-00024",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00025",
+    "patient_id": "PAT-00025",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00026",
+    "patient_id": "PAT-00026",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00027",
+    "patient_id": "PAT-00027",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00028",
+    "patient_id": "PAT-00028",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00029",
+    "patient_id": "PAT-00029",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00030",
+    "patient_id": "PAT-00030",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00031",
+    "patient_id": "PAT-00031",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00032",
+    "patient_id": "PAT-00032",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00033",
+    "patient_id": "PAT-00033",
+    "medication": "ExampleMed-A",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00034",
+    "patient_id": "PAT-00034",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00035",
+    "patient_id": "PAT-00035",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00036",
+    "patient_id": "PAT-00036",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00037",
+    "patient_id": "PAT-00037",
+    "medication": "ExampleMed-C",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00038",
+    "patient_id": "PAT-00038",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00039",
+    "patient_id": "PAT-00039",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00040",
+    "patient_id": "PAT-00040",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00041",
+    "patient_id": "PAT-00041",
+    "medication": "ExampleMed-B",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00042",
+    "patient_id": "PAT-00042",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00043",
+    "patient_id": "PAT-00043",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00044",
+    "patient_id": "PAT-00044",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00045",
+    "patient_id": "PAT-00045",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00046",
+    "patient_id": "PAT-00046",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00047",
+    "patient_id": "PAT-00047",
+    "medication": "ExampleMed-A",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00048",
+    "patient_id": "PAT-00048",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00049",
+    "patient_id": "PAT-00049",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00050",
+    "patient_id": "PAT-00050",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00051",
+    "patient_id": "PAT-00051",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00052",
+    "patient_id": "PAT-00052",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00053",
+    "patient_id": "PAT-00053",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00054",
+    "patient_id": "PAT-00054",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00055",
+    "patient_id": "PAT-00055",
+    "medication": "ExampleMed-B",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00056",
+    "patient_id": "PAT-00056",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00057",
+    "patient_id": "PAT-00057",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00058",
+    "patient_id": "PAT-00058",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00059",
+    "patient_id": "PAT-00059",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00060",
+    "patient_id": "PAT-00060",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00061",
+    "patient_id": "PAT-00061",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00062",
+    "patient_id": "PAT-00062",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00063",
+    "patient_id": "PAT-00063",
+    "medication": "ExampleMed-B",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00064",
+    "patient_id": "PAT-00064",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00065",
+    "patient_id": "PAT-00065",
+    "medication": "ExampleMed-C",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00066",
+    "patient_id": "PAT-00066",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00067",
+    "patient_id": "PAT-00067",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00068",
+    "patient_id": "PAT-00068",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00069",
+    "patient_id": "PAT-00069",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00070",
+    "patient_id": "PAT-00070",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00071",
+    "patient_id": "PAT-00071",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00072",
+    "patient_id": "PAT-00072",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00073",
+    "patient_id": "PAT-00073",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00074",
+    "patient_id": "PAT-00074",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00075",
+    "patient_id": "PAT-00075",
+    "medication": "ExampleMed-A",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00076",
+    "patient_id": "PAT-00076",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00077",
+    "patient_id": "PAT-00077",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00078",
+    "patient_id": "PAT-00078",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00079",
+    "patient_id": "PAT-00079",
+    "medication": "ExampleMed-C",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00080",
+    "patient_id": "PAT-00080",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00081",
+    "patient_id": "PAT-00081",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00082",
+    "patient_id": "PAT-00082",
+    "medication": "ExampleMed-C",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00083",
+    "patient_id": "PAT-00083",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00084",
+    "patient_id": "PAT-00084",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00085",
+    "patient_id": "PAT-00085",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00086",
+    "patient_id": "PAT-00086",
+    "medication": "ExampleMed-A",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00087",
+    "patient_id": "PAT-00087",
+    "medication": "ExampleMed-A",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00088",
+    "patient_id": "PAT-00088",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00089",
+    "patient_id": "PAT-00089",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00090",
+    "patient_id": "PAT-00090",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00091",
+    "patient_id": "PAT-00091",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "once daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00092",
+    "patient_id": "PAT-00092",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00093",
+    "patient_id": "PAT-00093",
+    "medication": "ExampleMed-B",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00094",
+    "patient_id": "PAT-00094",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00095",
+    "patient_id": "PAT-00095",
+    "medication": "ExampleMed-C",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00096",
+    "patient_id": "PAT-00096",
+    "medication": "ExampleMed-B",
+    "strength": "10 mg",
+    "frequency": "twice daily",
+    "duration": "30 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00097",
+    "patient_id": "PAT-00097",
+    "medication": "ExampleMed-D",
+    "strength": "10 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00098",
+    "patient_id": "PAT-00098",
+    "medication": "ExampleMed-D",
+    "strength": "5 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00099",
+    "patient_id": "PAT-00099",
+    "medication": "ExampleMed-D",
+    "strength": "20 mg",
+    "frequency": "twice daily",
+    "duration": "7 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  },
+  {
+    "prescription_id": "RX-00100",
+    "patient_id": "PAT-00100",
+    "medication": "ExampleMed-A",
+    "strength": "5 mg",
+    "frequency": "once daily",
+    "duration": "90 days",
+    "source": "synthetic_prescription",
+    "verified": false
+  }
+]

@@ -610,8 +610,9 @@
 
 <script>
 (function initMedLensDemographicIntakeAPI() {
-  const isLocalApi = window.location.origin.includes(':8000');
-  const API_BASE = isLocalApi ? `${window.location.origin}/api/intake` : 'http://localhost:8000/api/intake';
+  const isFile = window.location.protocol === 'file:';
+  const API_ROOT = isFile ? 'http://127.0.0.1:8000' : (window.location.origin.includes(':8000') ? window.location.origin : (window.location.origin || 'http://127.0.0.1:8000'));
+  const API_BASE = `${API_ROOT}/api/intake`;
   const MRN_DEFAULT = 'ML-9420-TX';
 
   // Elements

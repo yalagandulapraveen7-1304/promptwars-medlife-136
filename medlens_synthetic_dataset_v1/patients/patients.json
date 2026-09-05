@@ -1,0 +1,2402 @@
+[
+  {
+    "patient_id": "PAT-00001",
+    "name": "Nikhil Kumar",
+    "age": 58,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00002",
+    "name": "Priya Kumar",
+    "age": 77,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00003",
+    "name": "Nandini Patel",
+    "age": 47,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00004",
+    "name": "Nandini Kumar",
+    "age": 22,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00005",
+    "name": "Sneha Das",
+    "age": 30,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00006",
+    "name": "Kiran Rao",
+    "age": 25,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness",
+      "headache"
+    ],
+    "existing_conditions": [],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00007",
+    "name": "Aditya Iyer",
+    "age": 73,
+    "sex": "Male",
+    "symptoms": [
+      "cough",
+      "headache"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00008",
+    "name": "Sanjay Verma",
+    "age": 65,
+    "sex": "Male",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00009",
+    "name": "Rahul Iyer",
+    "age": 57,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00010",
+    "name": "Rahul Sharma",
+    "age": 59,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst",
+      "cough"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00011",
+    "name": "Ananya Sharma",
+    "age": 45,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00012",
+    "name": "Ananya Singh",
+    "age": 53,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00013",
+    "name": "Sneha Verma",
+    "age": 42,
+    "sex": "Female",
+    "symptoms": [
+      "dizziness",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00014",
+    "name": "Sneha Sharma",
+    "age": 71,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00015",
+    "name": "Nandini Rao",
+    "age": 71,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00016",
+    "name": "Ananya Nair",
+    "age": 27,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00017",
+    "name": "Aisha Reddy",
+    "age": 72,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00018",
+    "name": "Priya Singh",
+    "age": 66,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00019",
+    "name": "Kavya Reddy",
+    "age": 43,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00020",
+    "name": "Ananya Nair",
+    "age": 76,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00021",
+    "name": "Diya Das",
+    "age": 60,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue",
+      "cough"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00022",
+    "name": "Aditya Patel",
+    "age": 21,
+    "sex": "Male",
+    "symptoms": [
+      "cough",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00023",
+    "name": "Kavya Nair",
+    "age": 27,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00024",
+    "name": "Sanjay Rao",
+    "age": 39,
+    "sex": "Male",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00025",
+    "name": "Nikhil Rao",
+    "age": 36,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort",
+      "headache"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00026",
+    "name": "Nandini Verma",
+    "age": 71,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00027",
+    "name": "Aditya Sharma",
+    "age": 63,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00028",
+    "name": "Arjun Kumar",
+    "age": 27,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00029",
+    "name": "Arjun Rao",
+    "age": 69,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00030",
+    "name": "Aisha Kumar",
+    "age": 74,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "increased thirst"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00031",
+    "name": "Vihaan Verma",
+    "age": 64,
+    "sex": "Female",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00032",
+    "name": "Tara Verma",
+    "age": 21,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00033",
+    "name": "Vikram Iyer",
+    "age": 63,
+    "sex": "Male",
+    "symptoms": [
+      "headache"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00034",
+    "name": "Kavya Rao",
+    "age": 52,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00035",
+    "name": "Nikhil Nair",
+    "age": 62,
+    "sex": "Female",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00036",
+    "name": "Priya Verma",
+    "age": 73,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00037",
+    "name": "Meera Verma",
+    "age": 40,
+    "sex": "Female",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00038",
+    "name": "Kavya Reddy",
+    "age": 34,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort",
+      "cough"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00039",
+    "name": "Aarav Das",
+    "age": 19,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00040",
+    "name": "Sneha Verma",
+    "age": 37,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst",
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00041",
+    "name": "Nikhil Nair",
+    "age": 42,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00042",
+    "name": "Meera Iyer",
+    "age": 69,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00043",
+    "name": "Diya Iyer",
+    "age": 68,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00044",
+    "name": "Sanjay Reddy",
+    "age": 26,
+    "sex": "Female",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00045",
+    "name": "Kavya Rao",
+    "age": 65,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00046",
+    "name": "Diya Reddy",
+    "age": 18,
+    "sex": "Male",
+    "symptoms": [
+      "headache",
+      "increased thirst"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00047",
+    "name": "Rohan Singh",
+    "age": 32,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00048",
+    "name": "Aarav Nair",
+    "age": 52,
+    "sex": "Male",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00049",
+    "name": "Arjun Rao",
+    "age": 69,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00050",
+    "name": "Meera Sharma",
+    "age": 64,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00051",
+    "name": "Rohan Reddy",
+    "age": 46,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00052",
+    "name": "Kavya Patel",
+    "age": 31,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00053",
+    "name": "Kiran Nair",
+    "age": 19,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00054",
+    "name": "Tara Kumar",
+    "age": 20,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00055",
+    "name": "Rohan Singh",
+    "age": 74,
+    "sex": "Female",
+    "symptoms": [
+      "headache"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00056",
+    "name": "Aisha Rao",
+    "age": 61,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00057",
+    "name": "Tara Nair",
+    "age": 29,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00058",
+    "name": "Sneha Das",
+    "age": 49,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "headache"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00059",
+    "name": "Isha Singh",
+    "age": 27,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00060",
+    "name": "Ananya Verma",
+    "age": 73,
+    "sex": "Male",
+    "symptoms": [
+      "headache",
+      "cough"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00061",
+    "name": "Sneha Das",
+    "age": 32,
+    "sex": "Male",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00062",
+    "name": "Kavya Rao",
+    "age": 64,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00063",
+    "name": "Aarav Das",
+    "age": 22,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00064",
+    "name": "Tara Nair",
+    "age": 72,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00065",
+    "name": "Nikhil Rao",
+    "age": 74,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00066",
+    "name": "Isha Kumar",
+    "age": 73,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00067",
+    "name": "Priya Verma",
+    "age": 22,
+    "sex": "Male",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00068",
+    "name": "Arjun Sharma",
+    "age": 63,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00069",
+    "name": "Nandini Patel",
+    "age": 31,
+    "sex": "Female",
+    "symptoms": [
+      "headache"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00070",
+    "name": "Aarav Das",
+    "age": 64,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00071",
+    "name": "Arjun Das",
+    "age": 59,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00072",
+    "name": "Vikram Patel",
+    "age": 70,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst",
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00073",
+    "name": "Ananya Verma",
+    "age": 18,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue",
+      "headache"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00074",
+    "name": "Aditya Das",
+    "age": 58,
+    "sex": "Female",
+    "symptoms": [
+      "headache",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00075",
+    "name": "Ananya Verma",
+    "age": 42,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness",
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00076",
+    "name": "Kavya Reddy",
+    "age": 40,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "routine follow-up"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00077",
+    "name": "Priya Das",
+    "age": 39,
+    "sex": "Female",
+    "symptoms": [
+      "cough",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00078",
+    "name": "Aarav Verma",
+    "age": 77,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00079",
+    "name": "Aditya Verma",
+    "age": 32,
+    "sex": "Male",
+    "symptoms": [
+      "increased thirst",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00080",
+    "name": "Rohan Kumar",
+    "age": 75,
+    "sex": "Female",
+    "symptoms": [
+      "abdominal discomfort",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00081",
+    "name": "Diya Patel",
+    "age": 64,
+    "sex": "Male",
+    "symptoms": [
+      "fatigue",
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00082",
+    "name": "Aarav Kumar",
+    "age": 41,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00083",
+    "name": "Kavya Verma",
+    "age": 67,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00084",
+    "name": "Sneha Patel",
+    "age": 37,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness",
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00085",
+    "name": "Nikhil Nair",
+    "age": 66,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00086",
+    "name": "Diya Singh",
+    "age": 43,
+    "sex": "Male",
+    "symptoms": [
+      "headache",
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hypertension"
+    ],
+    "allergies": [
+      {
+        "allergen": "Latex",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00087",
+    "name": "Rohan Patel",
+    "age": 77,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00088",
+    "name": "Aditya Rao",
+    "age": 20,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst",
+      "cough"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00089",
+    "name": "Rohan Patel",
+    "age": 67,
+    "sex": "Female",
+    "symptoms": [
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-C",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00090",
+    "name": "Meera Das",
+    "age": 62,
+    "sex": "Female",
+    "symptoms": [
+      "routine follow-up"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00091",
+    "name": "Aisha Sharma",
+    "age": 30,
+    "sex": "Female",
+    "symptoms": [
+      "increased thirst"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Aspirin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00092",
+    "name": "Rohan Das",
+    "age": 73,
+    "sex": "Female",
+    "symptoms": [
+      "headache"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00093",
+    "name": "Priya Reddy",
+    "age": 40,
+    "sex": "Female",
+    "symptoms": [
+      "dizziness",
+      "headache"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00094",
+    "name": "Rohan Iyer",
+    "age": 55,
+    "sex": "Female",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00095",
+    "name": "Aisha Patel",
+    "age": 45,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00096",
+    "name": "Sneha Rao",
+    "age": 48,
+    "sex": "Male",
+    "symptoms": [
+      "cough"
+    ],
+    "existing_conditions": [],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00097",
+    "name": "Diya Sharma",
+    "age": 58,
+    "sex": "Male",
+    "symptoms": [
+      "abdominal discomfort",
+      "fatigue"
+    ],
+    "existing_conditions": [
+      "type 2 diabetes"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00098",
+    "name": "Vihaan Nair",
+    "age": 20,
+    "sex": "Male",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hyperlipidemia"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-A",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00099",
+    "name": "Ananya Verma",
+    "age": 60,
+    "sex": "Female",
+    "symptoms": [
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "hypothyroidism"
+    ],
+    "allergies": [
+      {
+        "allergen": "Sulfa drugs",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-D",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  },
+  {
+    "patient_id": "PAT-00100",
+    "name": "Aditya Das",
+    "age": 39,
+    "sex": "Male",
+    "symptoms": [
+      "routine follow-up",
+      "dizziness"
+    ],
+    "existing_conditions": [
+      "asthma"
+    ],
+    "allergies": [
+      {
+        "allergen": "Penicillin",
+        "status": "unverified"
+      }
+    ],
+    "medications": [
+      {
+        "name": "ExampleMed-B",
+        "source": "patient_reported"
+      }
+    ],
+    "data_status": "synthetic"
+  }
+]

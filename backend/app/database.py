@@ -3,10 +3,33 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "medlens.db")
+def get_db_path() -> str:
+    if os.environ.get("MEDLENS_DB_PATH"):
+        return os.environ["MEDLENS_DB_PATH"]
+
+    default_db = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "medlens.db")
+
+    # In Vercel / serverless runtime, filesystem is read-only.
+    # Seed temp medlens.db on instance start so mutations (overrides, flags, signoffs) succeed.
+    if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+        import tempfile
+        tmp_dir = "/tmp" if os.path.isdir("/tmp") else os.path.join(tempfile.gettempdir(), "medlens_tmp")
+        os.makedirs(tmp_dir, exist_ok=True)
+        tmp_db = os.path.join(tmp_dir, "medlens.db")
+        if not os.path.exists(tmp_db) and os.path.exists(default_db):
+            import shutil
+            try:
+                shutil.copy2(default_db, tmp_db)
+            except Exception:
+                pass
+        return tmp_db if os.path.exists(tmp_db) else default_db
+
+    return default_db
+
+DB_PATH = get_db_path()
 
 def get_connection():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(get_db_path())
     conn.row_factory = sqlite3.Row
     return conn
 

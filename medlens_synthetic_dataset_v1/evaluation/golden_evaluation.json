@@ -1,0 +1,1202 @@
+[
+  {
+    "patient_id": "PAT-00001",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00002",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00003",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00004",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00005",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00006",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00007",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00008",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00009",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00010",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00011",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00012",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00013",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00014",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00015",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00016",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00017",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00018",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00019",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00020",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00021",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00022",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00023",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00024",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00025",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00026",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00027",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00028",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00029",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00030",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00031",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00032",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00033",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00034",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00035",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00036",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00037",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00038",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00039",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00040",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00041",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00042",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00043",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00044",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00045",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00046",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00047",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00048",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00049",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00050",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00051",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00052",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00053",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00054",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00055",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00056",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00057",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00058",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00059",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00060",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00061",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00062",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00063",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00064",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00065",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00066",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00067",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00068",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00069",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00070",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00071",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00072",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00073",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00074",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00075",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00076",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00077",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00078",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00079",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00080",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00081",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00082",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00083",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00084",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00085",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00086",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00087",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00088",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00089",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00090",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00091",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00092",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00093",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00094",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00095",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00096",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00097",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00098",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00099",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "patient_id": "PAT-00100",
+    "checks": [
+      "patient_profile_extraction",
+      "latest_report_retrieval",
+      "reference_range_status",
+      "source_grounding",
+      "longitudinal_comparison",
+      "safety_behavior"
+    ],
+    "synthetic_only": true
+  }
+]

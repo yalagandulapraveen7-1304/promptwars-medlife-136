@@ -1,0 +1,5402 @@
+[
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-01",
+    "field": "report_date",
+    "value": "2025-04-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-02",
+    "field": "report_date",
+    "value": "2025-10-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-03",
+    "field": "report_date",
+    "value": "2026-04-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00001",
+    "report_id": "REP-00001-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-01",
+    "field": "report_date",
+    "value": "2025-03-05",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-02",
+    "field": "report_date",
+    "value": "2025-08-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-03",
+    "field": "report_date",
+    "value": "2026-02-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00002",
+    "report_id": "REP-00002-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-01",
+    "field": "report_date",
+    "value": "2025-04-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-02",
+    "field": "report_date",
+    "value": "2025-09-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-03",
+    "field": "report_date",
+    "value": "2026-04-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00003",
+    "report_id": "REP-00003-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-01",
+    "field": "report_date",
+    "value": "2025-03-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-02",
+    "field": "report_date",
+    "value": "2025-09-27",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-03",
+    "field": "report_date",
+    "value": "2026-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00004",
+    "report_id": "REP-00004-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-01",
+    "field": "report_date",
+    "value": "2025-01-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-02",
+    "field": "report_date",
+    "value": "2025-07-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-03",
+    "field": "report_date",
+    "value": "2026-01-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00005",
+    "report_id": "REP-00005-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-01",
+    "field": "report_date",
+    "value": "2025-02-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-02",
+    "field": "report_date",
+    "value": "2025-08-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-03",
+    "field": "report_date",
+    "value": "2026-02-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00006",
+    "report_id": "REP-00006-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-01",
+    "field": "report_date",
+    "value": "2025-01-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-02",
+    "field": "report_date",
+    "value": "2025-07-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-03",
+    "field": "report_date",
+    "value": "2026-01-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00007",
+    "report_id": "REP-00007-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-01",
+    "field": "report_date",
+    "value": "2025-02-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-02",
+    "field": "report_date",
+    "value": "2025-08-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-03",
+    "field": "report_date",
+    "value": "2026-02-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00008",
+    "report_id": "REP-00008-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-02",
+    "field": "report_date",
+    "value": "2025-09-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-03",
+    "field": "report_date",
+    "value": "2026-03-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00009",
+    "report_id": "REP-00009-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-01",
+    "field": "report_date",
+    "value": "2025-03-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-02",
+    "field": "report_date",
+    "value": "2025-09-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-03",
+    "field": "report_date",
+    "value": "2026-03-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00010",
+    "report_id": "REP-00010-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-01",
+    "field": "report_date",
+    "value": "2025-03-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-02",
+    "field": "report_date",
+    "value": "2025-09-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-03",
+    "field": "report_date",
+    "value": "2026-03-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00011",
+    "report_id": "REP-00011-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-01",
+    "field": "report_date",
+    "value": "2025-02-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-02",
+    "field": "report_date",
+    "value": "2025-08-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-03",
+    "field": "report_date",
+    "value": "2026-02-03",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00012",
+    "report_id": "REP-00012-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-02",
+    "field": "report_date",
+    "value": "2025-10-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-03",
+    "field": "report_date",
+    "value": "2026-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00013",
+    "report_id": "REP-00013-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-01",
+    "field": "report_date",
+    "value": "2025-02-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-02",
+    "field": "report_date",
+    "value": "2025-08-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-03",
+    "field": "report_date",
+    "value": "2026-02-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00014",
+    "report_id": "REP-00014-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-01",
+    "field": "report_date",
+    "value": "2025-02-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-02",
+    "field": "report_date",
+    "value": "2025-08-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-03",
+    "field": "report_date",
+    "value": "2026-02-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00015",
+    "report_id": "REP-00015-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-01",
+    "field": "report_date",
+    "value": "2025-04-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-02",
+    "field": "report_date",
+    "value": "2025-10-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-03",
+    "field": "report_date",
+    "value": "2026-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00016",
+    "report_id": "REP-00016-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-01",
+    "field": "report_date",
+    "value": "2025-04-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-02",
+    "field": "report_date",
+    "value": "2025-09-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-03",
+    "field": "report_date",
+    "value": "2026-03-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00017",
+    "report_id": "REP-00017-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-01",
+    "field": "report_date",
+    "value": "2025-01-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-02",
+    "field": "report_date",
+    "value": "2025-07-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-03",
+    "field": "report_date",
+    "value": "2026-01-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00018",
+    "report_id": "REP-00018-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-01",
+    "field": "report_date",
+    "value": "2025-01-26",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-02",
+    "field": "report_date",
+    "value": "2025-07-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-03",
+    "field": "report_date",
+    "value": "2026-01-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00019",
+    "report_id": "REP-00019-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-01",
+    "field": "report_date",
+    "value": "2025-03-05",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-02",
+    "field": "report_date",
+    "value": "2025-08-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-03",
+    "field": "report_date",
+    "value": "2026-02-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00020",
+    "report_id": "REP-00020-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-01",
+    "field": "report_date",
+    "value": "2025-03-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-02",
+    "field": "report_date",
+    "value": "2025-09-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-03",
+    "field": "report_date",
+    "value": "2026-03-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00021",
+    "report_id": "REP-00021-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-01",
+    "field": "report_date",
+    "value": "2025-01-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-02",
+    "field": "report_date",
+    "value": "2025-07-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-03",
+    "field": "report_date",
+    "value": "2026-01-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00022",
+    "report_id": "REP-00022-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-01",
+    "field": "report_date",
+    "value": "2025-04-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-02",
+    "field": "report_date",
+    "value": "2025-10-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-03",
+    "field": "report_date",
+    "value": "2026-04-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00023",
+    "report_id": "REP-00023-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-01",
+    "field": "report_date",
+    "value": "2025-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-02",
+    "field": "report_date",
+    "value": "2025-10-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-03",
+    "field": "report_date",
+    "value": "2026-03-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00024",
+    "report_id": "REP-00024-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-01",
+    "field": "report_date",
+    "value": "2025-04-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-02",
+    "field": "report_date",
+    "value": "2025-10-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-03",
+    "field": "report_date",
+    "value": "2026-04-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00025",
+    "report_id": "REP-00025-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-01",
+    "field": "report_date",
+    "value": "2025-02-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-02",
+    "field": "report_date",
+    "value": "2025-08-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-03",
+    "field": "report_date",
+    "value": "2026-02-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00026",
+    "report_id": "REP-00026-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-01",
+    "field": "report_date",
+    "value": "2025-03-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-02",
+    "field": "report_date",
+    "value": "2025-09-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-03",
+    "field": "report_date",
+    "value": "2026-02-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00027",
+    "report_id": "REP-00027-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-02",
+    "field": "report_date",
+    "value": "2025-10-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-03",
+    "field": "report_date",
+    "value": "2026-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00028",
+    "report_id": "REP-00028-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-01",
+    "field": "report_date",
+    "value": "2025-03-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-02",
+    "field": "report_date",
+    "value": "2025-10-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-03",
+    "field": "report_date",
+    "value": "2026-04-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00029",
+    "report_id": "REP-00029-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-01",
+    "field": "report_date",
+    "value": "2025-04-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-02",
+    "field": "report_date",
+    "value": "2025-10-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-03",
+    "field": "report_date",
+    "value": "2026-04-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00030",
+    "report_id": "REP-00030-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-01",
+    "field": "report_date",
+    "value": "2025-03-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-02",
+    "field": "report_date",
+    "value": "2025-08-27",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-03",
+    "field": "report_date",
+    "value": "2026-03-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00031",
+    "report_id": "REP-00031-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-01",
+    "field": "report_date",
+    "value": "2025-02-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-02",
+    "field": "report_date",
+    "value": "2025-07-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-03",
+    "field": "report_date",
+    "value": "2026-01-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00032",
+    "report_id": "REP-00032-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-01",
+    "field": "report_date",
+    "value": "2025-03-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-02",
+    "field": "report_date",
+    "value": "2025-10-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-03",
+    "field": "report_date",
+    "value": "2026-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00033",
+    "report_id": "REP-00033-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-01",
+    "field": "report_date",
+    "value": "2025-02-26",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-02",
+    "field": "report_date",
+    "value": "2025-09-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-03",
+    "field": "report_date",
+    "value": "2026-02-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00034",
+    "report_id": "REP-00034-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-01",
+    "field": "report_date",
+    "value": "2025-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-02",
+    "field": "report_date",
+    "value": "2025-09-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-03",
+    "field": "report_date",
+    "value": "2026-03-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00035",
+    "report_id": "REP-00035-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-01",
+    "field": "report_date",
+    "value": "2025-01-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-02",
+    "field": "report_date",
+    "value": "2025-07-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-03",
+    "field": "report_date",
+    "value": "2026-01-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00036",
+    "report_id": "REP-00036-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-01",
+    "field": "report_date",
+    "value": "2025-02-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-02",
+    "field": "report_date",
+    "value": "2025-08-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-03",
+    "field": "report_date",
+    "value": "2026-02-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00037",
+    "report_id": "REP-00037-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-01",
+    "field": "report_date",
+    "value": "2025-03-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-02",
+    "field": "report_date",
+    "value": "2025-08-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-03",
+    "field": "report_date",
+    "value": "2026-02-26",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00038",
+    "report_id": "REP-00038-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-01",
+    "field": "report_date",
+    "value": "2025-02-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-02",
+    "field": "report_date",
+    "value": "2025-08-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-03",
+    "field": "report_date",
+    "value": "2026-01-27",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00039",
+    "report_id": "REP-00039-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-01",
+    "field": "report_date",
+    "value": "2025-04-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-02",
+    "field": "report_date",
+    "value": "2025-10-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-03",
+    "field": "report_date",
+    "value": "2026-04-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00040",
+    "report_id": "REP-00040-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-01",
+    "field": "report_date",
+    "value": "2025-02-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-02",
+    "field": "report_date",
+    "value": "2025-08-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-03",
+    "field": "report_date",
+    "value": "2026-02-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00041",
+    "report_id": "REP-00041-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-01",
+    "field": "report_date",
+    "value": "2025-02-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-02",
+    "field": "report_date",
+    "value": "2025-08-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-03",
+    "field": "report_date",
+    "value": "2026-02-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00042",
+    "report_id": "REP-00042-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-01",
+    "field": "report_date",
+    "value": "2025-02-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-02",
+    "field": "report_date",
+    "value": "2025-08-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-03",
+    "field": "report_date",
+    "value": "2026-02-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00043",
+    "report_id": "REP-00043-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-01",
+    "field": "report_date",
+    "value": "2025-03-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-02",
+    "field": "report_date",
+    "value": "2025-09-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-03",
+    "field": "report_date",
+    "value": "2026-03-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00044",
+    "report_id": "REP-00044-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-01",
+    "field": "report_date",
+    "value": "2025-02-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-02",
+    "field": "report_date",
+    "value": "2025-07-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-03",
+    "field": "report_date",
+    "value": "2026-01-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00045",
+    "report_id": "REP-00045-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-01",
+    "field": "report_date",
+    "value": "2025-03-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-02",
+    "field": "report_date",
+    "value": "2025-09-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-03",
+    "field": "report_date",
+    "value": "2026-03-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00046",
+    "report_id": "REP-00046-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-01",
+    "field": "report_date",
+    "value": "2025-02-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-02",
+    "field": "report_date",
+    "value": "2025-07-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-03",
+    "field": "report_date",
+    "value": "2026-01-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00047",
+    "report_id": "REP-00047-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-01",
+    "field": "report_date",
+    "value": "2025-02-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-02",
+    "field": "report_date",
+    "value": "2025-08-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-03",
+    "field": "report_date",
+    "value": "2026-02-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00048",
+    "report_id": "REP-00048-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-01",
+    "field": "report_date",
+    "value": "2025-03-27",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-02",
+    "field": "report_date",
+    "value": "2025-09-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-03",
+    "field": "report_date",
+    "value": "2026-03-13",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00049",
+    "report_id": "REP-00049-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-02",
+    "field": "report_date",
+    "value": "2025-10-13",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-03",
+    "field": "report_date",
+    "value": "2026-03-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00050",
+    "report_id": "REP-00050-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-01",
+    "field": "report_date",
+    "value": "2025-04-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-02",
+    "field": "report_date",
+    "value": "2025-10-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-03",
+    "field": "report_date",
+    "value": "2026-04-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00051",
+    "report_id": "REP-00051-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-01",
+    "field": "report_date",
+    "value": "2025-04-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-02",
+    "field": "report_date",
+    "value": "2025-10-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-03",
+    "field": "report_date",
+    "value": "2026-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00052",
+    "report_id": "REP-00052-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-01",
+    "field": "report_date",
+    "value": "2025-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-02",
+    "field": "report_date",
+    "value": "2025-09-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-03",
+    "field": "report_date",
+    "value": "2026-03-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00053",
+    "report_id": "REP-00053-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-01",
+    "field": "report_date",
+    "value": "2025-02-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-02",
+    "field": "report_date",
+    "value": "2025-09-03",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-03",
+    "field": "report_date",
+    "value": "2026-03-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00054",
+    "report_id": "REP-00054-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-01",
+    "field": "report_date",
+    "value": "2025-04-26",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-02",
+    "field": "report_date",
+    "value": "2025-10-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-03",
+    "field": "report_date",
+    "value": "2026-04-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00055",
+    "report_id": "REP-00055-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-01",
+    "field": "report_date",
+    "value": "2025-04-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-02",
+    "field": "report_date",
+    "value": "2025-09-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-03",
+    "field": "report_date",
+    "value": "2026-03-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00056",
+    "report_id": "REP-00056-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-01",
+    "field": "report_date",
+    "value": "2025-04-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-02",
+    "field": "report_date",
+    "value": "2025-10-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-03",
+    "field": "report_date",
+    "value": "2026-04-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00057",
+    "report_id": "REP-00057-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-01",
+    "field": "report_date",
+    "value": "2025-04-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-02",
+    "field": "report_date",
+    "value": "2025-10-13",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-03",
+    "field": "report_date",
+    "value": "2026-04-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00058",
+    "report_id": "REP-00058-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-01",
+    "field": "report_date",
+    "value": "2025-04-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-02",
+    "field": "report_date",
+    "value": "2025-10-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-03",
+    "field": "report_date",
+    "value": "2026-04-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00059",
+    "report_id": "REP-00059-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-01",
+    "field": "report_date",
+    "value": "2025-02-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-02",
+    "field": "report_date",
+    "value": "2025-07-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-03",
+    "field": "report_date",
+    "value": "2026-02-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00060",
+    "report_id": "REP-00060-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-01",
+    "field": "report_date",
+    "value": "2025-04-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-02",
+    "field": "report_date",
+    "value": "2025-10-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-03",
+    "field": "report_date",
+    "value": "2026-04-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00061",
+    "report_id": "REP-00061-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-01",
+    "field": "report_date",
+    "value": "2025-02-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-02",
+    "field": "report_date",
+    "value": "2025-08-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-03",
+    "field": "report_date",
+    "value": "2026-02-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00062",
+    "report_id": "REP-00062-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-01",
+    "field": "report_date",
+    "value": "2025-04-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-02",
+    "field": "report_date",
+    "value": "2025-09-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-03",
+    "field": "report_date",
+    "value": "2026-03-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00063",
+    "report_id": "REP-00063-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-01",
+    "field": "report_date",
+    "value": "2025-03-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-02",
+    "field": "report_date",
+    "value": "2025-09-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-03",
+    "field": "report_date",
+    "value": "2026-03-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00064",
+    "report_id": "REP-00064-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-01",
+    "field": "report_date",
+    "value": "2025-01-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-02",
+    "field": "report_date",
+    "value": "2025-08-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-03",
+    "field": "report_date",
+    "value": "2026-02-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00065",
+    "report_id": "REP-00065-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-01",
+    "field": "report_date",
+    "value": "2025-03-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-02",
+    "field": "report_date",
+    "value": "2025-09-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-03",
+    "field": "report_date",
+    "value": "2026-03-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00066",
+    "report_id": "REP-00066-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-01",
+    "field": "report_date",
+    "value": "2025-02-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-02",
+    "field": "report_date",
+    "value": "2025-08-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-03",
+    "field": "report_date",
+    "value": "2026-02-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00067",
+    "report_id": "REP-00067-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-01",
+    "field": "report_date",
+    "value": "2025-03-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-02",
+    "field": "report_date",
+    "value": "2025-10-05",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-03",
+    "field": "report_date",
+    "value": "2026-03-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00068",
+    "report_id": "REP-00068-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-01",
+    "field": "report_date",
+    "value": "2025-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-02",
+    "field": "report_date",
+    "value": "2025-10-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-03",
+    "field": "report_date",
+    "value": "2026-03-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00069",
+    "report_id": "REP-00069-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-02",
+    "field": "report_date",
+    "value": "2025-10-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-03",
+    "field": "report_date",
+    "value": "2026-03-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00070",
+    "report_id": "REP-00070-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-01",
+    "field": "report_date",
+    "value": "2025-03-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-02",
+    "field": "report_date",
+    "value": "2025-08-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-03",
+    "field": "report_date",
+    "value": "2026-02-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00071",
+    "report_id": "REP-00071-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-01",
+    "field": "report_date",
+    "value": "2025-02-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-02",
+    "field": "report_date",
+    "value": "2025-08-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-03",
+    "field": "report_date",
+    "value": "2026-02-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00072",
+    "report_id": "REP-00072-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-01",
+    "field": "report_date",
+    "value": "2025-04-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-02",
+    "field": "report_date",
+    "value": "2025-10-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-03",
+    "field": "report_date",
+    "value": "2026-04-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00073",
+    "report_id": "REP-00073-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-01",
+    "field": "report_date",
+    "value": "2025-04-03",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-02",
+    "field": "report_date",
+    "value": "2025-10-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-03",
+    "field": "report_date",
+    "value": "2026-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00074",
+    "report_id": "REP-00074-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-01",
+    "field": "report_date",
+    "value": "2025-04-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-02",
+    "field": "report_date",
+    "value": "2025-10-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-03",
+    "field": "report_date",
+    "value": "2026-04-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00075",
+    "report_id": "REP-00075-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-01",
+    "field": "report_date",
+    "value": "2025-01-17",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-02",
+    "field": "report_date",
+    "value": "2025-07-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-03",
+    "field": "report_date",
+    "value": "2026-01-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00076",
+    "report_id": "REP-00076-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-01",
+    "field": "report_date",
+    "value": "2025-02-05",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-02",
+    "field": "report_date",
+    "value": "2025-08-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-03",
+    "field": "report_date",
+    "value": "2026-01-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00077",
+    "report_id": "REP-00077-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-01",
+    "field": "report_date",
+    "value": "2025-04-03",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-02",
+    "field": "report_date",
+    "value": "2025-10-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-03",
+    "field": "report_date",
+    "value": "2026-04-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00078",
+    "report_id": "REP-00078-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-01",
+    "field": "report_date",
+    "value": "2025-04-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-02",
+    "field": "report_date",
+    "value": "2025-10-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-03",
+    "field": "report_date",
+    "value": "2026-03-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00079",
+    "report_id": "REP-00079-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-01",
+    "field": "report_date",
+    "value": "2025-01-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-02",
+    "field": "report_date",
+    "value": "2025-08-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-03",
+    "field": "report_date",
+    "value": "2026-01-16",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00080",
+    "report_id": "REP-00080-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-01",
+    "field": "report_date",
+    "value": "2025-03-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-02",
+    "field": "report_date",
+    "value": "2025-10-05",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-03",
+    "field": "report_date",
+    "value": "2026-03-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00081",
+    "report_id": "REP-00081-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-01",
+    "field": "report_date",
+    "value": "2025-04-02",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-02",
+    "field": "report_date",
+    "value": "2025-09-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-03",
+    "field": "report_date",
+    "value": "2026-04-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00082",
+    "report_id": "REP-00082-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-01",
+    "field": "report_date",
+    "value": "2025-03-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-02",
+    "field": "report_date",
+    "value": "2025-08-22",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-03",
+    "field": "report_date",
+    "value": "2026-02-20",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00083",
+    "report_id": "REP-00083-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-01",
+    "field": "report_date",
+    "value": "2025-01-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-02",
+    "field": "report_date",
+    "value": "2025-08-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-03",
+    "field": "report_date",
+    "value": "2026-01-31",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00084",
+    "report_id": "REP-00084-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-01",
+    "field": "report_date",
+    "value": "2025-01-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-02",
+    "field": "report_date",
+    "value": "2025-07-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-03",
+    "field": "report_date",
+    "value": "2026-01-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00085",
+    "report_id": "REP-00085-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-01",
+    "field": "report_date",
+    "value": "2025-02-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-02",
+    "field": "report_date",
+    "value": "2025-07-28",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-03",
+    "field": "report_date",
+    "value": "2026-01-18",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00086",
+    "report_id": "REP-00086-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-01",
+    "field": "report_date",
+    "value": "2025-04-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-02",
+    "field": "report_date",
+    "value": "2025-10-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-03",
+    "field": "report_date",
+    "value": "2026-04-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00087",
+    "report_id": "REP-00087-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-01",
+    "field": "report_date",
+    "value": "2025-03-15",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-02",
+    "field": "report_date",
+    "value": "2025-09-09",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-03",
+    "field": "report_date",
+    "value": "2026-03-08",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00088",
+    "report_id": "REP-00088-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-01",
+    "field": "report_date",
+    "value": "2025-01-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-02",
+    "field": "report_date",
+    "value": "2025-07-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-03",
+    "field": "report_date",
+    "value": "2026-01-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00089",
+    "report_id": "REP-00089-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-01",
+    "field": "report_date",
+    "value": "2025-03-30",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-02",
+    "field": "report_date",
+    "value": "2025-10-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-03",
+    "field": "report_date",
+    "value": "2026-04-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00090",
+    "report_id": "REP-00090-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-01",
+    "field": "report_date",
+    "value": "2025-04-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-02",
+    "field": "report_date",
+    "value": "2025-10-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-03",
+    "field": "report_date",
+    "value": "2026-04-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00091",
+    "report_id": "REP-00091-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-01",
+    "field": "report_date",
+    "value": "2025-03-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-02",
+    "field": "report_date",
+    "value": "2025-09-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-03",
+    "field": "report_date",
+    "value": "2026-03-21",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00092",
+    "report_id": "REP-00092-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-01",
+    "field": "report_date",
+    "value": "2025-04-23",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-02",
+    "field": "report_date",
+    "value": "2025-10-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-03",
+    "field": "report_date",
+    "value": "2026-04-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00093",
+    "report_id": "REP-00093-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-01",
+    "field": "report_date",
+    "value": "2025-02-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-02",
+    "field": "report_date",
+    "value": "2025-08-04",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-03",
+    "field": "report_date",
+    "value": "2026-01-24",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00094",
+    "report_id": "REP-00094-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-01",
+    "field": "report_date",
+    "value": "2025-03-10",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-02",
+    "field": "report_date",
+    "value": "2025-09-06",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-03",
+    "field": "report_date",
+    "value": "2026-03-07",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00095",
+    "report_id": "REP-00095-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-01",
+    "field": "report_date",
+    "value": "2025-03-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-02",
+    "field": "report_date",
+    "value": "2025-09-26",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-03",
+    "field": "report_date",
+    "value": "2026-03-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00096",
+    "report_id": "REP-00096-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-01",
+    "field": "report_date",
+    "value": "2025-02-14",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-02",
+    "field": "report_date",
+    "value": "2025-08-03",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-03",
+    "field": "report_date",
+    "value": "2026-01-29",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00097",
+    "report_id": "REP-00097-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-01",
+    "field": "report_date",
+    "value": "2025-04-13",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-02",
+    "field": "report_date",
+    "value": "2025-10-12",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-03",
+    "field": "report_date",
+    "value": "2026-04-13",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00098",
+    "report_id": "REP-00098-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-01",
+    "field": "report_date",
+    "value": "2025-03-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-02",
+    "field": "report_date",
+    "value": "2025-09-11",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-03",
+    "field": "report_date",
+    "value": "2026-03-19",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00099",
+    "report_id": "REP-00099-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-01",
+    "field": "report_date",
+    "value": "2025-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-01",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-02",
+    "field": "report_date",
+    "value": "2025-09-25",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-02",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-03",
+    "field": "report_date",
+    "value": "2026-04-01",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  },
+  {
+    "patient_id": "PAT-00100",
+    "report_id": "REP-00100-03",
+    "field": "results",
+    "value": "structured lab results",
+    "source": "synthetic_report",
+    "page": 1,
+    "verified": false
+  }
+]

@@ -5,7 +5,27 @@ from typing import Dict, List, Any, Optional
 
 logger = logging.getLogger("medlens.copilot.kb")
 
-DEFAULT_DATASET_DIR = r"C:\Users\ammul\Downloads\medlens_synthetic_dataset_v1"
+def _resolve_dataset_dir() -> str:
+    if os.environ.get("MEDLENS_DATASET_DIR") and os.path.exists(os.environ["MEDLENS_DATASET_DIR"]):
+        return os.environ["MEDLENS_DATASET_DIR"]
+    
+    # Check bundled dataset inside backend/dataset/medlens_synthetic_dataset_v1
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    bundled_sub = os.path.join(base_dir, "dataset", "medlens_synthetic_dataset_v1")
+    if os.path.exists(bundled_sub):
+        return bundled_sub
+
+    bundled_direct = os.path.join(base_dir, "dataset")
+    if os.path.exists(os.path.join(bundled_direct, "patients")):
+        return bundled_direct
+
+    local_fallback = r"C:\Users\ammul\Downloads\medlens_synthetic_dataset_v1"
+    if os.path.exists(local_fallback):
+        return local_fallback
+
+    return bundled_sub
+
+DEFAULT_DATASET_DIR = _resolve_dataset_dir()
 
 class KnowledgeBase:
     """
