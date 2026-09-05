@@ -47,6 +47,11 @@ class PatientIntakeSubmission(BaseModel):
     contact: ContactInfo = Field(default_factory=ContactInfo)
     insurance: InsuranceInfo = Field(default_factory=InsuranceInfo)
     clinical_triage: ClinicalTriageIntake
+    symptoms: Optional[str] = None
+    existing_conditions: Optional[str] = None
+    allergies: Optional[str] = None
+    medications: Optional[str] = None
+    other_notes: Optional[str] = None
     is_draft: bool = False
 
 class PatientIntakeResponse(BaseModel):

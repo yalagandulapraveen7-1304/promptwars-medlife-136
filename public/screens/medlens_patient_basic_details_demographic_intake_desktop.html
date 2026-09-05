@@ -484,6 +484,50 @@
 </div>
 </details>
 </section>
+<!-- SECTION 6: Patient-Reported Clinical Intake (Symptoms, Conditions, Allergies & Medications) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">clinical_notes</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">6. Patient-Reported Clinical Intake</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Self-reported symptoms, pre-existing conditions, allergies, and at-home medications</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">person</span>
+PATIENT PROVIDED
+</span>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="intake-symptoms">Primary Symptoms &amp; Chief Complaint *</label>
+<textarea class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline resize-none h-20" id="intake-symptoms" placeholder="e.g. Shortness of breath on exertion, progressive bilateral ankle swelling over 14 days" aria-label="Primary Symptoms and Chief Complaint"></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="intake-conditions">Existing Conditions / Medical History *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="intake-conditions" placeholder="e.g. NYHA Class III Heart Failure, Essential Hypertension" type="text" aria-label="Existing Conditions and Medical History"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="intake-allergies">Self-Reported Allergies &amp; Drug Sensitivities *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="intake-allergies" placeholder="e.g. No Known Drug Allergies (NKDA) or Penicillin" type="text" aria-label="Self-Reported Allergies and Drug Sensitivities"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="intake-medications">Current At-Home Medications *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="intake-medications" placeholder="e.g. Furosemide 40mg daily, Lisinopril 10mg daily" type="text" aria-label="Current At-Home Medications"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="intake-other-notes">Other Relevant Patient Information</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="intake-other-notes" placeholder="e.g. Ambulates with cane; lives with spouse; low-sodium diet" type="text" aria-label="Other Relevant Patient Information"/>
+</div>
+</div>
+</div>
+</section>
 </form>
 <!-- Right 4 Columns: Clinical Verification & AI Intake Telemetry -->
 <aside class="lg:col-span-4 flex flex-col gap-space-md lg:sticky lg:top-32">
@@ -721,6 +765,20 @@
       const zipInput = document.getElementById('zip');
       if (zipInput) zipInput.value = contact.zip_code;
     }
+
+    // Clinical Intake attributes
+    const symptomsInput = document.getElementById('intake-symptoms');
+    if (symptomsInput && (data.symptoms || data.clinical_triage?.chief_complaint)) {
+      symptomsInput.value = data.symptoms || data.clinical_triage?.chief_complaint;
+    }
+    const condInput = document.getElementById('intake-conditions');
+    if (condInput && data.existing_conditions) condInput.value = data.existing_conditions;
+    const allergyInput = document.getElementById('intake-allergies');
+    if (allergyInput && data.allergies) allergyInput.value = data.allergies;
+    const medInput = document.getElementById('intake-medications');
+    if (medInput && data.medications) medInput.value = data.medications;
+    const notesInput = document.getElementById('intake-other-notes');
+    if (notesInput && data.other_notes) notesInput.value = data.other_notes;
   }
 
   // Gather form values for submission or draft
@@ -730,6 +788,7 @@
     const dobVal = document.getElementById('dob').value;
     const ageVal = updateAgeFromDob(dobVal) || 0;
     const generatedMrn = 'ML-' + Math.floor(1000 + Math.random() * 9000) + '-TX';
+    const symptomsVal = document.getElementById('intake-symptoms')?.value.trim() || 'Patient-reported symptoms recorded on admission.';
 
     return {
       session_id: '#ENC-' + Date.now().toString().slice(-4),
@@ -766,13 +825,18 @@
         copay_tier: 'Pending Verification'
       },
       clinical_triage: {
-        chief_complaint: 'New patient intake admission.',
+        chief_complaint: symptomsVal,
         admission_date: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
         urgency_tier: 'ROUTINE',
         assigned_ward: document.getElementById('assigned-ward')?.value.trim() || 'General Admission',
         assigned_room: 'Triage Pending',
         attending_clinician: 'Dr. Sarah Jenkins, MD'
       },
+      symptoms: symptomsVal,
+      existing_conditions: document.getElementById('intake-conditions')?.value.trim() || '',
+      allergies: document.getElementById('intake-allergies')?.value.trim() || '',
+      medications: document.getElementById('intake-medications')?.value.trim() || '',
+      other_notes: document.getElementById('intake-other-notes')?.value.trim() || '',
       is_draft: isDraft
     };
   }
@@ -781,7 +845,8 @@
   const trackedInputs = [
     'first-name', 'last-name', 'dob', 'legal-sex', 'primary-phone',
     'email', 'street-address', 'city', 'state-prov', 'zip',
-    'em-name', 'em-rel', 'em-phone', 'payer-carrier', 'member-id'
+    'em-name', 'em-rel', 'em-phone', 'payer-carrier', 'member-id',
+    'intake-symptoms', 'intake-conditions', 'intake-allergies', 'intake-medications'
   ];
 
   function updateCompletenessMeter() {
@@ -803,7 +868,7 @@
     if (descEl) descEl.textContent = `${filled} of ${trackedInputs.length} required intake attributes populated.`;
   }
 
-  document.querySelectorAll('input, select').forEach(input => {
+  document.querySelectorAll('input, select, textarea').forEach(input => {
     input.addEventListener('input', updateCompletenessMeter);
     input.addEventListener('change', updateCompletenessMeter);
   });

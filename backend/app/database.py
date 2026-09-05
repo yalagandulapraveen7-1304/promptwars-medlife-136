@@ -920,22 +920,32 @@ def query_copilot_synthesis(patient_mrn: str, query: str):
     warnings = []
 
     if "allergy" in q_lower or "conflict" in q_lower or "antibiotic" in q_lower or "penicillin" in q_lower:
-        answer = ("Critical Drug Conflict: Arthur self-reported 'No Known Drug Allergies', but Mercy General 2022 "
-                  "transfer note confirms cutaneous rash & hives from Ampicillin/Sulbactam. Scheduled Unasyn coverage "
-                  "must be held and substituted with non-beta-lactam alternatives (e.g. Azithromycin or Levofloxacin).")
+        answer = ("Safety Flag: Historical records contain a documented medication allergy that conflicts with the current patient intake. Human verification is required.\n\n"
+                  "Critical Drug Conflict Details:\n"
+                  "• Current Intake: Arthur self-reported 'No Known Drug Allergies' (NKDA).\n"
+                  "• Historical Document: Mercy General Hospital 2022 Transfer Note documents cutaneous rash & hives from Ampicillin / Sulbactam (Penicillin class).\n"
+                  "• Safety Action: Bedside confirmation required prior to administering any beta-lactam or penicillin-class agents.\n\n"
+                  "No diagnosis generated.\n"
+                  "No treatment recommendation generated.")
         citations.append("Mercy General Hospital Discharge Summary, Page 3, Line 41")
         warnings.append("Active Safety Hold: Penicillin class contraindication")
     elif "creatinine" in q_lower or "kidney" in q_lower or "renal" in q_lower or "egfr" in q_lower:
-        answer = ("Serum Creatinine is 1.4 mg/dL (historical baseline 1.1 mg/dL, delta +0.3). Notice: Under the MedLens "
-                  "Zero-Hallucination Range Policy, reference bounds were NOT stated in the source LabCorp report and are "
-                  "marked as UNVERIFIED. Clinician verification of kidney staging is recommended.")
+        answer = ("Documented laboratory finding for Serum Creatinine: 1.4 mg/dL (historical baseline 1.1 mg/dL, delta +0.3 mg/dL).\n\n"
+                  "Notice: Under the MedLens Zero-Hallucination Range Policy, reference bounds were NOT stated in the source LabCorp report and are "
+                  "classified as NOT DETERMINED. Missing ranges are never imputed or invented from medical assumptions. Human verification is required.\n\n"
+                  "No diagnosis generated.\n"
+                  "No treatment recommendation generated.")
         citations.append("LabCorp Report #LC-9941-A, Page 1, Line 28 (Creatinine 1.4 mg/dL [Ref Not Stated])")
         warnings.append("Reference range not determined from specimen source")
     else:
-        answer = (f"Clinical Synthesis for Arthur Pendleton (MRN: {patient_mrn}): "
-                  "Patient presents with NYHA Class III heart failure exacerbation with 3 out-of-range hematology biomarkers "
-                  "(Hb 10.2 g/dL, Hct 31.4%, Ferritin 18 ng/mL), consistent with microcytic iron-deficiency anemia in heart failure. "
-                  "Vital signs indicate stable hemodynamics on oral Lasix and Lisinopril, but pending beta-lactam allergy hold requires physician confirmation.")
+        answer = (f"Factual Medical Record Summary for Arthur Pendleton (MRN: {patient_mrn}):\n\n"
+                  "Documented Clinical Observations:\n"
+                  "• Out-of-Range Biomarkers: 3 laboratory analytes outside report reference intervals (Hemoglobin 10.2 g/dL [Low, Ref 13.5–17.5 g/dL], Hematocrit 31.4% [Low, Ref 41.0–53.0%], Ferritin 18 ng/mL [Low, Ref 30–400 ng/mL]).\n"
+                  "• Clinical Presentation: Documented dyspnea on mild exertion and bilateral ankle edema.\n"
+                  "• Active Documented Medications: Furosemide (Lasix) 40mg and Lisinopril 10mg.\n"
+                  "• Active Safety Hold: Penicillin-class allergy conflict requires clinician bedside verification.\n\n"
+                  "No diagnosis generated.\n"
+                  "No treatment recommendation generated.")
         citations.append("Clinical Intake by Nurse Kelly, RN (14 Oct 2026, 08:30 AM)")
 
     return {
@@ -1010,6 +1020,13 @@ def init_intake_tables(conn):
         created_at TEXT
     );
     """)
+
+    # Ensure clinical intake fields exist in patient_intakes
+    for col in ["symptoms", "existing_conditions", "allergies", "medications", "other_notes"]:
+        try:
+            cur.execute(f"ALTER TABLE patient_intakes ADD COLUMN {col} TEXT")
+        except Exception:
+            pass
 
     # Seed Eleanor Vance intake draft if not existing
     cur.execute("SELECT COUNT(*) FROM patient_intakes WHERE mrn = 'ML-9420-TX'")
@@ -1090,6 +1107,11 @@ def get_intake_prefill_bundle(source: str = "wristband"):
                 "assigned_room": "Room 412-B Inpatient",
                 "attending_clinician": "Dr. Sarah Jenkins, MD"
             },
+            "symptoms": "Exertional dyspnea, orthopnea (2 pillows), progressive bilateral ankle edema over 14 days.",
+            "existing_conditions": "Congestive Heart Failure (NYHA Class III), Essential Hypertension, Hyperlipidemia.",
+            "allergies": "Self-reported 'No Known Drug Allergies' (NKDA). Documented hold: Penicillin-class.",
+            "medications": "Furosemide (Lasix) 40mg PO daily, Lisinopril 10mg PO daily, Metoprolol Tartrate 25mg PO BID.",
+            "other_notes": "Patient reports adherence to low-sodium diet; ambulates with assistance.",
             "mpi_matched": True,
             "confidence_score": 99.4
         }
@@ -1137,6 +1159,11 @@ def get_intake_prefill_bundle(source: str = "wristband"):
                 "assigned_room": "Room 412-B",
                 "attending_clinician": "Dr. Sarah Jenkins, MD"
             },
+            "symptoms": "Dyspnea on mild exertion, orthopnea, bilateral lower extremity ankle edema.",
+            "existing_conditions": "Heart Failure (NYHA Class III), Hypertension.",
+            "allergies": "Self-reported 'No Known Drug Allergies' (NKDA).",
+            "medications": "Furosemide 40mg daily, Lisinopril 10mg daily, Metoprolol 25mg daily.",
+            "other_notes": "Admitted via ambulatory intake. Vital signs stable.",
             "mpi_matched": True,
             "confidence_score": 98.9
         }
@@ -1194,6 +1221,11 @@ def get_patient_intake(patient_mrn: str):
             "assigned_room": r["assigned_room"],
             "attending_clinician": r["attending_clinician"]
         },
+        "symptoms": r.get("symptoms") or r.get("chief_complaint") or "",
+        "existing_conditions": r.get("existing_conditions") or "",
+        "allergies": r.get("allergies") or "",
+        "medications": r.get("medications") or "",
+        "other_notes": r.get("other_notes") or "",
         "status": r["status"],
         "is_draft": r["status"] == "DRAFT"
     }
@@ -1208,6 +1240,11 @@ def save_patient_intake_db(submission: dict, is_draft: bool = False):
     contact = submission.get("contact", {})
     ins = submission.get("insurance", {})
     triage = submission.get("clinical_triage", {})
+    symptoms = submission.get("symptoms") or triage.get("symptoms") or triage.get("chief_complaint") or ""
+    conditions = submission.get("existing_conditions") or triage.get("existing_conditions") or ""
+    allergies = submission.get("allergies") or triage.get("allergies") or ""
+    meds = submission.get("medications") or triage.get("medications") or ""
+    other_notes = submission.get("other_notes") or triage.get("other_notes") or ""
     mrn = demo.get("mrn", "ML-9420-TX")
     session_id = submission.get("session_id", "#ENC-2026-8812")
     status = "DRAFT" if is_draft else "SUBMITTED"
@@ -1221,6 +1258,7 @@ def save_patient_intake_db(submission: dict, is_draft: bool = False):
         emergency_name, emergency_relation, emergency_phone,
         payer_name, policy_id, group_num, subscriber_id, copay_tier,
         chief_complaint, admission_date, urgency_tier, assigned_ward, assigned_room, attending_clinician,
+        symptoms, existing_conditions, allergies, medications, other_notes,
         status, created_at
     ) VALUES (
         ?, ?, ?, ?, ?, ?,
@@ -1229,6 +1267,7 @@ def save_patient_intake_db(submission: dict, is_draft: bool = False):
         ?, ?, ?,
         ?, ?, ?, ?, ?,
         ?, ?, ?, ?, ?, ?,
+        ?, ?, ?, ?, ?,
         ?, ?
     )
     """, (
@@ -1240,6 +1279,7 @@ def save_patient_intake_db(submission: dict, is_draft: bool = False):
         ins.get("payer_name"), ins.get("policy_id"), ins.get("group_num"), ins.get("subscriber_id"), ins.get("copay_tier"),
         triage.get("chief_complaint"), triage.get("admission_date"), triage.get("urgency_tier", "ACUTE_2H"),
         triage.get("assigned_ward"), triage.get("assigned_room"), triage.get("attending_clinician"),
+        symptoms, conditions, allergies, meds, other_notes,
         status, now_iso
     ))
 
