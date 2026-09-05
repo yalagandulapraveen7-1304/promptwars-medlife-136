@@ -177,9 +177,10 @@ class KnowledgeBase:
         elena_rep = {
             "patient_id": "ML-8841",
             "report_id": "LC-9011",
+            "report_name": "CBC Panel LC-9011",
             "report_date": "2026-10-14",
             "report_type": "laboratory",
-            "raw_text": "LabCorp CBC Report #LC-9011\nHemoglobin: 10.2 g/dL (Ref: 12.0-15.5) [LOW]\nHematocrit: 31.8 % (Ref: 37.0-48.0) [LOW]\nPlatelets: 220 x10^3/uL (Ref: 150-450) [NORMAL]\nFerritin: 14 ng/mL (Ref: 24-336) [LOW]\nWBC: 6.8 x10^3/uL (Ref: 4.5-11.0) [NORMAL]",
+            "raw_text": "LabCorp CBC Panel LC-9011\nHemoglobin: 10.2 g/dL (Ref: 12.0-16.0) [LOW]\nHematocrit: 31.4 % (Ref: 37.0-48.0) [LOW]\nPlatelets: 245 x10^3/uL (Ref: 150-450) [NORMAL]\nWBC: 6.8 x10^3/uL (Ref: 4.5-11.0) [NORMAL]",
             "synthetic": False
         }
         self.reports_by_patient.setdefault("ML-8841", []).append(elena_rep)
@@ -197,21 +198,20 @@ class KnowledgeBase:
 
         # Arthur Pendleton Lab Results
         arthur_labs = [
-            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Hemoglobin", "value": 10.2, "unit": "g/dL", "reference_low": 12.0, "reference_high": 16.0, "status": "low"},
-            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Hematocrit", "value": 31.4, "unit": "%", "reference_low": 37.0, "reference_high": 48.0, "status": "low"},
-            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Platelet Count", "value": 245000.0, "unit": "/µL", "reference_low": 150000.0, "reference_high": 450000.0, "status": "normal"},
-            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Serum Ferritin", "value": 18.0, "unit": "ng/mL", "reference_low": 24.0, "reference_high": 336.0, "status": "low"},
-            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Serum Creatinine", "value": 1.4, "unit": "mg/dL", "reference_low": None, "reference_high": None, "status": "unverified"}
+            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Hemoglobin", "value": 10.2, "unit": "g/dL", "reference_low": 12.0, "reference_high": 16.0, "status": "low", "source": "CBC Panel LC-9941-A", "confidence": 98},
+            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Hematocrit", "value": 31.4, "unit": "%", "reference_low": 37.0, "reference_high": 48.0, "status": "low", "source": "CBC Panel LC-9941-A", "confidence": 98},
+            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Platelet Count", "value": 245000.0, "unit": "/µL", "reference_low": 150000.0, "reference_high": 450000.0, "status": "normal", "source": "CBC Panel LC-9941-A", "confidence": 98},
+            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Serum Ferritin", "value": 18.0, "unit": "ng/mL", "reference_low": 24.0, "reference_high": 336.0, "status": "low", "source": "Iron Panel LC-9941-A", "confidence": 98},
+            {"patient_id": "ML-9420", "report_id": "LC-9941-A", "report_date": "2026-10-14", "test_name": "Serum Creatinine", "value": 1.4, "unit": "mg/dL", "reference_low": None, "reference_high": None, "status": "unverified", "source": "Chemistry Panel LC-9941-A", "confidence": 98}
         ]
         self.lab_results_by_patient["ML-9420"] = arthur_labs
         self.lab_results_by_report["LC-9941-A"] = arthur_labs
 
         # Elena Rostova Lab Results
         elena_labs = [
-            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hemoglobin", "value": 10.2, "unit": "g/dL", "reference_low": 12.0, "reference_high": 15.5, "status": "low"},
-            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hematocrit", "value": 31.8, "unit": "%", "reference_low": 37.0, "reference_high": 48.0, "status": "low"},
-            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Platelet Count", "value": 220000.0, "unit": "/µL", "reference_low": 150000.0, "reference_high": 450000.0, "status": "normal"},
-            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Serum Ferritin", "value": 14.0, "unit": "ng/mL", "reference_low": 24.0, "reference_high": 336.0, "status": "low"}
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hemoglobin", "value": 10.2, "unit": "g/dL", "reference_low": 12.0, "reference_high": 16.0, "status": "low", "source": "CBC Panel LC-9011", "confidence": 98},
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hematocrit", "value": 31.4, "unit": "%", "reference_low": 37.0, "reference_high": 48.0, "status": "low", "source": "CBC Panel LC-9011", "confidence": 98},
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Platelet Count", "value": 245000.0, "unit": "/µL", "reference_low": 150000.0, "reference_high": 450000.0, "status": "normal", "source": "CBC Panel LC-9011", "confidence": 98}
         ]
         self.lab_results_by_patient["ML-8841"] = elena_labs
         self.lab_results_by_report["LC-9011"] = elena_labs

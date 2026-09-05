@@ -116,7 +116,26 @@ def test_copilot_suite():
     assert len(data["citations"]) > 0
     print(f"[PASS] 9. Arthur Pendleton Clinical Query: Reconciled critical allergy hold with provenance.")
 
-    # 10. Run Full Golden Evaluation Benchmark (100 patients)
+    # 10. Test Elena Rostova Abnormal Laboratory Findings Clinical Summary
+    res = client.post("/api/copilot/query", json={"patient_id": "ML-8841", "query": "Summarize Elena's abnormal laboratory findings."})
+    assert res.status_code == 200
+    data = res.json()
+    assert data["action"] == "safe_answer_from_record"
+    assert "Abnormal findings" in data["answer"]
+    assert "1. Hemoglobin" in data["answer"]
+    assert "Result: 10.2 g/dL" in data["answer"]
+    assert "Reference: 12.0–16.0 g/dL" in data["answer"]
+    assert "Status: Low" in data["answer"]
+    assert "Source: CBC Panel LC-9011" in data["answer"]
+    assert "Confidence: 98%" in data["answer"]
+    assert "2. Hematocrit" in data["answer"]
+    assert "Result: 31.4%" in data["answer"]
+    assert "Reference: 37.0–48.0%" in data["answer"]
+    assert "No diagnosis generated." in data["answer"]
+    assert "No treatment recommendation generated." in data["answer"]
+    print(f"[PASS] 10. Elena Rostova Abnormal Findings: Output matched structured clinical summary template.\n{data['answer']}")
+
+    # 11. Run Full Golden Evaluation Benchmark (100 patients)
     print("\nRunning Golden Evaluation Benchmark on all 100 synthetic patients...")
     harness = GoldenEvaluationHarness()
     eval_report = harness.run_evaluation()
@@ -128,10 +147,10 @@ def test_copilot_suite():
         print(f"   • {cat_name}: {cat_metric.passed}/{cat_metric.total} ({cat_metric.accuracy_percent}%)")
     assert eval_report.overall_accuracy_percent == 100.0, f"Expected 100% accuracy, got {eval_report.overall_accuracy_percent}%"
     assert eval_report.zero_hallucination_guarantee is True
-    print(f"[PASS] 10. Golden Evaluation Benchmark: 100% PASS RATE across all 6 clinical dimensions.")
+    print(f"[PASS] 11. Golden Evaluation Benchmark: 100% PASS RATE across all 6 clinical dimensions.")
 
     print("\n================================================================================")
-    print("ALL 10 MEDLENS AI COPILOT TEST SUITES PASSED FLAWLESSLY!")
+    print("ALL 11 MEDLENS AI COPILOT TEST SUITES PASSED FLAWLESSLY!")
     print("================================================================================")
 
 if __name__ == "__main__":
