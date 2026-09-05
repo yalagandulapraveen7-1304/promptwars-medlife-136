@@ -24,12 +24,12 @@
 <div class="relative mt-space-2xs">
 <div class="flex items-center w-full bg-surface-container-lowest rounded-full px-space-md py-space-xs shadow-[0_2px_12px_rgba(15,23,42,0.06)]">
 <span class="material-symbols-outlined text-outline text-[1.25rem] mr-space-xs">search</span>
-<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search patient by name, MRN, or lab test..." type="text"/>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="mobile-search-input" placeholder="Search patient by name, MRN, or lab test..." type="text" aria-label="Search patient by name, MRN, or lab test"/>
 <div class="flex items-center gap-1 text-outline">
-<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" title="Voice Search">
+<button aria-label="Voice Search" class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" title="Voice Search">
 <span class="material-symbols-outlined text-[1.125rem]">mic</span>
 </button>
-<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" title="Scan Document / Barcode">
+<button aria-label="Scan Document or Barcode" class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" title="Scan Document / Barcode">
 <span class="material-symbols-outlined text-[1.125rem]">document_scanner</span>
 </button>
 </div>

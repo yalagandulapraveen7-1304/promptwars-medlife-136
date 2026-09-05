@@ -1378,7 +1378,7 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
 
       // Save to backend API
       try {
-        await fetch(`${API_BASE}/update-biomarker/${PATIENT_MRN}/${loinc}?clinician=Dr.%20Sarah%20Jenkins,%20MD`, {
+        const updateRes = await fetch(`${API_BASE}/update-biomarker/${PATIENT_MRN}/${loinc}?clinician=Dr.%20Sarah%20Jenkins,%20MD`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -1388,8 +1388,9 @@ Origin: Model inference generated from cross-document synthesis. Isolated from g
             override_reason: reason || 'Physician manual clinical edit & override'
           })
         });
+        if (!updateRes.ok) throw new Error(`HTTP error ${updateRes.status}`);
       } catch (err) {
-        console.warn('API update failed, maintained local update:', err);
+        // Maintained local update on network/offline fallback
       }
 
       if (saveBtn) {

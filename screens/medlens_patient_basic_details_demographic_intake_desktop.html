@@ -301,16 +301,16 @@
 <div class="pt-space-xs">
 <span class="block font-label-sm text-label-sm text-on-surface font-semibold mb-2">Preferred Communication Channel</span>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
-<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input checked="" class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="portal"/>
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors" for="contact-pref-portal">
+<input checked="" class="text-primary focus:ring-primary" id="contact-pref-portal" name="contact-pref" type="radio" value="portal" aria-label="Patient Portal communication channel"/>
 <span class="text-body-sm font-medium text-on-surface">Patient Portal</span>
 </label>
-<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="phone"/>
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors" for="contact-pref-phone">
+<input class="text-primary focus:ring-primary" id="contact-pref-phone" name="contact-pref" type="radio" value="phone" aria-label="Mobile / Voice communication channel"/>
 <span class="text-body-sm font-medium text-on-surface">Mobile / Voice</span>
 </label>
-<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="email"/>
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors" for="contact-pref-email">
+<input class="text-primary focus:ring-primary" id="contact-pref-email" name="contact-pref" type="radio" value="email" aria-label="Encrypted Email communication channel"/>
 <span class="text-body-sm font-medium text-on-surface">Encrypted Email</span>
 </label>
 </div>
@@ -469,16 +469,16 @@
 <div class="p-space-sm mt-2 rounded-lg bg-surface space-y-space-sm">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
 <div>
-<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Carrier</label>
-<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Medicare Part B" type="text"/>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="sec-carrier">Secondary Carrier</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="sec-carrier" placeholder="e.g. Medicare Part B" type="text" aria-label="Secondary Carrier"/>
 </div>
 <div>
-<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Policy ID</label>
-<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. #MED-99410" type="text"/>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="sec-policy-id">Secondary Policy ID</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="sec-policy-id" placeholder="e.g. #MED-99410" type="text" aria-label="Secondary Policy ID"/>
 </div>
 <div>
-<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Group</label>
-<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. #GRP-0012" type="text"/>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="sec-group">Secondary Group</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="sec-group" placeholder="e.g. #GRP-0012" type="text" aria-label="Secondary Group"/>
 </div>
 </div>
 </div>
@@ -613,7 +613,6 @@
   const isFile = window.location.protocol === 'file:';
   const API_ROOT = isFile ? 'http://127.0.0.1:8000' : (window.location.origin.includes(':8000') ? window.location.origin : (window.location.origin || 'http://127.0.0.1:8000'));
   const API_BASE = `${API_ROOT}/api/intake`;
-  const MRN_DEFAULT = 'ML-9420-TX';
 
   // Elements
   const scanBtn = document.getElementById('scan-wristband-btn');
@@ -686,7 +685,6 @@
   function populateForm(data) {
     const demo = data.demographics || {};
     const contact = data.contact || {};
-    const triage = data.clinical_triage || {};
 
     if (demo.first_name) document.getElementById('first-name').value = demo.first_name;
     if (demo.middle_name) document.getElementById('middle-name').value = demo.middle_name;

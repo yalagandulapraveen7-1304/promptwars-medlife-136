@@ -477,8 +477,8 @@
               </p>
 </div>
 <!-- Mandatory Verification Checkbox -->
-<label class="flex items-start gap-2.5 p-space-xs rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<label class="flex items-start gap-2.5 p-space-xs rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors" for="allergen-reverification-check">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" id="allergen-reverification-check" type="checkbox" aria-label="Require mandatory bedside allergen re-verification before finalizing clinical order set"/>
 <span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">
                 Require mandatory bedside allergen re-verification before finalizing clinical order set.
               </span>
@@ -540,8 +540,8 @@
 </div>
 </div>
 <!-- Confirmation Checkbox -->
-<label class="flex items-start gap-2.5 p-space-xs rounded-lg cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors">
-<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<label class="flex items-start gap-2.5 p-space-xs rounded-lg cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors" for="institutional-protocol-check">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" id="institutional-protocol-check" type="checkbox" aria-label="Confirm clinical indication under institutional privacy and security protocols"/>
 <span class="font-body-sm text-body-sm text-on-surface leading-snug">
                 I confirm clinical indication for prioritized MedLens algorithmic processing, reconciliation, and automated EHR sync under institutional privacy &amp; security protocols.
               </span>
@@ -720,7 +720,7 @@
         return;
       }
     } catch (e) {
-      console.warn('Fallback: local nomination dispatch');
+      if (btn && origHtml) btn.innerHTML = origHtml;
     }
 
     showToast('Nomination Dispatched', 'Nomination approved by Dr. Sarah Jenkins (Readiness: 94%).');

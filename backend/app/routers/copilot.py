@@ -87,7 +87,6 @@ def get_patient_conflicts_endpoint(patient_id: str):
     Returns detected cross-document conflicts requiring mandatory human verification.
     """
     kb = get_knowledge_base()
-    patient = kb.get_patient(patient_id)
     return detect_conflicts_for_patient(patient_id, kb.conflicts_by_patient)
 
 @router.get("/evaluate", response_model=CopilotEvaluationReport)

@@ -1,4 +1,3 @@
-from typing import Optional
 from fastapi import APIRouter, HTTPException, Query
 from datetime import datetime
 from app.models.patient_intake import (
@@ -46,7 +45,7 @@ def submit_patient_intake(submission: PatientIntakeSubmission):
     Enqueues patient into Doctor Dashboard triage queue, increments admissions KPI,
     and commits verified demographics to master registry.
     """
-    mrn, session_id, status = save_patient_intake_db(submission.model_dump(), is_draft=False)
+    mrn, session_id, _ = save_patient_intake_db(submission.model_dump(), is_draft=False)
     now_str = datetime.now().strftime("%d %b %Y %H:%M EST")
     return PatientIntakeResponse(
         success=True,
@@ -63,7 +62,7 @@ def save_intake_draft(submission: PatientIntakeSubmission):
     """
     Save in-progress demographic intake draft without finalizing triage admission.
     """
-    mrn, session_id, status = save_patient_intake_db(submission.model_dump(), is_draft=True)
+    mrn, session_id, _ = save_patient_intake_db(submission.model_dump(), is_draft=True)
     now_str = datetime.now().strftime("%d %b %Y %H:%M EST")
     return PatientIntakeResponse(
         success=True,

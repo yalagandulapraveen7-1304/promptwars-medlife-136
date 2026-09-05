@@ -1,6 +1,6 @@
-from typing import List, Optional, Dict, Any
+from typing import List, Optional
 from enum import Enum
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 class DataProvenanceOrigin(str, Enum):
     PATIENT_PROVIDED = "PATIENT PROVIDED"

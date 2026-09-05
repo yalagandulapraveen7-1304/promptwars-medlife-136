@@ -376,7 +376,6 @@ def resolve_patient_conflict(patient_mrn: str, action: str, clinician_name: str 
     conn = get_connection()
     cur = conn.cursor()
 
-    now_str = datetime.now().strftime("%d %b %Y %H:%M EST")
     if action == "ENFORCE_BEDSIDE_HOLD":
         cur.execute("""
         UPDATE conflicts
@@ -913,7 +912,6 @@ def get_evidence_layer_data(patient_mrn: str = "ML-9420"):
 def query_copilot_synthesis(patient_mrn: str, query: str):
     conn = get_connection()
     init_clinical_record_tables(conn)
-    record = get_patient_full_record(patient_mrn)
     conn.close()
 
     q_lower = query.lower()

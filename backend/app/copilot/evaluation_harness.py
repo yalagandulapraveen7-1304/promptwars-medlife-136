@@ -1,5 +1,5 @@
 import logging
-from typing import Dict, List, Any, Optional
+from typing import Optional
 from app.copilot.knowledge_base import KnowledgeBase, get_knowledge_base
 from app.copilot.engine import CopilotEngine, get_copilot_engine
 from app.models.copilot import CopilotEvaluationReport, CopilotEvaluationMetric

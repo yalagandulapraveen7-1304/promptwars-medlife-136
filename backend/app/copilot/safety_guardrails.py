@@ -1,5 +1,5 @@
 import re
-from typing import Dict, Any, Tuple, Optional
+from typing import Dict, Any, Optional
 from app.models.copilot import SafetyCheckResponse
 
 PROHIBITED_INTENTS = [

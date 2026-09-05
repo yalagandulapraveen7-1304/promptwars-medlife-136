@@ -1,7 +1,7 @@
-﻿import os
+import os
 import sys
 
-backend_dir = r"C:\Users\ammul\Downloads\stitch_medlens_clinical_intelligence_platform (1)\backend"
+backend_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, backend_dir)
 
 from starlette.testclient import TestClient

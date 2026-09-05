@@ -9,10 +9,7 @@ if backend_dir not in sys.path:
 from app.models.clinical_record import (
     DataProvenanceOrigin,
     BiomarkerObservation,
-    ActiveMedication,
     ClinicalPresentation,
-    ConflictItem,
-    FullPatientRecord,
     CopilotQueryResponse
 )
 from app.database import get_patient_full_record, query_copilot_synthesis

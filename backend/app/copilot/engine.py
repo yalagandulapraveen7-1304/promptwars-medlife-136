@@ -1,7 +1,6 @@
 import logging
-import re
 from typing import Dict, List, Any, Optional
-from app.models.copilot import CopilotQueryRequest, CopilotQueryResponse, CopilotConflictDetail
+from app.models.copilot import CopilotQueryResponse, CopilotConflictDetail
 from app.copilot.knowledge_base import KnowledgeBase, get_knowledge_base
 from app.copilot.safety_guardrails import SafetyGuardrailEngine
 from app.copilot.conflict_detector import ConflictDetector
@@ -174,7 +173,6 @@ class CopilotEngine:
 
         rid = latest_rep.get("report_id")
         rdate = latest_rep.get("report_date", "Unknown Date")
-        rep_name = latest_rep.get("report_name") or f"Report #{rid}"
         citations.append(f"Report #{rid} (Date: {rdate}), Page 1")
 
         labs = self.kb.get_lab_results(pid, rid)
