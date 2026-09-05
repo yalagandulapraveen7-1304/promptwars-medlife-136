@@ -2,20 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/(.*)",
+      "source": "/(.*)",
       "destination": "/api/index.py"
-    },
-    {
-      "source": "/screens/(.*)",
-      "destination": "/screens/"
-    },
-    {
-      "source": "/screenshots/(.*)",
-      "destination": "/screenshots/"
-    },
-    {
-      "source": "/",
-      "destination": "/index.html"
     }
   ]
 }

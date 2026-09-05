@@ -40,25 +40,44 @@ app.include_router(patient_intake.router)
 app.include_router(copilot.router)
 
 # Mount frontend directories for unified hosting if desired
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-SCREENS_DIR = os.path.join(PROJECT_ROOT, "screens")
-SCREENSHOTS_DIR = os.path.join(PROJECT_ROOT, "screenshots")
-DOCS_DIR = os.path.join(PROJECT_ROOT, "docs")
-INDEX_HTML = os.path.join(PROJECT_ROOT, "index.html")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-if os.path.exists(SCREENS_DIR):
+def _resolve_dir(name: str):
+    for base in [PROJECT_ROOT, os.getcwd(), os.path.abspath(".")]:
+        p = os.path.join(base, name)
+        if os.path.isdir(p):
+            return p
+    return None
+
+def _resolve_file(name: str):
+    for base in [PROJECT_ROOT, os.getcwd(), os.path.abspath(".")]:
+        p = os.path.join(base, name)
+        if os.path.isfile(p):
+            return p
+    return None
+
+SCREENS_DIR = _resolve_dir("screens")
+SCREENSHOTS_DIR = _resolve_dir("screenshots")
+DOCS_DIR = _resolve_dir("docs")
+INDEX_HTML = _resolve_file("index.html")
+
+if SCREENS_DIR:
     app.mount("/screens", StaticFiles(directory=SCREENS_DIR), name="screens")
-if os.path.exists(SCREENSHOTS_DIR):
+if SCREENSHOTS_DIR:
     app.mount("/screenshots", StaticFiles(directory=SCREENSHOTS_DIR), name="screenshots")
-if os.path.exists(DOCS_DIR):
+if DOCS_DIR:
     app.mount("/docs-files", StaticFiles(directory=DOCS_DIR), name="docs-files")
 
 @app.get("/api/health")
 def health_check():
     return {"status": "HEALTHY", "service": "MedLens Dashboard Backend", "version": "1.0.0"}
 
+@app.get("/")
+@app.get("/index.html")
 @app.get("/app")
 def serve_app():
-    if os.path.exists(INDEX_HTML):
-        return FileResponse(INDEX_HTML)
-    return {"message": "index.html not found"}
+    target = _resolve_file("index.html")
+    if target and os.path.exists(target):
+        return FileResponse(target)
+    return {"status": "HEALTHY", "service": "MedLens Clinical Intelligence Platform", "version": "1.0.0"}
+
