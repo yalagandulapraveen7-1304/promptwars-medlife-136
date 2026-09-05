@@ -99,7 +99,7 @@ def sync_ehr():
 def dispatch_nurse_flag(patient_mrn: str, payload: Optional[FlagNurseRequest] = None):
     """
     Dispatch an urgent clinical bedside instruction / allergy validation task to the assigned on-duty nurse.
-    Persists flag in database and records clinician signature in HIPAA audit log.
+    Persists flag in database and records clinician signature in tamper-evident security audit log.
     """
     p_data = payload or FlagNurseRequest()
     res = flag_for_nurse(

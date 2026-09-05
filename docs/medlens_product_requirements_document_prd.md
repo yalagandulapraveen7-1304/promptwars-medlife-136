@@ -3,8 +3,7 @@
 **Document Version:** 1.0.0  
 **Status:** Approved for Implementation  
 **Product Owner:** Clinical Product & AI Systems Architecture  
-**Target Release:** Q1 2027  
-**Compliance Standard:** HIPAA BAA, SOC 2 Type II, 21 CFR Part 11, NIST Identity Assurance Level 3, FHIR R4  
+**Compliance Standard:** Designed with privacy and security best practices (AES-256 encryption, immutable audit logging, NIST guidelines, FHIR R4 interoperability)  
 
 ---
 
@@ -27,7 +26,7 @@ Modern clinical workflows suffer from severe data fragmentation. Clinicians rout
 | :--- | :--- | :--- | :--- |
 | **Dr. Sarah Jenkins, MD** | Attending Cardiologist & Clinical Lead | Triage inpatient queues, review lab anomalies, verify discrepancy alerts, and approve clinical order sets. | Visual fatigue from legacy EHR interfaces; high risk of missing buried allergen contraindications. |
 | **Nurse Kelly, BSN, RN** | Triage & Inpatient Intake Nurse | Collect patient demographics, conduct structured pre-fill intake, capture photo scans of physical wristbands or outside records. | Redundant data entry across disconnected systems; slow manual verification of payer eligibility. |
-| **Chief Medical Information Officer (CMIO)** | Health System Governance & Compliance | Ensure zero ungrounded clinical AI hallucinations, enforce 100% HIPAA/audit logging compliance, monitor OCR extraction error rates. | Lack of explainability in black-box clinical algorithms; potential regulatory liability. |
+| **Chief Medical Information Officer (CMIO)** | Health System Governance & Compliance | Ensure zero ungrounded clinical AI hallucinations, enforce rigorous privacy, security, and audit logging standards, monitor OCR extraction error rates. | Lack of explainability in black-box clinical algorithms; potential regulatory liability. |
 
 ---
 
@@ -54,7 +53,7 @@ A progressive 8-stage clinical intake workflow:
 ### Module 3: Document Processing & Table Detection Pipeline
 - **Multi-Format Ingest:** Secure upload for PDF, scanned JPG/PNG, DICOM metadata snapshots, and CCDA XML dossiers up to 50 MB per file.
 - **Intelligent OCR & Table Extraction:** Convolutional layout analysis preserving complex tabular laboratory structures (confidence score target > 95%).
-- **De-identification Engine:** Client-side de-identification conforming to Safe Harbor HIPAA standards before processing non-EHR document payloads.
+- **De-identification Engine:** Client-side de-identification conforming to privacy and de-identification best practices before processing non-EHR document payloads.
 
 ### Module 4: Structured Medical Record & Reference Range Integrity
 - **Zero-Hallucination Range Policy:** Clinical reference ranges must be extracted directly from the specimen source lab report. If omitted in the original report, the system explicitly marks the status as **`NOT DETERMINED FROM SOURCE`**—it strictly forbids inferring default biological reference bounds.
@@ -82,7 +81,7 @@ A progressive 8-stage clinical intake workflow:
   - Origin source document and page number.
   - Ingestion timestamp and AI model confidence score.
   - Name, NPI, and timestamp of the verifying clinician.
-- **HIPAA AES-256 & BAA Compliance:** Full data-at-rest and data-in-transit encryption with SOC 2 Type II audit trail exports.
+- **Enterprise Security & Privacy Controls:** Full data-at-rest (AES-256) and data-in-transit (TLS 1.3) encryption with comprehensive audit trail exports.
 
 ---
 
@@ -106,7 +105,7 @@ A progressive 8-stage clinical intake workflow:
 
 ### 5.2 Non-Functional Requirements
 1. **Performance:** Page load under standard hospital broadband $\le 1.2\text{s}$; full OCR and structured table rendering $\le 4.5\text{s}$ per 10-page dossier.
-2. **Security & Privacy:** 100% HIPAA compliance; no patient Health Information (PHI) used for foundational model retraining; role-based access control (RBAC).
+2. **Security & Privacy:** Privacy and security controls aligned with industry best practices; no patient Health Information (PHI) used for foundational model retraining; role-based access control (RBAC).
 3. **Availability & Reliability:** 99.99% uptime with offline local caching for bedside vital entries.
 4. **Accessibility:** WCAG 2.1 AA compliant contrast ratios across all clinical alerts, status flags, and form input states.
 
