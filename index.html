@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedLens — Clinical Intelligence Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400,0,0&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#006194',
+              600: '#00527e',
+              700: '#004368'
+            },
+            secondary: {
+              500: '#006a61',
+              600: '#00564e'
+            },
+            surface: '#f8f9ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Dropdown transitions */
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu,
+    .dropdown-menu.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    /* Custom scrollbar for doc preview */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="h-full bg-slate-100 text-slate-800 font-sans antialiased flex flex-col overflow-hidden">
+
+  <!-- TOP PRIMARY NAVIGATION BAR -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm flex-none">
+    <div class="w-full px-4 sm:px-6 h-14 flex items-center justify-between gap-2">
+
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-3 shrink-0">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-500 to-secondary-500 flex items-center justify-center text-white shadow-md shadow-primary-500/20">
+          <span class="material-symbols-outlined text-xl">vital_signs</span>
+        </div>
+        <a href="javascript:void(0)" onclick="loadScreen('dashboard-desktop')" class="flex items-center gap-2 group">
+          <span class="font-heading font-extrabold text-lg text-slate-900 tracking-tight group-hover:text-primary-500 transition-colors">MedLens</span>
+          <span class="hidden sm:inline-block text-[10px] font-bold tracking-wider uppercase bg-primary-50 text-primary-500 px-2 py-0.5 rounded-full border border-primary-100">Suite</span>
+        </a>
+      </div>
+
+      <!-- Center Navigation Links & Dropdowns -->
+      <nav class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto py-1 text-xs">
+
+        <!-- 1. Dashboards Dropdown -->
+        <div class="relative dropdown">
+          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-dashboards">
+            <span class="material-symbols-outlined text-[16px] text-primary-500">dashboard</span>
+            <span>Dashboards</span>
+            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
+            <a href="javascript:void(0)" onclick="loadScreen('dashboard-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="dashboard-desktop">
+              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">desktop_windows</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Doctor Dashboard</div>
+                <div class="text-[11px] text-slate-500">Desktop Clinical Workstation</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('dashboard-mobile')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="dashboard-mobile">
+              <span class="material-symbols-outlined text-lg text-slate-500 mt-0.5">smartphone</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Doctor Dashboard</div>
+                <div class="text-[11px] text-slate-500">Mobile Bedside Triage</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Patient Intake Dropdown -->
+        <div class="relative dropdown">
+          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-intake">
+            <span class="material-symbols-outlined text-[16px] text-secondary-500">assignment</span>
+            <span>Intake</span>
+            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
+            <a href="javascript:void(0)" onclick="loadScreen('demographic-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="demographic-desktop">
+              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">badge</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Demographic Intake</div>
+                <div class="text-[11px] text-slate-500">Desktop Section A &amp; EDI Payer</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('nomination-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="nomination-desktop">
+              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">clinical_notes</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Nomination Intake</div>
+                <div class="text-[11px] text-slate-500">Desktop Stepper &amp; OCR Zone</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('nomination-mobile')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="nomination-mobile">
+              <span class="material-symbols-outlined text-lg text-slate-500 mt-0.5">smartphone</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Nomination Intake</div>
+                <div class="text-[11px] text-slate-500">Mobile Bedside Triage Nurse</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Clinical Record (Direct Link) -->
+        <button onclick="loadScreen('record')" class="nav-trigger nav-direct flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-record" data-screen-id="record">
+          <span class="material-symbols-outlined text-[16px] text-teal-600">health_and_safety</span>
+          <span>Clinical Record</span>
+        </button>
+
+        <!-- 4. Brand & Assets Dropdown -->
+        <div class="relative dropdown">
+          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-brand">
+            <span class="material-symbols-outlined text-[16px] text-purple-600">palette</span>
+            <span>Brand</span>
+            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-full mt-1 w-56 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
+            <a href="javascript:void(0)" onclick="loadScreen('logo')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="logo">
+              <span class="material-symbols-outlined text-lg text-purple-500 mt-0.5">token</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Clinical Logo</div>
+                <div class="text-[11px] text-slate-500">SVG &amp; Brand Typography</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('headshot')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="headshot">
+              <span class="material-symbols-outlined text-lg text-amber-500 mt-0.5">account_circle</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Physician Headshot</div>
+                <div class="text-[11px] text-slate-500">Dr. Sarah Jenkins Avatar</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Documentation Dropdown -->
+        <div class="relative dropdown">
+          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-docs">
+            <span class="material-symbols-outlined text-[16px] text-slate-600">menu_book</span>
+            <span>Docs</span>
+            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
+          </button>
+          <div class="dropdown-menu absolute right-0 sm:left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
+            <a href="javascript:void(0)" onclick="loadScreen('prd')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="prd">
+              <span class="material-symbols-outlined text-lg text-blue-500 mt-0.5">description</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Product Requirements (PRD)</div>
+                <div class="text-[11px] text-slate-500">HIPAA, SOC 2, FHIR R4 specs</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('architecture')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="architecture">
+              <span class="material-symbols-outlined text-lg text-teal-500 mt-0.5">account_tree</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">System Architecture</div>
+                <div class="text-[11px] text-slate-500">8 core architectural modules</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="loadScreen('design')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="design">
+              <span class="material-symbols-outlined text-lg text-purple-500 mt-0.5">palette</span>
+              <div>
+                <div class="font-semibold text-xs text-slate-900">Design System Tokens</div>
+                <div class="text-[11px] text-slate-500">Theme tokens &amp; typography scale</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Simple Directory Overview -->
+        <button onclick="toggleDirectoryView()" class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-colors" id="nav-btn-directory">
+          <span class="material-symbols-outlined text-[16px]">list_alt</span>
+          <span class="hidden sm:inline">All Pages</span>
+        </button>
+      </nav>
+
+      <!-- Right Utility Controls: Open raw link -->
+      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+        <a id="open-external-btn" href="#" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:text-primary-500 hover:border-primary-200 hover:bg-primary-50 text-xs font-medium transition-colors" title="Open active screen in new tab">
+          <span class="hidden md:inline">Open in Tab</span>
+          <span class="material-symbols-outlined text-[15px]">open_in_new</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SUB-BAR / VIEWER CONTROL BAR -->
+    <div id="viewer-subbar" class="bg-slate-50/90 border-t border-slate-200/80 px-4 sm:px-6 py-1.5 flex items-center justify-between text-xs">
+      
+      <!-- Current Page Label -->
+      <div class="flex items-center gap-2 truncate">
+        <span class="text-slate-400 font-medium hidden sm:inline" id="current-category">Dashboards</span>
+        <span class="text-slate-300 hidden sm:inline">/</span>
+        <span class="font-semibold text-slate-900 truncate" id="current-title">Doctor Dashboard (Desktop Workstation)</span>
+        <span class="hidden md:inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-100/80 text-blue-700" id="current-badge">Desktop</span>
+      </div>
+
+      <!-- Controls: View Mode & Viewport Switcher -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Live HTML vs Screenshot View -->
+        <div class="flex items-center bg-slate-200/70 p-0.5 rounded-lg" id="render-mode-toggle">
+          <button onclick="setRenderMode('live')" id="btn-mode-live" class="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1">
+            <span class="material-symbols-outlined text-[13px]">code</span>
+            <span>Live Screen</span>
+          </button>
+          <button onclick="setRenderMode('screenshot')" id="btn-mode-screenshot" class="px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1">
+            <span class="material-symbols-outlined text-[13px]">image</span>
+            <span>Screenshot</span>
+          </button>
+        </div>
+
+        <!-- Viewport Size -->
+        <div class="hidden sm:flex items-center bg-slate-200/70 p-0.5 rounded-lg" id="viewport-switcher">
+          <button onclick="setViewport('100%')" id="btn-vp-desktop" class="p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all" title="Full Width (100%)">
+            <span class="material-symbols-outlined text-[15px]">desktop_windows</span>
+          </button>
+          <button onclick="setViewport('768px')" id="btn-vp-tablet" class="p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all" title="Tablet View (768px)">
+            <span class="material-symbols-outlined text-[15px]">tablet</span>
+          </button>
+          <button onclick="setViewport('390px')" id="btn-vp-mobile" class="p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all" title="Mobile View (390px)">
+            <span class="material-symbols-outlined text-[15px]">smartphone</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN VIEWER CONTAINER -->
+  <main class="flex-1 w-full relative flex flex-col items-center justify-center overflow-hidden" id="viewer-container">
+    
+    <!-- IFRAME FOR LIVE / SCREENSHOT VIEW -->
+    <div id="frame-wrapper" class="w-full h-full flex items-center justify-center transition-all duration-300 ease-out bg-slate-100">
+      <iframe id="main-frame" src="screens/medlens_doctor_dashboard_clinical_triage_desktop.html" class="w-full h-full border-0 bg-white transition-all duration-300" title="MedLens Active Screen"></iframe>
+    </div>
+
+    <!-- DIRECTORY / ALL PAGES OVERVIEW (Hidden by default) -->
+    <div id="directory-view" class="hidden absolute inset-0 bg-white z-40 overflow-y-auto p-6 sm:p-10">
+      <div class="max-w-5xl mx-auto space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+          <div>
+            <h2 class="font-heading font-bold text-xl text-slate-900">All Navigation Pages</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Direct index of all screens, design assets, and architecture documents.</p>
+          </div>
+          <button onclick="toggleDirectoryView()" class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">close</span>
+            <span>Close Overview</span>
+          </button>
+        </div>
+
+        <div class="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 border-b border-slate-200 text-slate-500 uppercase tracking-wider font-semibold">
+              <tr>
+                <th class="px-4 py-3">Page / Screen</th>
+                <th class="px-4 py-3">Category</th>
+                <th class="px-4 py-3">Format</th>
+                <th class="px-4 py-3 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200" id="directory-table-body">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Screen Registry
+    const SCREENS = {
+      'dashboard-desktop': {
+        title: 'Doctor Dashboard (Clinical Triage)',
+        category: 'Dashboards',
+        badge: 'Desktop',
+        html: 'screens/medlens_doctor_dashboard_clinical_triage_desktop.html',
+        screenshot: 'screenshots/medlens_doctor_dashboard_clinical_triage_desktop.png',
+        defaultVp: '100%'
+      },
+      'dashboard-mobile': {
+        title: 'Doctor Dashboard (Clinical Triage)',
+        category: 'Dashboards',
+        badge: 'Mobile',
+        html: 'screens/medlens_doctor_dashboard_clinical_triage.html',
+        screenshot: 'screenshots/medlens_doctor_dashboard_clinical_triage.png',
+        defaultVp: '390px'
+      },
+      'demographic-desktop': {
+        title: 'Patient Demographic Intake',
+        category: 'Intake',
+        badge: 'Desktop',
+        html: 'screens/medlens_patient_basic_details_demographic_intake_desktop.html',
+        screenshot: 'screenshots/medlens_patient_basic_details_demographic_intake_desktop.png',
+        defaultVp: '100%'
+      },
+      'nomination-desktop': {
+        title: 'Patient Nomination Intake',
+        category: 'Intake',
+        badge: 'Desktop',
+        html: 'screens/medlens_patient_nomination_intake_desktop.html',
+        screenshot: 'screenshots/medlens_patient_nomination_intake_desktop.png',
+        defaultVp: '100%'
+      },
+      'nomination-mobile': {
+        title: 'Patient Nomination Intake',
+        category: 'Intake',
+        badge: 'Mobile',
+        html: 'screens/medlens_patient_nomination_intake.html',
+        screenshot: 'screenshots/medlens_patient_nomination_intake.png',
+        defaultVp: '390px'
+      },
+      'record': {
+        title: 'Structured Clinical Record',
+        category: 'Clinical Core',
+        badge: 'Desktop',
+        html: 'screens/medlens_patient_details_structured_clinical_record.html',
+        screenshot: 'screenshots/medlens_patient_details_structured_clinical_record.png',
+        defaultVp: '100%'
+      },
+      'logo': {
+        title: 'MedLens Clinical Logo & Identity',
+        category: 'Brand',
+        badge: 'Component',
+        html: 'screens/medlens_clinical_logo.html',
+        screenshot: 'screenshots/medlens_clinical_logo.png',
+        defaultVp: '100%'
+      },
+      'headshot': {
+        title: 'Physician Headshot (Dr. Sarah Jenkins)',
+        category: 'Brand',
+        badge: 'Asset PNG',
+        html: 'screenshots/close_up_friendly_professional_headshot_of_a_female_physician_wearing_a_white.png',
+        screenshot: 'screenshots/close_up_friendly_professional_headshot_of_a_female_physician_wearing_a_white.png',
+        defaultVp: '100%'
+      },
+      'prd': {
+        title: 'Product Requirements Document (PRD)',
+        category: 'Docs',
+        badge: 'Markdown',
+        html: 'docs/medlens_product_requirements_document_prd.md',
+        screenshot: null,
+        defaultVp: '100%'
+      },
+      'architecture': {
+        title: 'System Architecture Specification',
+        category: 'Docs',
+        badge: 'Spec TXT',
+        html: 'docs/medlens_system_architecture_specification.txt',
+        screenshot: null,
+        defaultVp: '100%'
+      },
+      'design': {
+        title: 'Design System & Color Tokens',
+        category: 'Docs',
+        badge: 'Tokens MD',
+        html: 'docs/clinical_clarity_care_design.md',
+        screenshot: null,
+        defaultVp: '100%'
+      }
+    };
+
+    let currentScreenId = 'dashboard-desktop';
+    let currentRenderMode = 'live'; // 'live' or 'screenshot'
+    let currentViewport = '100%';
+    let isDirectoryOpen = false;
+
+    function loadScreen(id) {
+      if (!SCREENS[id]) return;
+      currentScreenId = id;
+      const screen = SCREENS[id];
+
+      // Close directory view if open
+      if (isDirectoryOpen) toggleDirectoryView(false);
+
+      // Update Subbar Labels
+      document.getElementById('current-category').textContent = screen.category;
+      document.getElementById('current-title').textContent = screen.title;
+      document.getElementById('current-badge').textContent = screen.badge;
+
+      // Update Navigation Active State
+      document.querySelectorAll('.nav-item').forEach(el => {
+        if (el.getAttribute('data-screen-id') === id) {
+          el.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+        } else {
+          el.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+        }
+      });
+
+      const directBtn = document.getElementById('nav-btn-record');
+      if (id === 'record') {
+        directBtn.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+      } else {
+        directBtn.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+      }
+
+      // Hide or show screenshot toggle if not available (e.g. docs)
+      const renderToggle = document.getElementById('render-mode-toggle');
+      if (!screen.screenshot) {
+        renderToggle.style.display = 'none';
+        currentRenderMode = 'live';
+      } else {
+        renderToggle.style.display = 'flex';
+      }
+
+      // Auto-set viewport for mobile screens
+      if (screen.defaultVp === '390px') {
+        setViewport('390px');
+      } else {
+        setViewport('100%');
+      }
+
+      // Update iframe source & external button
+      updateFrame();
+
+      // Update URL hash
+      window.location.hash = id;
+    }
+
+    function updateFrame() {
+      const screen = SCREENS[currentScreenId];
+      const targetUrl = (currentRenderMode === 'screenshot' && screen.screenshot) 
+        ? screen.screenshot 
+        : screen.html;
+
+      document.getElementById('main-frame').src = targetUrl;
+      document.getElementById('open-external-btn').href = targetUrl;
+
+      // Update live/screenshot button active styles
+      const btnLive = document.getElementById('btn-mode-live');
+      const btnScreen = document.getElementById('btn-mode-screenshot');
+      if (currentRenderMode === 'live') {
+        btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
+        btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
+      } else {
+        btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
+        btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
+      }
+    }
+
+    function setRenderMode(mode) {
+      currentRenderMode = mode;
+      updateFrame();
+    }
+
+    function setViewport(width) {
+      currentViewport = width;
+      const frame = document.getElementById('main-frame');
+      const wrapper = document.getElementById('frame-wrapper');
+
+      const btnDesktop = document.getElementById('btn-vp-desktop');
+      const btnTablet = document.getElementById('btn-vp-tablet');
+      const btnMobile = document.getElementById('btn-vp-mobile');
+
+      // Reset button styles
+      [btnDesktop, btnTablet, btnMobile].forEach(btn => {
+        btn.className = 'p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all';
+      });
+
+      if (width === '100%') {
+        btnDesktop.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        frame.style.width = '100%';
+        frame.style.maxWidth = '100%';
+        frame.style.height = '100%';
+        frame.style.borderRadius = '0px';
+        frame.style.boxShadow = 'none';
+        wrapper.classList.remove('p-4');
+      } else if (width === '768px') {
+        btnTablet.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        frame.style.width = '768px';
+        frame.style.maxWidth = '768px';
+        frame.style.height = 'calc(100% - 32px)';
+        frame.style.borderRadius = '16px';
+        frame.style.boxShadow = '0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)';
+        wrapper.classList.add('p-4');
+      } else if (width === '390px') {
+        btnMobile.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        frame.style.width = '390px';
+        frame.style.maxWidth = '390px';
+        frame.style.height = 'calc(100% - 32px)';
+        frame.style.borderRadius = '32px';
+        frame.style.boxShadow = '0 20px 25px -5px rgba(0,0,0,0.15), 0 8px 10px -6px rgba(0,0,0,0.1)';
+        wrapper.classList.add('p-4');
+      }
+    }
+
+    function toggleDirectoryView(forceState) {
+      isDirectoryOpen = forceState !== undefined ? forceState : !isDirectoryOpen;
+      const dirView = document.getElementById('directory-view');
+      const dirBtn = document.getElementById('nav-btn-directory');
+
+      if (isDirectoryOpen) {
+        dirView.classList.remove('hidden');
+        dirBtn.classList.add('bg-slate-200', 'text-slate-900');
+        renderDirectoryTable();
+      } else {
+        dirView.classList.add('hidden');
+        dirBtn.classList.remove('bg-slate-200', 'text-slate-900');
+      }
+    }
+
+    function renderDirectoryTable() {
+      const tbody = document.getElementById('directory-table-body');
+      tbody.innerHTML = '';
+
+      Object.keys(SCREENS).forEach(key => {
+        const item = SCREENS[key];
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = `
+          <td class="px-4 py-3 font-medium text-slate-900">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-base text-slate-400">
+                ${item.badge === 'Mobile' ? 'smartphone' : (item.badge === 'Desktop' ? 'desktop_windows' : 'article')}
+              </span>
+              <span>${item.title}</span>
+            </div>
+          </td>
+          <td class="px-4 py-3 text-slate-500">${item.category}</td>
+          <td class="px-4 py-3">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold ${
+              item.badge === 'Desktop' ? 'bg-blue-50 text-blue-700' :
+              (item.badge === 'Mobile' ? 'bg-emerald-50 text-emerald-700' : 'bg-purple-50 text-purple-700')
+            }">${item.badge}</span>
+          </td>
+          <td class="px-4 py-3 text-right">
+            <div class="inline-flex items-center gap-1.5">
+              <button onclick="loadScreen('${key}')" class="px-2.5 py-1 rounded-md bg-primary-50 text-primary-600 hover:bg-primary-100 font-semibold transition-colors">
+                View in Shell
+              </button>
+              <a href="${item.html}" target="_blank" class="p-1 text-slate-400 hover:text-slate-700 transition-colors" title="Open in New Tab">
+                <span class="material-symbols-outlined text-[15px]">open_in_new</span>
+              </a>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    
+    // Synchronize navbar when user navigates inside iframe
+    const mainFrame = document.getElementById('main-frame');
+    mainFrame.addEventListener('load', () => {
+      try {
+        const frameLoc = mainFrame.contentWindow.location;
+        const path = frameLoc.pathname;
+        const filename = path.substring(path.lastIndexOf('/') + 1);
+
+        for (const key in SCREENS) {
+          if (SCREENS[key].html.endsWith(filename)) {
+            if (currentScreenId !== key) {
+              currentScreenId = key;
+              const screen = SCREENS[key];
+              document.getElementById('current-category').textContent = screen.category;
+              document.getElementById('current-title').textContent = screen.title;
+              document.getElementById('current-badge').textContent = screen.badge;
+              document.getElementById('open-external-btn').href = screen.html;
+
+              document.querySelectorAll('.nav-item').forEach(el => {
+                if (el.getAttribute('data-screen-id') === key) {
+                  el.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+                } else {
+                  el.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+                }
+              });
+
+              const directBtn = document.getElementById('nav-btn-record');
+              if (key === 'record') {
+                directBtn.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+              } else {
+                directBtn.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+              }
+
+              window.location.hash = key;
+            }
+            break;
+          }
+        }
+      } catch (err) {
+        // Handled silently
+      }
+    });
+
+    // Initialize from URL Hash or default
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && SCREENS[hash]) {
+        loadScreen(hash);
+      } else {
+        loadScreen('dashboard-desktop');
+      }
+    });
+  </script>
+</body>
+</html>

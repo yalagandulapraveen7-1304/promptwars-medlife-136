@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#006194", "secondary": "#006a61", "on-error": "#ffffff", "secondary-container": "#86f2e4", "secondary-fixed-dim": "#6bd8cb", "primary-fixed-dim": "#93ccff", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#2f2ebe", "on-secondary-fixed-variant": "#005049", "on-surface-variant": "#3f4850", "primary-fixed": "#cce5ff", "primary-container": "#007bb9", "tertiary-container": "#6063ee", "outline": "#707881", "on-error-container": "#93000a", "on-secondary-fixed": "#00201d", "background": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "tertiary": "#4648d4", "surface": "#f8f9ff", "surface-tint": "#006398", "on-primary-fixed-variant": "#004b73", "error": "#ba1a1a", "on-surface": "#0d1c2e", "secondary-fixed": "#89f5e7", "on-secondary-container": "#006f66", "surface-container": "#e6eeff", "on-primary-container": "#fdfcff", "on-secondary": "#ffffff", "on-primary-fixed": "#001d31", "inverse-surface": "#233144", "surface-container-low": "#eff4ff", "on-background": "#0d1c2e", "surface-dim": "#ccdbf3", "tertiary-fixed-dim": "#c0c1ff", "tertiary-fixed": "#e1e0ff", "on-tertiary": "#ffffff", "surface-container-highest": "#d5e3fc", "surface-bright": "#f8f9ff", "inverse-primary": "#93ccff", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "outline-variant": "#bfc7d2", "on-tertiary-fixed": "#07006c", "on-tertiary-container": "#fffbff", "surface-variant": "#d5e3fc", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.75rem", "sidebar-width": "17.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-mobile": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "metric-value": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.375rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "metric-value": ["1.5rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.025em", "fontWeight": "600" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 flex flex-col justify-between px-space-md py-space-xs"><div class="flex items-center justify-between w-full"><div class="flex items-center gap-space-xs"><img alt="MedLens Clinical Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrNyrRgRjApB3i7wbhY6JFZGSW-YXnciJ8JlwRegOBX9K7MJ6gKrn-kru4tAUJ1pqP9NSW7t2a8MIXc2Cl-UQ5pGrz5XuSGoFiZW52o3EWlz1ulDAaxBLVOsvTCBjcDVVwQ-Y6DC7PsMXBExyYLdQAm_OeEIs1Mt7iVKjPcxDUmWSHMpAgLY4J4MrFxGEwrNwxjW_S_poAn4nEpvJ3dSR7e-ymThNvxTMmPXPfL9KycrLRx8KzylLdrpxe"/><div class="flex flex-col"><a href="medlens_doctor_dashboard_clinical_triage_desktop.html" class="flex flex-col hover:opacity-80 transition-opacity"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">MedLens</span><span class="font-label-sm text-label-sm text-primary tracking-wide leading-none mt-space-2xs">Dashboard</span></a></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pending clinical verifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[1.5rem]">notifications</span><span class="absolute top-2 right-2 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-error"></span></span></button><div class="p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq84kwjGG8Jci9ZW73HBhE10Ju2hoqbyqQLTjLJrsZYXsFpu4nKRaDIvgj75fZ_JdQVKlxo9wl1QSAuQ6Glf94EM3vwt6GMmWm0-iL6jpySW3EX7H1rf2vtQr4FStjWZCJT5Onm1mkYQTmJ0PmpVt5EUYFAGVNVls-Ykq5Ss5gMSPVFZ0Z61G1ixOnJb7AP-dUCPZ6VRtaEEiaYoT5Ehg54Qg5uZDc5vf0_cJcTgAPwIiGaKhsHkqOug"/></div></div></div><div class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low/90 text-on-surface-variant"><div class="flex items-center gap-space-2xs truncate"><span class="material-symbols-outlined text-[1rem] text-secondary">local_hospital</span><span class="font-label-sm text-label-sm truncate">St. Jude Health Clinic • Dr. Sarah Jenkins, MD</span></div><div class="flex items-center gap-1.5 shrink-0 pl-space-xs"><span class="h-2 w-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">EHR Synced</span></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="flex w-full min-h-[calc(100vh-7rem)]">
+<!-- Persistent Left Sidebar Navigation -->
+<aside class="hidden lg:flex flex-col w-64 shrink-0 bg-surface-container-lowest p-space-md shadow-sm justify-between">
+<div class="flex flex-col gap-space-md">
+<!-- Sidebar Navigation Items -->
+<nav aria-label="Clinical Portal Navigation" class="flex flex-col gap-1.5">
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="medlens_doctor_dashboard_clinical_triage_desktop.html">
+<span class="material-symbols-outlined text-[1.25rem]">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a aria-current="page" class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg bg-primary text-on-primary font-semibold shadow-sm transition-all" href="medlens_patient_nomination_intake_desktop.html">
+<span class="material-symbols-outlined text-[1.25rem]" style="font-variation-settings: 'FILL' 1;">assignment_add</span>
+<span class="font-label-md text-label-md">Patient Intake</span>
+<span class="ml-auto px-1.5 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm">Active</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="medlens_patient_details_structured_clinical_record.html">
+<span class="material-symbols-outlined text-[1.25rem]">folder_shared</span>
+<span class="font-label-md text-label-md">Medical Records</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="medlens_doctor_dashboard_clinical_triage_desktop.html">
+<span class="material-symbols-outlined text-[1.25rem]">fact_check</span>
+<span class="font-label-md text-label-md">Verification Queue</span>
+<span class="ml-auto px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">4</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="#">
+<span class="material-symbols-outlined text-[1.25rem]">swap_driving_apps_wheel</span>
+<span class="font-label-md text-label-md">Conflict Center</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="medlens_patient_details_structured_clinical_record.html">
+<span class="material-symbols-outlined text-[1.25rem]">psychology</span>
+<span class="font-label-md text-label-md">AI Clinical Copilot</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" href="../docs/medlens_system_architecture_specification.txt">
+<span class="material-symbols-outlined text-[1.25rem]">tune</span>
+<span class="font-label-md text-label-md">Audit &amp; Settings</span>
+</a>
+</nav>
+</div>
+<!-- Station / Security Badge -->
+<div class="flex flex-col gap-2 p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">FHIR Node Live</span>
+<span class="h-2 w-2 rounded-full bg-secondary animate-ping"></span>
+</div>
+<p class="font-label-sm text-label-sm leading-snug">Station: Cardiology Inpatient 4-East • Session encrypted with AES-256 GCM.</p>
+</div>
+</aside>
+<!-- Main Workspace -->
+<main class="flex-1 flex flex-col p-space-md lg:p-space-xl gap-space-lg overflow-x-hidden">
+<!-- Header Bar -->
+<header class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<a href="medlens_doctor_dashboard_clinical_triage_desktop.html" class="hover:text-primary">Dashboard</a>
+<span class="material-symbols-outlined text-[0.875rem]">chevron_right</span>
+<a href="medlens_patient_basic_details_demographic_intake_desktop.html" class="hover:text-primary">Patient Intake</a>
+<span class="material-symbols-outlined text-[0.875rem]">chevron_right</span>
+<span class="text-primary font-semibold">Nominate Patient</span>
+</nav>
+<!-- Status Indicator Tag -->
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[1rem]">verified_user</span>
+<span>HIPAA BAA Compliant • Cerner/Epic Synced</span>
+</div>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mt-1">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Patient Nomination &amp; Clinical Intake Referral</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Nominate patients for AI-assisted multi-source ingestion, complex conflict reconciliation, or specialized clinical care cohorts.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[1rem]">save</span>
+              Save Draft
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[1rem]">file_open</span>
+              Load EHR Template
+            </button>
+<a href="medlens_doctor_dashboard_clinical_triage_desktop.html" class="relative px-space-lg py-2 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm hover:bg-primary-container shadow-md transition-all flex items-center gap-2" id="submit-nomination-top-btn">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-surface-bright opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-surface-bright"></span>
+</span>
+<span>Submit Nomination for Processing</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Multi-Step Stepper Progress Bar -->
+<section aria-label="Referral Progress" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm relative">
+<!-- Step 1 -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[1.125rem]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Step 1 • Completed</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Candidate Demographics</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
+              2
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold">Step 2 • Active</span>
+<span class="font-body-sm text-body-sm text-on-primary-fixed font-bold truncate">Clinical Pathway &amp; Priority</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
+              3
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Step 3 • In Progress</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Source Records &amp; OCR</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low opacity-75">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
+              4
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 4 • Pending</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Doctor Sign-off</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Two-Column Desktop Workspace (60% Form / 40% AI Intelligence Rail) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (Primary Forms & Uploads) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg min-w-0">
+<!-- Card 1: Candidate Demographics & Identity -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">person_pin</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Candidate Demographics &amp; Identity</h2>
+</div>
+<!-- External Ingestion Shortcuts -->
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[1rem]">barcode_scanner</span>
+                  Scan Barcode
+                </button>
+<button class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[1rem]">sync</span>
+                  Epic FHIR Pull
+                </button>
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[1rem]">hub</span>
+                  Cerner Gateway
+                </button>
+</div>
+</div>
+<!-- Patient Profile Identity Capsule -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<img class="w-16 h-16 rounded-full object-cover shrink-0 shadow-sm" data-alt="A dignified senior male patient with soft silver hair, wearing clean hospital-issued inpatient garments, seated upright against neutral soft daylight in a medical facility, respectful warm clinical portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC__bfqcfZxnlojeN9a3j6vVqaHwmLSK2lUdjanJ4ugcBEBYJi0rX0kq6CQGra0vcboj2qeIvYXL-c6i3TztTs4wlrs_AEbDDZA2bz2i5-VtErT7ESMb_dBfLOxt4LlD6aLRru6UEci1sCo1qVy3hWQ7MwBP8vw1Pn-zPHtIV0Z030iQvbwa6fIZdDaRlWrqh70CLwRV5tr8_BOgxNN_dq8Nuj0kSW3nty3E-drTgGVr58e_mQuJeDWjw"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Arthur Pendleton</span>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">MRN #ML-9420</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">58y Male</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-x-space-md gap-y-1 mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div><strong class="text-on-surface">DOB:</strong> 12 Mar 1968</div>
+<div><strong class="text-on-surface">Phone:</strong> +1 (555) 482-9013</div>
+<div><strong class="text-on-surface">Room:</strong> 412-B Inpatient</div>
+<div class="col-span-2 sm:col-span-3 truncate"><strong class="text-on-surface">Emergency Kin:</strong> Clara Pendleton (Spouse • +1 555-482-9014)</div>
+</div>
+</div>
+</div>
+<!-- Form Fields Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface" for="attending-physician">Primary Attending</label>
+<div class="flex items-center px-3 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem] text-primary mr-2">medical_services</span>
+<input class="bg-transparent w-full focus:outline-none text-on-surface font-medium" id="attending-physician" readonly="" type="text" value="Dr. Sarah Jenkins, MD"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface" for="referring-dept">Referring Department</label>
+<div class="flex items-center px-3 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem] text-secondary mr-2">cardiology</span>
+<input class="bg-transparent w-full focus:outline-none text-on-surface font-medium" id="referring-dept" readonly="" type="text" value="Cardiology &amp; Acute Care"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface" for="cohort-select">Cohort Assignment</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer" id="cohort-select">
+<option selected="">Complex Chronic Care Cohort A</option>
+<option>Post-PCI Observation Group</option>
+<option>Heart Failure Remote Titration</option>
+<option>Clinical Trial Protocol Screening</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Card 2: Clinical Pathway & Processing Urgency -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">conversion_path</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Clinical Pathway &amp; Processing Urgency</h2>
+</div>
+<!-- Pathway Selector Chips -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Intended Ingestion Pathways (Multi-select)</span>
+<div class="flex flex-wrap gap-2" id="pathway-container">
+<button class="pathway-btn px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Complex Chronic Care Program
+                </button>
+<button class="pathway-btn px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Cardiac Triage &amp; Arrhythmia Watch
+                </button>
+<button class="pathway-btn px-3 py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[1rem]">science</span>
+                  Clinical Trial (ML-102 Protocol)
+                </button>
+<button class="pathway-btn px-3 py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[1rem]">compare</span>
+                  Multi-Report Discrepancy Reconciliation
+                </button>
+</div>
+</div>
+<!-- Urgency SLA Selector -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Processing Priority (Service Level Agreement)</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="urgency-selector">
+<!-- Option 1: Routine -->
+<div class="urgency-card cursor-pointer p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Routine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">72h SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standard overnight OCR batch queue</p>
+</div>
+<!-- Option 2: Priority Review (Selected) -->
+<div class="urgency-card cursor-pointer p-space-sm rounded-lg bg-primary-fixed text-on-primary-fixed shadow-md flex flex-col gap-1 ring-2 ring-primary">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary">Priority Review</span>
+<span class="px-1.5 py-0.25 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">24h SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-fixed">Elevated priority ingest &amp; live conflict triage</p>
+</div>
+<!-- Option 3: Acute Triage -->
+<div class="urgency-card cursor-pointer p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-error">Acute Triage</span>
+<span class="px-1.5 py-0.25 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">&lt; 2h Fast-track</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate queue interruption for ICU sync</p>
+</div>
+</div>
+</div>
+<!-- Chief Indication & Referral Clinical Memo -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface" for="clinical-memo">Chief Indication &amp; Referral Clinical Memo</label>
+<span class="font-label-sm text-label-sm text-primary font-medium">MedLens NLP Enabled</span>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-colors resize-none leading-relaxed" id="clinical-memo" rows="4">Severe exertional dyspnea (NYHA III) over past 3 weeks. Borderline Hb (10.1 g/dL), conflicting outpatient records regarding ACE inhibitor dosage vs ARB switch during last hospitalization. Requesting full MedLens multi-record reconciliation, allergy cross-check, and trial eligibility screen.</textarea>
+</div>
+</section>
+<!-- Card 3: Source Health Records & Ingestion Queue -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">upload_file</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Source Health Records &amp; Ingestion Queue</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">3 Files Queued</span>
+</div>
+<!-- Modern Drag-and-Drop Ingestion Zone -->
+<div class="p-space-lg rounded-xl bg-surface-container-low text-center flex flex-col items-center justify-center gap-2 transition-colors cursor-pointer group hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[1.75rem]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Drop hospital dossiers, lab PDFs, DICOM snapshots, or CCDA XML</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supports PDF, JPG, DICOM up to 50MB per batch with automatic de-identification</span>
+</div>
+<button class="mt-2 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                Browse Local Files
+              </button>
+</div>
+<!-- Attached Files Ingestion List -->
+<div class="flex flex-col gap-2">
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-9 h-9 rounded bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[1.25rem]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Mercy_General_Discharge_Summary.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2.4 MB • Ingested via Cerner Gateway</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">check</span> 98% OCR Parsed
+                  </span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm hover:bg-primary hover:text-on-primary transition-colors">
+                    Preview Extraction
+                  </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-9 h-9 rounded bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[1.25rem]">monitor_heart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Recent_Echo_Cardiogram_Report.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.1 MB • Cardiology Annex B</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">schedule</span> Pending MD Sign-off
+                  </span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm hover:bg-primary hover:text-on-primary transition-colors">
+                    Inspect
+                  </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-9 h-9 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[1.25rem]">table_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">LabCorp_Metabolic_Panel_Oct2026.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">850 KB • Outpatient Lab Sync</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">verified</span> Table Detection Verified
+                  </span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm hover:bg-primary hover:text-on-primary transition-colors">
+                    Inspect
+                  </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (MedLens AI Copilot & Pre-Scan Intelligence Rail) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg min-w-0 xl:sticky xl:top-32">
+<!-- Widget 1: Discrepancy Early-Watch (MedLens Prescan Engine) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<!-- Subtle alert banner background -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Discrepancy Early-Watch</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">MedLens Pre-Scan Engine</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">High Severity Alert</span>
+</div>
+<!-- Alert Card Content -->
+<div class="p-space-md rounded-xl bg-error-container/20 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-error font-bold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem]">medication_liquid</span>
+                Potential Medication / Allergen Conflict
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                Arthur self-reported <span class="font-semibold text-on-surface">"No known drug allergies (NKDA)"</span> on initial clinic check-in. However, the prior Mercy General discharge summary (2022) logs:
+              </p>
+<div class="p-space-xs rounded bg-surface-container-lowest text-error font-mono text-label-sm font-medium">
+                "Cutaneous rash &amp; hives secondary to Ampicillin/Sulbactam"
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                Recommendation: MedLens recommends mandatory bedside allergen re-verification before finalizing clinical order set.
+              </p>
+</div>
+<!-- Mandatory Verification Checkbox -->
+<label class="flex items-start gap-2.5 p-space-xs rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">
+                Require mandatory bedside allergen re-verification before finalizing clinical order set.
+              </span>
+</label>
+</section>
+<!-- Widget 2: AI Ingestion Readiness & Quality Score -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">troubleshoot</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Ingestion Readiness Score</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Engine v4.2</span>
+</div>
+<!-- Visual Meter + Metric -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<!-- Inline Radial Progress SVG Chart -->
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm font-bold text-primary">94%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Document Readability Score</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">High semantic clarity across 3 records</span>
+</div>
+</div>
+<!-- Verification Checklist -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">check_circle</span>
+<span>Demographics matched to Master Patient Index (MPI)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">check_circle</span>
+<span>Lab values tabular layout detected (14 parameters)</span>
+</div>
+<div class="flex items-center gap-2 text-error font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-error text-[1.25rem]">error</span>
+<span>1 Unresolved medication date overlap detected</span>
+</div>
+</div>
+</section>
+<!-- Widget 3: Attending Physician Sign-off -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">approval_delegation</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Attending Physician Sign-off</h2>
+</div>
+<!-- Doctor Snippet with Avatar -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<img alt="Dr. Sarah Jenkins" class="w-12 h-12 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VI_s84HBd1wzU-M1mI5tM4MkGNkK_23ZDsVKVcT1-JEuHjMJWuubZbdwdKS7Fo9iHNugaiz1qHpOXltC7DKtYVCl3bkeIriOZEZTF8zml4baOEaFM3MxxW6pzlGEPuH32I_31t3DS_juUaUlolBuoh6_noZP9dsGoqv3nCD-F7q2MxFq_-Q1MqhKo_ut759xsk3Oocf3Bccno2w7ODJ2JB7aQb5p_ShslruA4kzUfHhwkmP5ER_2gzpdrB"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Dr. Sarah Jenkins, MD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chief of Cardiology • St. Jude Health Clinic</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-0.5">Today, 10:45 AM EDT</span>
+</div>
+</div>
+<!-- Confirmation Checkbox -->
+<label class="flex items-start gap-2.5 p-space-xs rounded-lg cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+                I confirm clinical indication for prioritized MedLens algorithmic processing, reconciliation, and automated EHR sync under HIPAA BAA protocols.
+              </span>
+</label>
+<!-- Sign-off Action CTA Button -->
+<div class="flex flex-col gap-1.5 pt-1">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm hover:bg-primary-container shadow-md transition-all flex items-center justify-center gap-2" id="approve-dispatch-btn" type="button">
+<span class="material-symbols-outlined text-[1.25rem]">send</span>
+<span>Approve &amp; Dispatch Nomination</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>Keyboard shortcut:</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-mono font-bold text-[0.75rem]">⌘ + Enter</kbd>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<!-- Floating Action Feedback Toast -->
+<div id="medlensToast" class="fixed top-24 right-5 z-50 max-w-md bg-surface-container-lowest border border-outline-variant/40 rounded-xl shadow-2xl p-4 transform translate-y-[-120%] opacity-0 transition-all duration-300 flex items-start gap-3 pointer-events-none">
+  <div id="toastIconContainer" class="w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center shrink-0 mt-0.5">
+    <span class="material-symbols-outlined text-[1.25rem]" id="toastIcon">check_circle</span>
+  </div>
+  <div class="flex flex-col min-w-0">
+    <span class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm" id="toastTitle">System Notification</span>
+    <p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5" id="toastMessage">Action completed successfully.</p>
+  </div>
+</div>
+
+<script>
+(function initMedLensNominationAPI() {
+  const isLocalApi = window.location.origin.includes(':8000');
+  const API_BASE = isLocalApi ? `${window.location.origin}/api/intake` : 'http://localhost:8000/api/intake';
+  const PATIENT_MRN = 'ML-9420-TX';
+
+  const approveBtn = document.getElementById('approve-dispatch-btn');
+  const toast = document.getElementById('medlensToast');
+  const toastTitle = document.getElementById('toastTitle');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastIcon = document.getElementById('toastIcon');
+  const toastIconContainer = document.getElementById('toastIconContainer');
+
+  let toastTimer = null;
+  function showToast(title, message, isError = false) {
+    if (!toast) return;
+    clearTimeout(toastTimer);
+    toastTitle.textContent = title;
+    toastMessage.textContent = message;
+    if (isError) {
+      toastIconContainer.className = 'w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5';
+      toastIcon.textContent = 'error';
+    } else {
+      toastIconContainer.className = 'w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center shrink-0 mt-0.5';
+      toastIcon.textContent = 'verified';
+    }
+    toast.classList.remove('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 4000);
+  }
+
+  // Pathway chip toggling
+  const pathwayBtns = document.querySelectorAll('.pathway-btn');
+  pathwayBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isSelected = btn.classList.contains('bg-primary');
+      if (isSelected) {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon && icon.textContent === 'check_circle') icon.textContent = 'add_circle';
+      } else {
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'check_circle';
+      }
+    });
+  });
+
+  // Urgency card selection
+  const urgencyCards = document.querySelectorAll('.urgency-card');
+  urgencyCards.forEach(card => {
+    card.addEventListener('click', () => {
+      urgencyCards.forEach(c => {
+        c.classList.remove('bg-primary-fixed', 'text-on-primary-fixed', 'shadow-md', 'ring-2', 'ring-primary');
+        c.classList.add('bg-surface-container-low');
+      });
+      card.classList.remove('bg-surface-container-low');
+      card.classList.add('bg-primary-fixed', 'text-on-primary-fixed', 'shadow-md', 'ring-2', 'ring-primary');
+    });
+  });
+
+  async function handleNominationDispatch(btn) {
+    const origHtml = btn ? btn.innerHTML : '';
+    if (btn) btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[1.25rem]">progress_activity</span><span>Dispatching Pipeline...</span>';
+
+    // Collect selected pathways
+    const selectedPathways = [];
+    document.querySelectorAll('.pathway-btn.bg-primary').forEach(b => {
+      const txt = b.textContent.trim().replace(/^add_circle\s*|^check_circle\s*/, '');
+      if (txt) selectedPathways.push(txt);
+    });
+    if (selectedPathways.length === 0) {
+      selectedPathways.push('Complex Heart Failure Cohort', 'Cardiorenal Metabolic Review');
+    }
+
+    const payload = {
+      patient_mrn: PATIENT_MRN,
+      clinical_pathways: selectedPathways,
+      urgency_tier: 'ACUTE_2H',
+      attached_document_count: 3,
+      referring_doctor_notes: 'Admitted for prioritized algorithmic ingestion and complex conflict reconciliation.',
+      attending_doctor_signoff: true,
+      signoff_doctor: 'Dr. Sarah Jenkins, MD'
+    };
+
+    try {
+      const res = await fetch(`${API_BASE}/nominate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        const data = await res.json();
+        showToast('Nomination Dispatched', `Nomination #${data.nomination_id} approved. Ingestion readiness score: ${data.readiness_score}%.`);
+        if (btn) btn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem]">check</span><span>Dispatched!</span>';
+        setTimeout(() => {
+          window.location.href = 'medlens_doctor_dashboard_clinical_triage_desktop.html';
+        }, 900);
+        return;
+      }
+    } catch (e) {
+      console.warn('Fallback: local nomination dispatch');
+    }
+
+    showToast('Nomination Dispatched', 'Nomination approved by Dr. Sarah Jenkins (Readiness: 94%).');
+    setTimeout(() => {
+      window.location.href = 'medlens_doctor_dashboard_clinical_triage_desktop.html';
+    }, 900);
+  }
+
+  if (approveBtn) {
+    approveBtn.addEventListener('click', () => handleNominationDispatch(approveBtn));
+  }
+
+  const topSubmitBtn = document.getElementById('submit-nomination-top-btn');
+  if (topSubmitBtn) {
+    topSubmitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      handleNominationDispatch(topSubmitBtn);
+    });
+  }
+
+  // Keyboard shortcut: ⌘+Enter
+  window.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      handleNominationDispatch(approveBtn);
+    }
+  });
+})();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors group text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary" data-path="dashboard" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">grid_view</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="intake" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">assignment_add</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Intake</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="records" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">folder_shared</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Records</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="verify" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">fact_check</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Verify</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="copilot" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">psychology</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Copilot</span></a></div></nav></body></html>

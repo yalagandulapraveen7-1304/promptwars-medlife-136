@@ -1,0 +1,14 @@
+🩺 MedLens — Complete System Architecture & Specification
+
+Core Concept:
+MedLens converts fragmented patient information and medical reports into a structured, traceable, reviewable patient record, with AI assisting clinicians in understanding and navigating clinical data with source provenance and human-in-the-loop verification.
+
+Key Architectural Modules:
+1. Patient Management: Source-attributed patient profiles, demographics, medical history, allergy verification states.
+2. Structured Patient Intake: Sectioned intake flow (Basic info, complaint, history, medications, allergies with reactions, reports, doctor notes).
+3. Document Processing Pipeline: Multi-format report upload (PDF/JPG), OCR, table detection, laboratory field extraction.
+4. Structured Medical Record & Reference Range Awareness: Clear visual status (LOW, NORMAL, HIGH, or "Not determined from source" if omitted), extraction confidence scores.
+5. Chronological Timeline & Comparisons: Event-based medical journey, historical delta comparisons (Previous vs. Current trends).
+6. Conflict & Inconsistency Detection: Flagging contradictory reports/intake notes with verification badges.
+7. Doctor AI Copilot & Evidence Viewer: Grounded conversational assistant, split-pane source PDF evidence highlighting, [Verify], [Edit], [Reject] actions.
+8. Security, Audit Logging & Patient-friendly Summaries: Granular role access, complete timeline audit trails, non-diagnostic patient summaries.
