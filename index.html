@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
   <meta charset="utf-8" />
@@ -210,14 +210,6 @@
         </button>
       </nav>
 
-      <!-- Right Utility Controls: Open raw link -->
-      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
-        <a id="open-external-btn" href="#" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:text-primary-500 hover:border-primary-200 hover:bg-primary-50 text-xs font-medium transition-colors" title="Open active screen in new tab">
-          <span class="hidden md:inline">Open in Tab</span>
-          <span class="material-symbols-outlined text-[15px]">open_in_new</span>
-        </a>
-      </div>
-
     </div>
 
     <!-- SUB-BAR / VIEWER CONTROL BAR -->
@@ -229,36 +221,6 @@
         <span class="text-slate-300 hidden sm:inline">/</span>
         <span class="font-semibold text-slate-900 truncate" id="current-title">Doctor Dashboard (Desktop Workstation)</span>
         <span class="hidden md:inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-100/80 text-blue-700" id="current-badge">Desktop</span>
-      </div>
-
-      <!-- Controls: View Mode & Viewport Switcher -->
-      <div class="flex items-center gap-3">
-        
-        <!-- Live HTML vs Screenshot View -->
-        <div class="flex items-center bg-slate-200/70 p-0.5 rounded-lg" id="render-mode-toggle">
-          <button onclick="setRenderMode('live')" id="btn-mode-live" class="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1">
-            <span class="material-symbols-outlined text-[13px]">code</span>
-            <span>Live Screen</span>
-          </button>
-          <button onclick="setRenderMode('screenshot')" id="btn-mode-screenshot" class="px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1">
-            <span class="material-symbols-outlined text-[13px]">image</span>
-            <span>Screenshot</span>
-          </button>
-        </div>
-
-        <!-- Viewport Size -->
-        <div class="hidden sm:flex items-center bg-slate-200/70 p-0.5 rounded-lg" id="viewport-switcher">
-          <button onclick="setViewport('100%')" id="btn-vp-desktop" class="p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all" title="Full Width (100%)">
-            <span class="material-symbols-outlined text-[15px]">desktop_windows</span>
-          </button>
-          <button onclick="setViewport('768px')" id="btn-vp-tablet" class="p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all" title="Tablet View (768px)">
-            <span class="material-symbols-outlined text-[15px]">tablet</span>
-          </button>
-          <button onclick="setViewport('390px')" id="btn-vp-mobile" class="p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all" title="Mobile View (390px)">
-            <span class="material-symbols-outlined text-[15px]">smartphone</span>
-          </button>
-        </div>
-
       </div>
 
     </div>
@@ -435,11 +397,13 @@
 
       // Hide or show screenshot toggle if not available (e.g. docs)
       const renderToggle = document.getElementById('render-mode-toggle');
-      if (!screen.screenshot) {
-        renderToggle.style.display = 'none';
-        currentRenderMode = 'live';
-      } else {
-        renderToggle.style.display = 'flex';
+      if (renderToggle) {
+        if (!screen.screenshot) {
+          renderToggle.style.display = 'none';
+          currentRenderMode = 'live';
+        } else {
+          renderToggle.style.display = 'flex';
+        }
       }
 
       // Auto-set viewport for mobile screens
@@ -462,18 +426,22 @@
         ? screen.screenshot 
         : screen.html;
 
-      document.getElementById('main-frame').src = targetUrl;
-      document.getElementById('open-external-btn').href = targetUrl;
+      const mainFrame = document.getElementById('main-frame');
+      if (mainFrame) mainFrame.src = targetUrl;
+      const extBtn = document.getElementById('open-external-btn');
+      if (extBtn) extBtn.href = targetUrl;
 
       // Update live/screenshot button active styles
       const btnLive = document.getElementById('btn-mode-live');
       const btnScreen = document.getElementById('btn-mode-screenshot');
-      if (currentRenderMode === 'live') {
-        btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
-        btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
-      } else {
-        btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
-        btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
+      if (btnLive && btnScreen) {
+        if (currentRenderMode === 'live') {
+          btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
+          btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
+        } else {
+          btnScreen.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white text-primary-600 shadow-sm transition-all flex items-center gap-1';
+          btnLive.className = 'px-2 py-0.5 rounded-md text-[11px] font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1';
+        }
       }
     }
 
@@ -493,33 +461,39 @@
 
       // Reset button styles
       [btnDesktop, btnTablet, btnMobile].forEach(btn => {
-        btn.className = 'p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all';
+        if (btn) btn.className = 'p-1 rounded-md text-slate-500 hover:text-slate-900 transition-all';
       });
 
       if (width === '100%') {
-        btnDesktop.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
-        frame.style.width = '100%';
-        frame.style.maxWidth = '100%';
-        frame.style.height = '100%';
-        frame.style.borderRadius = '0px';
-        frame.style.boxShadow = 'none';
-        wrapper.classList.remove('p-4');
+        if (btnDesktop) btnDesktop.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        if (frame) {
+          frame.style.width = '100%';
+          frame.style.maxWidth = '100%';
+          frame.style.height = '100%';
+          frame.style.borderRadius = '0px';
+          frame.style.boxShadow = 'none';
+        }
+        if (wrapper) wrapper.classList.remove('p-4');
       } else if (width === '768px') {
-        btnTablet.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
-        frame.style.width = '768px';
-        frame.style.maxWidth = '768px';
-        frame.style.height = 'calc(100% - 32px)';
-        frame.style.borderRadius = '16px';
-        frame.style.boxShadow = '0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)';
-        wrapper.classList.add('p-4');
+        if (btnTablet) btnTablet.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        if (frame) {
+          frame.style.width = '768px';
+          frame.style.maxWidth = '768px';
+          frame.style.height = 'calc(100% - 32px)';
+          frame.style.borderRadius = '16px';
+          frame.style.boxShadow = '0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)';
+        }
+        if (wrapper) wrapper.classList.add('p-4');
       } else if (width === '390px') {
-        btnMobile.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
-        frame.style.width = '390px';
-        frame.style.maxWidth = '390px';
-        frame.style.height = 'calc(100% - 32px)';
-        frame.style.borderRadius = '32px';
-        frame.style.boxShadow = '0 20px 25px -5px rgba(0,0,0,0.15), 0 8px 10px -6px rgba(0,0,0,0.1)';
-        wrapper.classList.add('p-4');
+        if (btnMobile) btnMobile.className = 'p-1 rounded-md text-primary-600 bg-white shadow-sm transition-all';
+        if (frame) {
+          frame.style.width = '390px';
+          frame.style.maxWidth = '390px';
+          frame.style.height = 'calc(100% - 32px)';
+          frame.style.borderRadius = '32px';
+          frame.style.boxShadow = '0 20px 25px -5px rgba(0,0,0,0.15), 0 8px 10px -6px rgba(0,0,0,0.1)';
+        }
+        if (wrapper) wrapper.classList.add('p-4');
       }
     }
 

@@ -6,17 +6,20 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
 from app.database import init_all_tables
-from app.routers import dashboard, clinical_record, patient_intake
+from app.routers import dashboard, clinical_record, patient_intake, copilot
+from app.copilot.knowledge_base import get_knowledge_base
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize SQLite schema and seed clinical data
     init_all_tables()
+    # Initialize Copilot Knowledge Base from synthetic dataset
+    get_knowledge_base()
     yield
 
 app = FastAPI(
     title="MedLens Clinical Intelligence Platform API",
-    description="Backend service powering the MedLens Clinical Triage & Provider Dashboard (Module 7), Structured Clinical Records (Module 6, 12, 13, 14, 23), and Patient Intake & Nomination (Module 3).",
+    description="Backend service powering the MedLens Clinical Triage & Provider Dashboard (Module 7), Structured Clinical Records (Module 6, 12, 13, 14, 23), Patient Intake & Nomination (Module 3), and AI Copilot Intelligence Service.",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -34,6 +37,7 @@ app.add_middleware(
 app.include_router(dashboard.router)
 app.include_router(clinical_record.router)
 app.include_router(patient_intake.router)
+app.include_router(copilot.router)
 
 # Mount frontend directories for unified hosting if desired
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))

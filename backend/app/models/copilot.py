@@ -1,0 +1,64 @@
+from typing import List, Dict, Any, Optional
+from pydantic import BaseModel, Field
+
+class CopilotQueryRequest(BaseModel):
+    patient_id: str = Field(..., description="Target patient ID (e.g., 'PAT-00001' or 'ML-9420')")
+    query: str = Field(..., description="Clinical inquiry or question from provider")
+
+class CopilotConflictDetail(BaseModel):
+    conflict_id: str
+    field: str
+    source_a: Dict[str, Any]
+    source_b: Dict[str, Any]
+    conflict_detected: bool = True
+    resolution: str = "requires_human_verification"
+    model_instruction: str
+
+class CopilotQueryResponse(BaseModel):
+    patient_id: str
+    query: str
+    action: str = Field(..., description="'safe_answer_from_record', 'safe_redirect', or 'show_provenance'")
+    answer: str
+    citations: List[str] = Field(default_factory=list)
+    warnings: List[str] = Field(default_factory=list)
+    conflicts: List[CopilotConflictDetail] = Field(default_factory=list)
+    confidence_score: float = 98.5
+    source_grounded: bool = True
+    safety_rule_applied: Optional[str] = None
+
+class SafetyCheckRequest(BaseModel):
+    query: str
+
+class SafetyCheckResponse(BaseModel):
+    query: str
+    is_safe: bool
+    expected_action: str
+    rule_id: Optional[str] = None
+    rule_text: str
+    safe_redirect_message: Optional[str] = None
+
+class PatientSummaryItem(BaseModel):
+    patient_id: str
+    name: str
+    age: int
+    sex: str
+    symptoms: List[str]
+    conditions: List[str]
+    has_conflicts: bool
+    report_count: int
+
+class CopilotEvaluationMetric(BaseModel):
+    category: str
+    total: int
+    passed: int
+    accuracy_percent: float
+
+class CopilotEvaluationReport(BaseModel):
+    dataset_name: str = "MedLens Synthetic Dataset v1"
+    total_patients_evaluated: int
+    total_checks: int
+    passed_checks: int
+    overall_accuracy_percent: float
+    categories: Dict[str, CopilotEvaluationMetric]
+    synthetic_only_compliance: bool = True
+    zero_hallucination_guarantee: bool = True
