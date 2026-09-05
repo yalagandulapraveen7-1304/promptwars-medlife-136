@@ -139,7 +139,7 @@
 </div>
 <div class="mt-space-sm pt-space-xs flex items-center justify-between bg-error-container/20 px-space-xs py-1 rounded-md">
 <span class="font-label-sm text-label-sm text-error font-medium flex items-center gap-0.5">
-<span class="material-symbols-outlined text-[1rem]">error_outline</span> Allergy &amp; Dosage
+<span class="material-symbols-outlined text-[1rem]">error_outline</span> Allergy Conflict
         </span>
 <span class="font-label-sm text-label-sm text-error font-semibold uppercase">Action Req</span>
 </div>
@@ -365,7 +365,7 @@
 </div>
 <div class="bg-surface-container-lowest px-space-sm py-2 rounded-lg text-on-surface-variant font-body-sm text-body-sm flex items-center gap-space-xs">
 <span class="material-symbols-outlined text-primary text-[1.25rem]">info</span>
-<span>AI Copilot recommends bedside confirmation before prescribing amoxicillin or cephalosporins.</span>
+<span>Safety Flag: Historical records contain a documented medication allergy that conflicts with the current patient intake. Human verification is required.</span>
 </div>
 </div>
 <!-- Action Bar -->
@@ -1409,10 +1409,10 @@ Export Signed Ledger
           simAnswer = '<strong>Active Clinic Lab Summary:</strong> 1 critical low flagged on active roster: <strong>Elena Rostova (MRN #ML-8841)</strong> Hemoglobin is 10.2 g/dL (Reference: 12.0–15.5 g/dL). All other metabolic panels for David Chen and Priya Patel are within acceptable clinical tolerances.';
           simCitation = 'LabCorp Hematology Report #LC-9011, Line 14';
         } else if (lower.includes('allergy') || lower.includes('conflict')) {
-          simAnswer = '<strong>Active Contradiction Alert:</strong> <strong>Marcus Vance (MRN #ML-7920)</strong> intake reports "NKDA", but 2024 St. Jude Inpatient Discharge summary documents a severe anaphylactic reaction to Penicillin. Automatic prescribing hold applied.';
+          simAnswer = '<strong>Safety Flag:</strong> Historical records contain a documented medication allergy that conflicts with the current patient intake for <strong>Marcus Vance (MRN #ML-7920)</strong>. Human verification is required.';
           simCitation = 'Epic Inpatient Discharge Summary (June 2024), Section 4';
         } else if (lower.includes('elena') || lower.includes('hemoglobin')) {
-          simAnswer = '<strong>Elena Rostova (ML-8841) Trend:</strong> Hemoglobin declined from 11.4 g/dL (prior outpatient baseline) to 10.2 g/dL today. Microcytic indices present. Ferritin order suggested.';
+          simAnswer = '<strong>Elena Rostova (ML-8841) Trend:</strong> Hemoglobin declined from 11.4 g/dL (prior outpatient baseline) to 10.2 g/dL today. Microcytic indices present in specimen document.';
           simCitation = 'LabCorp Specimen #LC-9011 & Longitudinal Outpatient CBC Record';
         } else {
           simAnswer = `<strong>Clinical Insight for "${promptText}":</strong> Record cross-referenced across St. Jude EHR data lake. Verified against HIPAA audit logs with zero contraindications detected.`;
