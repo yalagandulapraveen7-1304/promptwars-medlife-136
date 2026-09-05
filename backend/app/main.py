@@ -1,6 +1,6 @@
 import os
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -68,6 +68,18 @@ if SCREENSHOTS_DIR:
 if DOCS_DIR:
     app.mount("/docs-files", StaticFiles(directory=DOCS_DIR), name="docs-files")
 
+@app.middleware("http")
+async def vercel_rewrite_middleware(request: Request, call_next):
+    path = request.scope.get("path", "")
+    if path.startswith("/api/index.py") or path.startswith("/api/index"):
+        matched = request.headers.get("x-matched-path")
+        if matched:
+            request.scope["path"] = matched
+        else:
+            sub = path.replace("/api/index.py", "").replace("/api/index", "")
+            request.scope["path"] = sub if sub else "/"
+    return await call_next(request)
+
 @app.get("/api/health")
 def health_check():
     return {"status": "HEALTHY", "service": "MedLens Dashboard Backend", "version": "1.0.0"}
@@ -75,9 +87,12 @@ def health_check():
 @app.get("/")
 @app.get("/index.html")
 @app.get("/app")
+@app.get("/api/index.py")
+@app.get("/api/index")
 def serve_app():
     target = _resolve_file("index.html")
     if target and os.path.exists(target):
         return FileResponse(target)
     return {"status": "HEALTHY", "service": "MedLens Clinical Intelligence Platform", "version": "1.0.0"}
+
 

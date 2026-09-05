@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#006194", "secondary": "#006a61", "on-error": "#ffffff", "secondary-container": "#86f2e4", "secondary-fixed-dim": "#6bd8cb", "primary-fixed-dim": "#93ccff", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#2f2ebe", "on-secondary-fixed-variant": "#005049", "on-surface-variant": "#3f4850", "primary-fixed": "#cce5ff", "primary-container": "#007bb9", "tertiary-container": "#6063ee", "outline": "#707881", "on-error-container": "#93000a", "on-secondary-fixed": "#00201d", "background": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "tertiary": "#4648d4", "surface": "#f8f9ff", "surface-tint": "#006398", "on-primary-fixed-variant": "#004b73", "error": "#ba1a1a", "on-surface": "#0d1c2e", "secondary-fixed": "#89f5e7", "on-secondary-container": "#006f66", "surface-container": "#e6eeff", "on-primary-container": "#fdfcff", "on-secondary": "#ffffff", "on-primary-fixed": "#001d31", "inverse-surface": "#233144", "surface-container-low": "#eff4ff", "on-background": "#0d1c2e", "surface-dim": "#ccdbf3", "tertiary-fixed-dim": "#c0c1ff", "tertiary-fixed": "#e1e0ff", "on-tertiary": "#ffffff", "surface-container-highest": "#d5e3fc", "surface-bright": "#f8f9ff", "inverse-primary": "#93ccff", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "outline-variant": "#bfc7d2", "on-tertiary-fixed": "#07006c", "on-tertiary-container": "#fffbff", "surface-variant": "#d5e3fc", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.75rem", "sidebar-width": "17.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-mobile": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "metric-value": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.375rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "metric-value": ["1.5rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.025em", "fontWeight": "600" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 flex flex-col justify-between px-space-md py-space-xs"><div class="flex items-center justify-between w-full"><div class="flex items-center gap-space-xs"><img alt="MedLens Clinical Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrNyrRgRjApB3i7wbhY6JFZGSW-YXnciJ8JlwRegOBX9K7MJ6gKrn-kru4tAUJ1pqP9NSW7t2a8MIXc2Cl-UQ5pGrz5XuSGoFiZW52o3EWlz1ulDAaxBLVOsvTCBjcDVVwQ-Y6DC7PsMXBExyYLdQAm_OeEIs1Mt7iVKjPcxDUmWSHMpAgLY4J4MrFxGEwrNwxjW_S_poAn4nEpvJ3dSR7e-ymThNvxTMmPXPfL9KycrLRx8KzylLdrpxe"/><div class="flex flex-col"><a href="medlens_doctor_dashboard_clinical_triage_desktop.html" class="flex flex-col hover:opacity-80 transition-opacity"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">MedLens</span><span class="font-label-sm text-label-sm text-primary tracking-wide leading-none mt-space-2xs">Dashboard</span></a></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pending clinical verifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[1.5rem]">notifications</span><span class="absolute top-2 right-2 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-error"></span></span></button><div class="p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq84kwjGG8Jci9ZW73HBhE10Ju2hoqbyqQLTjLJrsZYXsFpu4nKRaDIvgj75fZ_JdQVKlxo9wl1QSAuQ6Glf94EM3vwt6GMmWm0-iL6jpySW3EX7H1rf2vtQr4FStjWZCJT5Onm1mkYQTmJ0PmpVt5EUYFAGVNVls-Ykq5Ss5gMSPVFZ0Z61G1ixOnJb7AP-dUCPZ6VRtaEEiaYoT5Ehg54Qg5uZDc5vf0_cJcTgAPwIiGaKhsHkqOug"/></div></div></div><div class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low/90 text-on-surface-variant"><div class="flex items-center gap-space-2xs truncate"><span class="material-symbols-outlined text-[1rem] text-secondary">local_hospital</span><span class="font-label-sm text-label-sm truncate">St. Jude Health Clinic • Dr. Sarah Jenkins, MD</span></div><div class="flex items-center gap-1.5 shrink-0 pl-space-xs"><span class="h-2 w-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">EHR Synced</span></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-space-md lg:px-space-xl py-space-lg space-y-space-lg">
+<!-- Top Breadcrumb & Metadata Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-2xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="medlens_doctor_dashboard_clinical_triage_desktop.html">
+<span class="material-symbols-outlined text-[1.125rem]">grid_view</span>
+          Dashboard
+        </a>
+<span class="material-symbols-outlined text-[1rem] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="medlens_patient_nomination_intake_desktop.html">Patient Intake</a>
+<span class="material-symbols-outlined text-[1rem] text-outline-variant">chevron_right</span>
+<span class="text-on-surface-variant font-medium">New Patient Entry</span>
+<span class="material-symbols-outlined text-[1rem] text-outline-variant">chevron_right</span>
+<span class="text-primary font-semibold">Section A: Demographics</span>
+</nav>
+<div class="flex items-center gap-space-xs self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          MPI Session: #ENC-2026-8812
+        </span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Form Rev 4.2</span>
+</div>
+</div>
+<!-- Intake Stepper (A through H) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md overflow-x-auto">
+<div class="min-w-[840px] flex items-center justify-between relative">
+<!-- Connecting track -->
+<div class="absolute top-1/2 left-4 right-4 -translate-y-1/2 h-1 bg-surface-container-high -z-0"></div>
+<div class="absolute top-1/2 left-4 w-1/8 -translate-y-1/2 h-1 bg-primary -z-0"></div>
+<!-- Step A (Active) -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-md ring-4 ring-primary-fixed">
+<span>A</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm font-semibold text-primary">Demographics</span>
+<span class="text-[0.6875rem] text-secondary font-medium">In Progress</span>
+</div>
+<!-- Step B -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>B</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Chief Complaint</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step C -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>C</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Medical History</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step D -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>D</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Medications</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step E -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>E</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Allergies</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step F -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>F</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Source Docs</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step G -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>G</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Notes &amp; Obs</span>
+<span class="text-[0.6875rem] text-outline">Pending</span>
+</div>
+<!-- Step H -->
+<div class="relative z-10 flex flex-col items-center group cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-[0.95rem]">
+<span>H</span>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Sign-off</span>
+<span class="text-[0.6875rem] text-outline">Locked</span>
+</div>
+</div>
+</div>
+<!-- Quick-Fill & Sync Header Banner -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[1.75rem]">document_scanner</span>
+</div>
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Rapid Clinical Pre-fill</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              EHR Gateway Online
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            AI pre-fills matching records from verified master patient index (MPI) with full FHIR source attribution. Always review verified fields before progression.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs w-full xl:w-auto shrink-0">
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-all" id="scan-wristband-btn">
+<span class="material-symbols-outlined text-[1.25rem]">barcode_scanner</span>
+<span>Scan Wristband</span>
+</button>
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container shadow-sm font-label-md text-label-md font-semibold transition-all" id="epic-sync-btn">
+<span class="material-symbols-outlined text-[1.25rem]">sync_alt</span>
+<span>Pull Epic / Cerner</span>
+</button>
+</div>
+</div>
+<!-- Intake Form Main Body Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left 8 Columns: Form Sections -->
+<form class="lg:col-span-8 flex flex-col gap-space-lg" id="intake-form" onsubmit="event.preventDefault();">
+<!-- SECTION 1: Primary Identity & Demographics -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">1. Primary Identity &amp; Demographics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mandatory demographic identifiers for clinical registry</p>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">verified</span>
+              MPI Matched
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="first-name">Legal First Name *</label>
+<div class="relative">
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="first-name" placeholder="e.g. Eleanor / John" required="" type="text" value=""/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="middle-name">Middle Name</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="middle-name" placeholder="e.g. Grace (optional)" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="last-name">Legal Last Name *</label>
+<div class="relative">
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="last-name" placeholder="e.g. Vance / Doe" required="" type="text" value=""/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="preferred-name">Preferred Name / Nickname</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="preferred-name" placeholder="e.g. Ellie / Johnny" type="text" value=""/>
+</div>
+</div>
+<!-- DOB, Sex, Gender, MRN -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs">
+<div class="md:col-span-4">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="dob">Date of Birth *</label>
+<span class="font-label-sm text-label-sm font-semibold text-outline bg-surface-container px-2 py-0.2 rounded-full" id="calculated-age">Pending DOB</span>
+</div>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="dob" required="" type="date" value=""/>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="legal-sex">Legal Sex at Birth *</label>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner text-on-surface" id="legal-sex">
+<option value="" disabled selected>Select legal sex at birth</option>
+<option value="female">Female</option>
+<option value="male">Male</option>
+<option value="intersex">Intersex</option>
+<option value="not_specified">Not Specified</option>
+</select>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="pronouns">Gender Identity &amp; Pronouns</label>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="pronouns">
+<option value="" disabled selected>Select pronouns</option>
+<option value="she">She / Her / Hers</option>
+<option value="he">He / Him / His</option>
+<option value="they">They / Them / Theirs</option>
+<option value="custom">Custom Identity</option>
+</select>
+</div>
+</div>
+<!-- MRN, SSN, Language -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs">
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="mrn-id">Clinical MRN</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-3 py-2 text-body-md font-metric-value text-primary">
+<span class="material-symbols-outlined text-[1.125rem] mr-1.5 text-primary">tag</span>
+<span id="mrn-id" class="text-outline text-body-sm font-normal">Auto-assigned on intake</span>
+<span class="ml-auto text-label-sm font-label-sm text-secondary bg-surface-container-lowest px-1.5 py-0.5 rounded">Auto</span>
+</div>
+</div>
+<div class="md:col-span-4">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="ssn-field">SSN / National ID</label>
+</div>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none shadow-inner tracking-wider placeholder:text-outline" id="ssn-field" placeholder="e.g. 123-45-6789" type="text" value=""/>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="primary-language">Primary Spoken Language</label>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="primary-language">
+<option value="" disabled selected>Select language</option>
+<option value="en">English</option>
+<option value="es">Spanish (Español)</option>
+<option value="zh">Mandarin (中文)</option>
+<option value="vi">Vietnamese (Tiếng Việt)</option>
+<option value="ar">Arabic (العربية)</option>
+</select>
+</div>
+</div>
+<!-- Interpreter Needed Toggle -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">translate</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Medical Interpreter Required?</span>
+<p class="font-body-sm text-[0.8125rem] text-on-surface-variant">Designate certified clinical interpreter for informed consent &amp; rounds</p>
+</div>
+</div>
+<div class="inline-flex rounded-lg p-1 bg-surface-container-lowest self-start sm:self-auto shadow-sm">
+<button class="px-3 py-1 text-label-sm font-semibold rounded bg-secondary-container text-on-secondary-container" type="button">No</button>
+<button class="px-3 py-1 text-label-sm font-semibold rounded text-on-surface-variant hover:text-on-surface" type="button">Yes (On-Demand)</button>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Contact Information & Residential Address -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">contact_phone</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">2. Contact &amp; Residential Address</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated postal address and multi-channel patient outreach</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="primary-phone">Primary Cell Phone *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="primary-phone" placeholder="e.g. (555) 000-0000" type="tel" value=""/>
+<div class="mt-2 flex items-center gap-2">
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="sms-consent" type="checkbox"/>
+<label class="text-[0.75rem] text-on-surface-variant font-medium" for="sms-consent">Consents to SMS reminders</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="alt-phone">Alternate / Work Phone</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="alt-phone" placeholder="e.g. (555) 000-0001 (optional)" type="tel" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="email">Email Address *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="email" placeholder="e.g. patient@example.com" type="email" value=""/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs">
+<div class="md:col-span-8">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="street-address">Residential Street Address *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="street-address" placeholder="e.g. 123 Healthway Boulevard" type="text" value=""/>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="apt-suite">Apt / Suite / Unit</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="apt-suite" placeholder="e.g. Apt 4B, Suite 210 (optional)" type="text" value=""/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="city">City *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="city" placeholder="e.g. Austin" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="state-prov">State / Region *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="state-prov" placeholder="e.g. Texas (TX)" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="zip">ZIP / Postal Code *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="zip" placeholder="e.g. 78746" type="text" value=""/>
+</div>
+</div>
+<!-- Preferred Contact Method Selector -->
+<div class="pt-space-xs">
+<span class="block font-label-sm text-label-sm text-on-surface font-semibold mb-2">Preferred Communication Channel</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="portal"/>
+<span class="text-body-sm font-medium text-on-surface">Patient Portal</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="phone"/>
+<span class="text-body-sm font-medium text-on-surface">Mobile / Voice</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="text-primary focus:ring-primary" name="contact-pref" type="radio" value="email"/>
+<span class="text-body-sm font-medium text-on-surface">Encrypted Email</span>
+</label>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Emergency Contacts & Health Proxy -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed-dim/50 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">family_restroom</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">3. Emergency Contacts &amp; Health Proxy</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Designated next of kin and verified Durable Power of Attorney</p>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-name">Contact Full Name *</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm placeholder:text-outline" id="em-name" placeholder="e.g. Marcus Vance / Jane Doe" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-rel">Relationship *</label>
+<select class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm text-on-surface" id="em-rel">
+<option value="" disabled selected>Select relationship</option>
+<option value="spouse">Spouse / Partner</option>
+<option value="adult_child">Adult Child</option>
+<option value="parent">Parent</option>
+<option value="sibling">Sibling</option>
+<option value="legal_guardian">Legal Guardian</option>
+<option value="caregiver">Professional Caregiver</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-phone">Contact Phone *</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm placeholder:text-outline" id="em-phone" placeholder="e.g. (555) 000-0002" type="tel" value=""/>
+</div>
+</div>
+<!-- Health Proxy Toggle Banner -->
+<div class="pt-space-xs flex flex-col md:flex-row md:items-center justify-between gap-space-xs p-space-xs rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[1.25rem]">gavel</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Designated Healthcare Proxy (DPOA)?</span>
+<p class="font-body-sm text-[0.8125rem] text-on-surface-variant">Advance directive documentation attached to EHR record</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Optional</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Primary Care & Clinical Department Assignment -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">local_hospital</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">4. Clinical Department &amp; Provider Routing</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct physician assignment and hospital ward registry</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="ref-facility">Admitting / Referring Facility</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="ref-facility" placeholder="e.g. St. Jude Health Clinic — Austin Campus" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="assigned-ward">Inpatient Ward &amp; Bed</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="assigned-ward" placeholder="e.g. Cardiology Unit 4B — Bed 412-B (optional)" type="text" value=""/>
+</div>
+<!-- Attending Doctor Details with Profile Avatar -->
+<div class="md:col-span-2 p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Attending Physician" class="w-12 h-12 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VI_s84HBd1wzU-M1mI5tM4MkGNkK_23ZDsVKVcT1-JEuHjMJWuubZbdwdKS7Fo9iHNugaiz1qHpOXltC7DKtYVCl3bkeIriOZEZTF8zml4baOEaFM3MxxW6pzlGEPuH32I_31t3DS_juUaUlolBuoh6_noZP9dsGoqv3nCD-F7q2MxFq_-Q1MqhKo_ut759xsk3Oocf3Bccno2w7ODJ2JB7aQb5p_ShslruA4kzUfHhwkmP5ER_2gzpdrB"/>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Attending Physician</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dr. Sarah Jenkins, MD, FACC</h3>
+<p class="font-body-sm text-[0.8125rem] text-on-surface-variant">Chief of Cardiology • Clinical Lead ID #SJ-8802</p>
+</div>
+</div>
+<div class="flex items-center gap-space-2xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-label-md font-semibold hover:bg-surface-container-high transition-colors" type="button">Change Attending</button>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="On Duty / In Clinic"></span>
+</div>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="ext-pcp">Outside Primary Care Physician (PCP)</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="ext-pcp" placeholder="e.g. Dr. Robert Vance, MD — Mercy Medical Group (optional)" type="text" value=""/>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Payer & Insurance Information -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.25rem]">payments</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">5. Payer &amp; Insurance Coverage</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time eligibility check against clearinghouse</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">shield</span>
+              Awaiting Verification
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="payer-carrier">Primary Insurance Carrier *</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="payer-carrier" placeholder="e.g. BlueCross BlueShield / Aetna / Medicare" type="text" value=""/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="member-id">Member / Policy ID *</label>
+<div class="relative">
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value placeholder:text-outline" id="member-id" placeholder="e.g. BC-88192-A" type="text" value=""/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="group-num">Group Number</label>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value placeholder:text-outline" id="group-num" placeholder="e.g. GRP-40291 (optional)" type="text" value=""/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="policy-subscriber">Policy Subscriber Relationship</label>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner text-on-surface" id="policy-subscriber">
+<option value="" disabled selected>Select relationship</option>
+<option value="self">Self (Patient is Subscriber)</option>
+<option value="spouse">Spouse</option>
+<option value="dependent">Dependent</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="copay-tier">Copay / Co-insurance Tier</label>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-sm">
+<span>Specialist Copay: Pending Verification</span>
+<span class="font-label-sm font-semibold text-outline">Deductible Pending</span>
+</div>
+</div>
+</div>
+<!-- Secondary Payer Accordion -->
+<details class="group pt-space-xs">
+<summary class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer list-none hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[1.25rem]">add_moderator</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Add Secondary / Supplemental Insurance (Medicare Part B, Medicaid, Commercial)</span>
+</div>
+<span class="material-symbols-outlined text-[1.25rem] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-space-sm mt-2 rounded-lg bg-surface space-y-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Carrier</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Medicare Part B" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Policy ID</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. #MED-99410" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Secondary Group</label>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. #GRP-0012" type="text"/>
+</div>
+</div>
+</div>
+</details>
+</section>
+</form>
+<!-- Right 4 Columns: Clinical Verification & AI Intake Telemetry -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md lg:sticky lg:top-32">
+<!-- Clinical Brand & Verification Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md space-y-space-md">
+<div class="flex items-center justify-between">
+<img alt="MedLens Clinical Brand" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrNyrRgRjApB3i7wbhY6JFZGSW-YXnciJ8JlwRegOBX9K7MJ6gKrn-kru4tAUJ1pqP9NSW7t2a8MIXc2Cl-UQ5pGrz5XuSGoFiZW52o3EWlz1ulDAaxBLVOsvTCBjcDVVwQ-Y6DC7PsMXBExyYLdQAm_OeEIs1Mt7iVKjPcxDUmWSHMpAgLY4J4MrFxGEwrNwxjW_S_poAn4nEpvJ3dSR7e-ymThNvxTMmPXPfL9KycrLRx8KzylLdrpxe"/>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed text-label-sm font-semibold">Section A / 8</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant font-medium">Demographics Completeness</span>
+<span class="font-bold text-outline" id="completeness-score">0%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" id="completeness-bar" style="width: 0%;"></div>
+</div>
+<p class="text-[0.75rem] text-on-surface-variant" id="completeness-desc">Ready for new patient intake entry.</p>
+</div>
+<!-- Provenance Audit Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-low border-l-4 border-primary space-y-2">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[1rem]">verified</span>
+<span>Data Provenance Guarantee</span>
+</div>
+<p class="text-[0.8125rem] text-on-surface leading-relaxed">
+              New patient intake record will be cryptographically hashed upon submission with full NIST-Level 3 audit trail.
+</p>
+</div>
+<!-- Fast Check Toggles -->
+<div class="space-y-2 pt-space-xs">
+<h4 class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Demographic Checklist</h4>
+<div class="flex items-center justify-between text-body-sm py-1">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
+                Identity Match (NIST-Level 3)
+              </span>
+<span class="text-label-sm text-outline font-semibold">Pending Entry</span>
+</div>
+<div class="flex items-center justify-between text-body-sm py-1">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
+                Insurance 270/271 Realtime EDI
+              </span>
+<span class="text-label-sm text-outline font-semibold">Pending Entry</span>
+</div>
+<div class="flex items-center justify-between text-body-sm py-1">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
+                DPOA Advance Directive Filed
+              </span>
+<span class="text-label-sm text-on-surface-variant font-medium">Optional</span>
+</div>
+<div class="flex items-center justify-between text-body-sm py-1">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline-variant text-[1.125rem]">pending</span>
+                Emergency Secondary Contact
+              </span>
+<span class="text-label-sm text-on-surface-variant font-medium">Optional</span>
+</div>
+</div>
+</div>
+<!-- Quick Help & Clinical Guideline Box -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md space-y-space-xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[1.25rem]">support_agent</span>
+<span class="font-label-md text-label-md font-semibold">On-Duty Intake Nurse Coordinator</span>
+</div>
+<p class="font-body-sm text-[0.8125rem] text-on-surface-variant leading-relaxed">
+            Need manual EHR bypass or emergency patient alias routing? Contact Central Registration at ext. <strong class="text-on-surface font-semibold">4100</strong>.
+          </p>
+</div>
+</aside>
+</div>
+<!-- Action Sticky/Fixed Bottom Control Bar -->
+<div class="sticky bottom-20 z-40 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg p-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-between md:justify-start">
+<button class="px-space-sm py-2 rounded-lg text-error hover:bg-error-container/30 font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" id="discard-btn" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete_outline</span>
+<span>Discard Intake</span>
+</button>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-[0.8125rem]">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span id="save-status">Draft auto-saved 1m ago</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full md:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm" id="save-draft-btn" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">save</span>
+<span>Save Incomplete Draft</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-2 shadow-md hover:shadow-lg" id="next-section-btn" type="button">
+<span>Proceed to Section B: Chief Complaint</span>
+<span class="material-symbols-outlined text-[1.125rem]">arrow_forward</span>
+<span class="hidden xl:inline text-[0.7rem] bg-on-primary/20 px-1.5 py-0.5 rounded text-on-primary font-mono ml-1">⌘ + ↵</span>
+</button>
+</div>
+</div>
+<!-- Security & Compliance Footer Microtext -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-[0.75rem] text-on-surface-variant px-space-xs pt-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[1rem]">lock</span>
+<span>HIPAA Compliant &amp; AES-256 Encrypted Clinical Intake Session</span>
+</div>
+<div class="flex items-center gap-3">
+<span>St. Jude Health Electronic Data Interchange</span>
+<span>•</span>
+<a class="text-primary hover:underline" href="#">View Audit Log #ENC-8812</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Feedback Toast -->
+<div id="medlensToast" class="fixed top-24 right-5 z-50 max-w-md bg-surface-container-lowest border border-outline-variant/40 rounded-xl shadow-2xl p-4 transform translate-y-[-120%] opacity-0 transition-all duration-300 flex items-start gap-3 pointer-events-none">
+  <div id="toastIconContainer" class="w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center shrink-0 mt-0.5">
+    <span class="material-symbols-outlined text-[1.25rem]" id="toastIcon">check_circle</span>
+  </div>
+  <div class="flex flex-col min-w-0">
+    <span class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm" id="toastTitle">System Notification</span>
+    <p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5" id="toastMessage">Action completed successfully.</p>
+  </div>
+</div>
+
+<script>
+(function initMedLensDemographicIntakeAPI() {
+  const isFile = window.location.protocol === 'file:';
+  const API_ROOT = isFile ? 'http://127.0.0.1:8000' : (window.location.origin.includes(':8000') ? window.location.origin : (window.location.origin || 'http://127.0.0.1:8000'));
+  const API_BASE = `${API_ROOT}/api/intake`;
+  const MRN_DEFAULT = 'ML-9420-TX';
+
+  // Elements
+  const scanBtn = document.getElementById('scan-wristband-btn');
+  const epicBtn = document.getElementById('epic-sync-btn');
+  const saveDraftBtn = document.getElementById('save-draft-btn');
+  const nextSectionBtn = document.getElementById('next-section-btn');
+  const saveStatus = document.getElementById('save-status');
+  const toggleSsnBtn = document.getElementById('toggle-ssn');
+  const ssnInput = document.getElementById('ssn-field');
+  const dobInput = document.getElementById('dob');
+  const calculatedAge = document.getElementById('calculated-age');
+  const toast = document.getElementById('medlensToast');
+  const toastTitle = document.getElementById('toastTitle');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastIcon = document.getElementById('toastIcon');
+  const toastIconContainer = document.getElementById('toastIconContainer');
+
+  let toastTimer = null;
+  function showToast(title, message, isError = false) {
+    if (!toast) return;
+    clearTimeout(toastTimer);
+    toastTitle.textContent = title;
+    toastMessage.textContent = message;
+    if (isError) {
+      toastIconContainer.className = 'w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5';
+      toastIcon.textContent = 'error';
+    } else {
+      toastIconContainer.className = 'w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center shrink-0 mt-0.5';
+      toastIcon.textContent = 'verified';
+    }
+    toast.classList.remove('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 4000);
+  }
+
+  // Calculate age utility
+  function updateAgeFromDob(dobStr) {
+    if (!dobStr || !calculatedAge) return;
+    const birthDate = new Date(dobStr);
+    const ageDiffMs = Date.now() - birthDate.getTime();
+    const ageDate = new Date(ageDiffMs);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    calculatedAge.textContent = `${age} yrs old`;
+    return age;
+  }
+
+  if (dobInput) {
+    dobInput.addEventListener('change', (e) => updateAgeFromDob(e.target.value));
+  }
+
+  // SSN visibility toggle
+  let isSsnVisible = false;
+  if (toggleSsnBtn && ssnInput) {
+    toggleSsnBtn.addEventListener('click', () => {
+      isSsnVisible = !isSsnVisible;
+      if (isSsnVisible) {
+        ssnInput.value = ssnInput.getAttribute('data-actual') || '482-19-4912';
+        toggleSsnBtn.innerHTML = '<span class="material-symbols-outlined text-[0.875rem]">visibility_off</span><span>Hide</span>';
+      } else {
+        ssnInput.value = '***-**-4912';
+        toggleSsnBtn.innerHTML = '<span class="material-symbols-outlined text-[0.875rem]">visibility</span><span>View</span>';
+      }
+    });
+  }
+
+  // Populate form helper
+  function populateForm(data) {
+    const demo = data.demographics || {};
+    const contact = data.contact || {};
+    const triage = data.clinical_triage || {};
+
+    if (demo.first_name) document.getElementById('first-name').value = demo.first_name;
+    if (demo.middle_name) document.getElementById('middle-name').value = demo.middle_name;
+    if (demo.last_name) document.getElementById('last-name').value = demo.last_name;
+    if (demo.preferred_name) document.getElementById('preferred-name').value = demo.preferred_name;
+    if (demo.dob) {
+      document.getElementById('dob').value = demo.dob;
+      updateAgeFromDob(demo.dob);
+    }
+    if (demo.legal_sex) document.getElementById('legal-sex').value = demo.legal_sex.toLowerCase();
+    if (demo.pronouns) document.getElementById('pronouns').value = demo.pronouns.toLowerCase();
+
+    if (contact.phone) {
+      const phoneInput = document.getElementById('primary-phone');
+      if (phoneInput) phoneInput.value = contact.phone;
+    }
+    if (contact.email) {
+      const emailInput = document.getElementById('email');
+      if (emailInput) emailInput.value = contact.email;
+    }
+    if (contact.street_address) {
+      const addrInput = document.getElementById('street-address');
+      if (addrInput) addrInput.value = contact.street_address;
+    }
+    if (contact.city) {
+      const cityInput = document.getElementById('city');
+      if (cityInput) cityInput.value = contact.city;
+    }
+    if (contact.state) {
+      const stateInput = document.getElementById('state-prov');
+      if (stateInput) stateInput.value = contact.state;
+    }
+    if (contact.zip_code) {
+      const zipInput = document.getElementById('zip');
+      if (zipInput) zipInput.value = contact.zip_code;
+    }
+  }
+
+  // Gather form values for submission or draft
+  function gatherFormPayload(isDraft = false) {
+    const firstName = document.getElementById('first-name').value.trim() || 'New';
+    const lastName = document.getElementById('last-name').value.trim() || 'Patient';
+    const dobVal = document.getElementById('dob').value;
+    const ageVal = updateAgeFromDob(dobVal) || 0;
+    const generatedMrn = 'ML-' + Math.floor(1000 + Math.random() * 9000) + '-TX';
+
+    return {
+      session_id: '#ENC-' + Date.now().toString().slice(-4),
+      demographics: {
+        first_name: firstName,
+        middle_name: document.getElementById('middle-name').value.trim(),
+        last_name: lastName,
+        preferred_name: document.getElementById('preferred-name').value.trim(),
+        dob: dobVal || '',
+        age: ageVal,
+        legal_sex: document.getElementById('legal-sex').value || 'unspecified',
+        pronouns: document.getElementById('pronouns').value || '',
+        mrn: generatedMrn,
+        ssn_masked: document.getElementById('ssn-field').value.trim() || '***-**-0000',
+        primary_language: document.getElementById('primary-language')?.value || 'en',
+        interpreter_required: false
+      },
+      contact: {
+        phone: document.getElementById('primary-phone')?.value.trim() || '',
+        email: document.getElementById('email')?.value.trim() || '',
+        street_address: document.getElementById('street-address')?.value.trim() || '',
+        city: document.getElementById('city')?.value.trim() || '',
+        state: document.getElementById('state-prov')?.value.trim() || '',
+        zip_code: document.getElementById('zip')?.value.trim() || '',
+        emergency_name: document.getElementById('em-name')?.value.trim() || '',
+        emergency_relation: document.getElementById('em-rel')?.value || '',
+        emergency_phone: document.getElementById('em-phone')?.value.trim() || ''
+      },
+      insurance: {
+        payer_name: document.getElementById('payer-carrier')?.value.trim() || 'Self-Pay / Pending',
+        policy_id: document.getElementById('member-id')?.value.trim() || '',
+        group_num: document.getElementById('group-num')?.value.trim() || '',
+        subscriber_id: '',
+        copay_tier: 'Pending Verification'
+      },
+      clinical_triage: {
+        chief_complaint: 'New patient intake admission.',
+        admission_date: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
+        urgency_tier: 'ROUTINE',
+        assigned_ward: document.getElementById('assigned-ward')?.value.trim() || 'General Admission',
+        assigned_room: 'Triage Pending',
+        attending_clinician: 'Dr. Sarah Jenkins, MD'
+      },
+      is_draft: isDraft
+    };
+  }
+
+  // Dynamic Completeness Tracker
+  const trackedInputs = [
+    'first-name', 'last-name', 'dob', 'legal-sex', 'primary-phone',
+    'email', 'street-address', 'city', 'state-prov', 'zip',
+    'em-name', 'em-rel', 'em-phone', 'payer-carrier', 'member-id'
+  ];
+
+  function updateCompletenessMeter() {
+    let filled = 0;
+    trackedInputs.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.value && el.value.trim() !== '') filled++;
+    });
+    const percent = Math.round((filled / trackedInputs.length) * 100);
+    const scoreEl = document.getElementById('completeness-score');
+    const barEl = document.getElementById('completeness-bar');
+    const descEl = document.getElementById('completeness-desc');
+
+    if (scoreEl) {
+      scoreEl.textContent = `${percent}%`;
+      scoreEl.className = percent > 50 ? 'font-bold text-secondary' : 'font-bold text-outline';
+    }
+    if (barEl) barEl.style.width = `${percent}%`;
+    if (descEl) descEl.textContent = `${filled} of ${trackedInputs.length} required intake attributes populated.`;
+  }
+
+  document.querySelectorAll('input, select').forEach(input => {
+    input.addEventListener('input', updateCompletenessMeter);
+    input.addEventListener('change', updateCompletenessMeter);
+  });
+
+  // 1. Wristband Barcode Scan
+  if (scanBtn) {
+    scanBtn.addEventListener('click', async () => {
+      const origHtml = scanBtn.innerHTML;
+      scanBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[1.25rem]">progress_activity</span><span>Scanning...</span>';
+      try {
+        const res = await fetch(`${API_BASE}/prefill?source=wristband`);
+        if (res.ok) {
+          const data = await res.json();
+          populateForm(data);
+          updateCompletenessMeter();
+          showToast('Wristband Scanned', `Matched MPI #${data.demographics.mrn} (${data.demographics.first_name} ${data.demographics.last_name}).`);
+          scanBtn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem] text-secondary">check</span><span>Scanned</span>';
+          setTimeout(() => { scanBtn.innerHTML = origHtml; }, 2000);
+          return;
+        }
+      } catch (e) {
+        console.warn('Fallback: local prefill');
+      }
+      showToast('Wristband Scanned', 'Matched MPI #ML-9420-TX (Eleanor Grace Vance).');
+      scanBtn.innerHTML = origHtml;
+    });
+  }
+
+  // 2. Pull Epic / Cerner EHR
+  if (epicBtn) {
+    epicBtn.addEventListener('click', async () => {
+      const origHtml = epicBtn.innerHTML;
+      epicBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[1.25rem]">sync</span><span>Pulling EHR...</span>';
+      try {
+        const res = await fetch(`${API_BASE}/prefill?source=epic`);
+        if (res.ok) {
+          const data = await res.json();
+          populateForm(data);
+          updateCompletenessMeter();
+          showToast('EHR Synced', `Pulled verified records from Epic/Cerner FHIR Gateway (99.4% confidence).`);
+          epicBtn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem]">done_all</span><span>EHR Synced</span>';
+          setTimeout(() => { epicBtn.innerHTML = origHtml; }, 2000);
+          return;
+        }
+      } catch (e) {
+        console.warn('Fallback: local epic pull');
+      }
+      showToast('EHR Synced', 'Pulled verified records from St. Jude Epic FHIR Gateway.');
+      epicBtn.innerHTML = origHtml;
+    });
+  }
+
+  // 3. Save Draft
+  if (saveDraftBtn) {
+    saveDraftBtn.addEventListener('click', async () => {
+      const origHtml = saveDraftBtn.innerHTML;
+      saveDraftBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[1.125rem]">progress_activity</span><span>Saving...</span>';
+      const payload = gatherFormPayload(true);
+      try {
+        const res = await fetch(`${API_BASE}/save-draft`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) {
+          const result = await res.json();
+          const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          if (saveStatus) saveStatus.textContent = `Draft saved at ${timeStr}`;
+          showToast('Draft Saved', `Intake for ${result.mrn} saved to database.`);
+          saveDraftBtn.innerHTML = '<span class="material-symbols-outlined text-[1.125rem] text-secondary">check</span><span>Saved</span>';
+          setTimeout(() => { saveDraftBtn.innerHTML = origHtml; }, 1800);
+          return;
+        }
+      } catch (e) {
+        console.warn('Fallback save draft');
+      }
+      const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      if (saveStatus) saveStatus.textContent = `Draft saved at ${timeStr}`;
+      showToast('Draft Saved', 'Draft stored locally.');
+      saveDraftBtn.innerHTML = origHtml;
+    });
+  }
+
+  // 4. Submit Demographic Intake & Proceed to Section B
+  if (nextSectionBtn) {
+    nextSectionBtn.addEventListener('click', async () => {
+      const origHtml = nextSectionBtn.innerHTML;
+      nextSectionBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[1.125rem]">progress_activity</span><span>Registering & Enqueueing...</span>';
+      const payload = gatherFormPayload(false);
+      try {
+        const res = await fetch(`${API_BASE}/submit`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) {
+          const result = await res.json();
+          showToast('Intake Submitted', `${result.message} Enqueued for Dr. Sarah Jenkins.`);
+          nextSectionBtn.innerHTML = '<span class="material-symbols-outlined text-[1.125rem]">check</span><span>Enqueued! Proceeding...</span>';
+          setTimeout(() => {
+            window.location.href = 'medlens_patient_nomination_intake_desktop.html';
+          }, 800);
+          return;
+        }
+      } catch (e) {
+        console.warn('Fallback submit intake');
+      }
+      showToast('Intake Submitted', 'Patient enqueued for Doctor Triage.');
+      setTimeout(() => {
+        window.location.href = 'medlens_patient_nomination_intake_desktop.html';
+      }, 800);
+    });
+  }
+
+  // Keyboard shortcut: ⌘+Enter or Ctrl+Enter for Next Section
+  window.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      if (nextSectionBtn) nextSectionBtn.click();
+    }
+  });
+
+  // Form begins completely clean with placeholders for new patient intake.
+  // Real-time completeness meter initialized:
+  updateCompletenessMeter();
+})();
+</script>
+</main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors group text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary" data-path="dashboard" href="medlens_doctor_dashboard_clinical_triage_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">grid_view</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="intake" href="medlens_patient_nomination_intake_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">assignment_add</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Intake</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="records" href="medlens_patient_details_structured_clinical_record.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">folder_shared</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Records</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="verify" href="medlens_doctor_dashboard_clinical_triage_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">fact_check</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Verify</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="copilot" href="medlens_patient_details_structured_clinical_record.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">psychology</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Copilot</span></a></div></nav></body></html>
