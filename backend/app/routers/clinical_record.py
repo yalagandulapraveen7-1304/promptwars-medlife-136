@@ -1,4 +1,5 @@
 from typing import List, Optional
+from pydantic import BaseModel
 from fastapi import APIRouter, HTTPException, Query
 from app.models.clinical_record import (
     FullPatientRecord,
@@ -14,6 +15,7 @@ from app.models.clinical_record import (
 from app.database import (
     get_patient_full_record,
     verify_biomarker,
+    update_biomarker,
     resolve_patient_allergy,
     sign_off_clinical_record,
     get_evidence_layer_data,
@@ -21,6 +23,12 @@ from app.database import (
 )
 
 router = APIRouter(prefix="/api/records", tags=["Structured Clinical Record"])
+
+class UpdateBiomarkerRequest(BaseModel):
+    result_value: str
+    reference_interval: Optional[str] = None
+    status: Optional[str] = None
+    override_reason: Optional[str] = None
 
 @router.get("/patient/{patient_mrn}", response_model=FullPatientRecord)
 def get_patient_record(patient_mrn: str):
@@ -65,6 +73,35 @@ def verify_patient_biomarker(
         message=f"Biomarker {biomarker_code} successfully verified by {clinician}.",
         biomarker=updated_bm
     )
+
+@router.post("/update-biomarker/{patient_mrn}/{biomarker_code}")
+def update_patient_biomarker(
+    patient_mrn: str,
+    biomarker_code: str,
+    payload: UpdateBiomarkerRequest,
+    clinician: str = Query("Dr. Sarah Jenkins, MD", description="Attending physician updating extraction")
+):
+    """
+    Physician clinical edit and manual override of an extracted biomarker observation.
+    Updates value, reference interval, and clinical status flag with audit log entry.
+    """
+    updated_bm = update_biomarker(
+        patient_mrn=patient_mrn,
+        biomarker_code=biomarker_code,
+        result_value=payload.result_value,
+        reference_interval=payload.reference_interval,
+        status=payload.status,
+        clinician_name=clinician,
+        reason=payload.override_reason
+    )
+    if not updated_bm:
+        raise HTTPException(status_code=404, detail=f"Biomarker {biomarker_code} not found for patient {patient_mrn}")
+    
+    return {
+        "success": True,
+        "message": f"Biomarker {biomarker_code} updated to {payload.result_value} by {clinician}.",
+        "biomarker": updated_bm
+    }
 
 @router.post("/resolve-allergy-conflict/{patient_mrn}", response_model=ResolveAllergyConflictResponse)
 def resolve_allergy_discrepancy(

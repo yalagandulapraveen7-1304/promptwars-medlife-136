@@ -94,6 +94,39 @@ class KnowledgeBase:
             "data_status": "gold_clinical_benchmark"
         }
 
+        # Integrate Elena Rostova (ML-8841)
+        self.patients["ML-8841"] = {
+            "patient_id": "ML-8841",
+            "name": "Elena Rostova",
+            "age": 52,
+            "sex": "Female",
+            "symptoms": ["Fatigue", "Generalized weakness", "Mild pallor", "Exertional dyspnea"],
+            "existing_conditions": ["Iron-deficiency Microcytic Anemia", "Hypertension"],
+            "allergies": [],
+            "medications": [
+                {"name": "Ferrous Sulfate", "dosage": "325mg oral daily", "status": "active"},
+                {"name": "Amlodipine", "dosage": "5mg oral daily", "status": "active"}
+            ],
+            "data_status": "inpatient_triage_roster"
+        }
+
+        # Integrate Marcus Vance (ML-7920)
+        self.patients["ML-7920"] = {
+            "patient_id": "ML-7920",
+            "name": "Marcus Vance",
+            "age": 44,
+            "sex": "Male",
+            "symptoms": ["Post-operative observation", "Mild abdominal soreness"],
+            "existing_conditions": ["Post-appendectomy status", "Severe Penicillin Anaphylaxis"],
+            "allergies": [
+                {"allergen": "Penicillin", "status": "critical_conflict", "reaction": "Severe Anaphylactic Shock", "source": "Epic Inpatient Note 2024"}
+            ],
+            "medications": [
+                {"name": "Acetaminophen", "dosage": "650mg oral q6h prn", "status": "active"}
+            ],
+            "data_status": "inpatient_triage_roster"
+        }
+
         # 2. Reports
         reps = self._read_json("reports", "reports.json")
         for r in reps:
@@ -120,6 +153,18 @@ class KnowledgeBase:
         self.reports_by_patient.setdefault("ML-9420", []).append(arthur_rep)
         self.reports_by_id["LC-9941-A"] = arthur_rep
 
+        # Elena Rostova Report & Labs
+        elena_rep = {
+            "patient_id": "ML-8841",
+            "report_id": "LC-9011",
+            "report_date": "2026-10-14",
+            "report_type": "laboratory",
+            "raw_text": "LabCorp CBC Report #LC-9011\nHemoglobin: 10.2 g/dL (Ref: 12.0-15.5) [LOW]\nHematocrit: 31.8 % (Ref: 37.0-48.0) [LOW]\nPlatelets: 220 x10^3/uL (Ref: 150-450) [NORMAL]\nFerritin: 14 ng/mL (Ref: 24-336) [LOW]\nWBC: 6.8 x10^3/uL (Ref: 4.5-11.0) [NORMAL]",
+            "synthetic": False
+        }
+        self.reports_by_patient.setdefault("ML-8841", []).append(elena_rep)
+        self.reports_by_id["LC-9011"] = elena_rep
+
         # 3. Lab Results
         labs = self._read_json("reports", "lab_results.json")
         for lb in labs:
@@ -140,6 +185,16 @@ class KnowledgeBase:
         ]
         self.lab_results_by_patient["ML-9420"] = arthur_labs
         self.lab_results_by_report["LC-9941-A"] = arthur_labs
+
+        # Elena Rostova Lab Results
+        elena_labs = [
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hemoglobin", "value": 10.2, "unit": "g/dL", "reference_low": 12.0, "reference_high": 15.5, "status": "low"},
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Hematocrit", "value": 31.8, "unit": "%", "reference_low": 37.0, "reference_high": 48.0, "status": "low"},
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Platelet Count", "value": 220000.0, "unit": "/µL", "reference_low": 150000.0, "reference_high": 450000.0, "status": "normal"},
+            {"patient_id": "ML-8841", "report_id": "LC-9011", "report_date": "2026-10-14", "test_name": "Serum Ferritin", "value": 14.0, "unit": "ng/mL", "reference_low": 24.0, "reference_high": 336.0, "status": "low"}
+        ]
+        self.lab_results_by_patient["ML-8841"] = elena_labs
+        self.lab_results_by_report["LC-9011"] = elena_labs
 
         # 4. Prescriptions
         r_rx = self._read_json("reports", "prescriptions.json")

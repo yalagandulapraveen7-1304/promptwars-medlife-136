@@ -70,6 +70,10 @@
 <p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Nominate patients for AI-assisted multi-source ingestion, complex conflict reconciliation, or specialized clinical care cohorts.</p>
 </div>
 <div class="flex flex-wrap items-center gap-space-xs">
+<a href="medlens_patient_basic_details_demographic_intake_desktop.html" class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all flex items-center gap-1.5 shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[1.125rem]">person_add</span>
+              + Admit New Patient
+            </a>
 <button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[1rem]">save</span>
               Save Draft
@@ -92,42 +96,42 @@
 <section aria-label="Referral Progress" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm relative">
 <!-- Step 1 -->
-<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low">
-<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[1.125rem]">check</span>
-</div>
+<div id="stepper-step-1" onclick="goToStep(1)" class="flex items-center gap-space-xs p-2 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-sm cursor-pointer transition-all">
+<div id="stepper-circle-1" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
+              1
+            </div>
 <div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-secondary font-semibold">Step 1 • Completed</span>
-<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Candidate Demographics</span>
+<span id="stepper-status-1" class="font-label-sm text-label-sm text-primary font-bold">Step 1 • Active</span>
+<span class="font-body-sm text-body-sm text-on-primary-fixed font-bold truncate">Candidate Demographics</span>
 </div>
 </div>
 <!-- Step 2 -->
-<div class="flex items-center gap-space-xs p-2 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-sm">
-<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
+<div id="stepper-step-2" onclick="goToStep(2)" class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div id="stepper-circle-2" class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
               2
             </div>
 <div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-primary font-bold">Step 2 • Active</span>
-<span class="font-body-sm text-body-sm text-on-primary-fixed font-bold truncate">Clinical Pathway &amp; Priority</span>
+<span id="stepper-status-2" class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Step 2 • Pending</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Clinical Pathway &amp; Priority</span>
 </div>
 </div>
 <!-- Step 3 -->
-<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low">
-<div class="w-8 h-8 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
+<div id="stepper-step-3" onclick="goToStep(3)" class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div id="stepper-circle-3" class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0 font-bold font-label-md text-label-md">
               3
             </div>
 <div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-primary font-semibold">Step 3 • In Progress</span>
+<span id="stepper-status-3" class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Step 3 • Pending</span>
 <span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Source Records &amp; OCR</span>
 </div>
 </div>
 <!-- Step 4 -->
-<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low opacity-75">
-<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
+<div id="stepper-step-4" onclick="goToStep(4)" class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low opacity-75 hover:opacity-100 cursor-pointer transition-all">
+<div id="stepper-circle-4" class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
               4
             </div>
 <div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Step 4 • Pending</span>
+<span id="stepper-status-4" class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Step 4 • Pending</span>
 <span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Doctor Sign-off</span>
 </div>
 </div>
@@ -138,14 +142,19 @@
 <!-- LEFT COLUMN (Primary Forms & Uploads) -->
 <div class="xl:col-span-7 flex flex-col gap-space-lg min-w-0">
 <!-- Card 1: Candidate Demographics & Identity -->
-<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<section id="step-1-card" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md ring-2 ring-primary/20 transition-all">
 <div class="flex flex-wrap items-center justify-between gap-space-xs">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-[1.5rem]">person_pin</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Candidate Demographics &amp; Identity</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Step 1 Active</span>
 </div>
 <!-- External Ingestion Shortcuts -->
 <div class="flex flex-wrap items-center gap-1.5">
+<a href="medlens_patient_basic_details_demographic_intake_desktop.html" class="px-2.5 py-1 rounded bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm flex items-center gap-1 transition-colors font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[1rem]">person_add</span>
+                  + Admit New Patient
+                </a>
 <button class="px-2.5 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm flex items-center gap-1 transition-colors">
 <span class="material-symbols-outlined text-[1rem]">barcode_scanner</span>
                   Scan Barcode
@@ -168,6 +177,10 @@
 <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Arthur Pendleton</span>
 <span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">MRN #ML-9420</span>
 <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">58y Male</span>
+<a href="medlens_patient_basic_details_demographic_intake_desktop.html" class="ml-auto text-primary text-label-sm font-label-sm font-semibold hover:underline flex items-center gap-0.5">
+  <span class="material-symbols-outlined text-[0.875rem]">open_in_new</span>
+  Full Demographic Intake
+</a>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-space-md gap-y-1 mt-2 text-on-surface-variant font-label-sm text-label-sm">
 <div><strong class="text-on-surface">DOB:</strong> 12 Mar 1968</div>
@@ -203,12 +216,26 @@
 </select>
 </div>
 </div>
+<!-- Stepper Progression Button -->
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-high mt-1">
+  <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+    <span class="material-symbols-outlined text-[1rem] text-secondary">check_circle</span>
+    Arthur Pendleton identity &amp; cohort verified
+  </span>
+  <button type="button" onclick="goToStep(2)" class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all">
+    <span>Continue to Step 2: Pathway &amp; SLA</span>
+    <span class="material-symbols-outlined text-[1.125rem]">arrow_forward</span>
+  </button>
+</div>
 </section>
 <!-- Card 2: Clinical Pathway & Processing Urgency -->
-<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<section id="step-2-card" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md transition-all">
+<div class="flex items-center justify-between gap-2">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-[1.5rem]">conversion_path</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Clinical Pathway &amp; Processing Urgency</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Step 2</span>
+</div>
 </div>
 <!-- Pathway Selector Chips -->
 <div class="flex flex-col gap-2">
@@ -270,13 +297,25 @@
 </div>
 <textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-colors resize-none leading-relaxed" id="clinical-memo" rows="4">Severe exertional dyspnea (NYHA III) over past 3 weeks. Borderline Hb (10.1 g/dL), conflicting outpatient records regarding ACE inhibitor dosage vs ARB switch during last hospitalization. Requesting full MedLens multi-record reconciliation, allergy cross-check, and trial eligibility screen.</textarea>
 </div>
+<!-- Stepper Progression Buttons -->
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-high mt-1">
+  <button type="button" onclick="goToStep(1)" class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-all">
+    <span class="material-symbols-outlined text-[1.125rem]">arrow_back</span>
+    <span>Back to Step 1</span>
+  </button>
+  <button type="button" onclick="goToStep(3)" class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all">
+    <span>Continue to Step 3: Source Records</span>
+    <span class="material-symbols-outlined text-[1.125rem]">arrow_forward</span>
+  </button>
+</div>
 </section>
 <!-- Card 3: Source Health Records & Ingestion Queue -->
-<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<section id="step-3-card" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md transition-all">
 <div class="flex items-center justify-between">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-[1.5rem]">upload_file</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Source Health Records &amp; Ingestion Queue</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Step 3</span>
 </div>
 <span class="font-label-sm text-label-sm text-secondary font-semibold">3 Files Queued</span>
 </div>
@@ -356,6 +395,52 @@
 </div>
 </div>
 </div>
+<!-- Stepper Progression Buttons -->
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-high mt-2">
+  <button type="button" onclick="goToStep(2)" class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-all">
+    <span class="material-symbols-outlined text-[1.125rem]">arrow_back</span>
+    <span>Back to Step 2</span>
+  </button>
+  <button type="button" onclick="goToStep(4)" class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all">
+    <span>Proceed to Step 4: Doctor Sign-off</span>
+    <span class="material-symbols-outlined text-[1.125rem]">arrow_forward</span>
+  </button>
+</div>
+</section>
+
+<!-- Card 4: Doctor Review & Referral Sign-off (Step 4) -->
+<section id="step-4-card" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md transition-all">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-[1.5rem]">assignment_turned_in</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Doctor Review &amp; Intake Sign-off</h2>
+      <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Step 4</span>
+    </div>
+    <span class="font-label-sm text-label-sm text-secondary font-semibold">Attending: Dr. Sarah Jenkins, MD</span>
+  </div>
+  <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+    <div class="flex items-center justify-between">
+      <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Attending Physician Affirmation</span>
+      <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">MPI Ready</span>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      I confirm that patient Arthur Pendleton (#ML-9420) is nominated for AI intake triage. Clinical history, medications, and 3 attached source files have been pre-scanned.
+    </p>
+    <div class="flex items-center gap-2 pt-1">
+      <span class="material-symbols-outlined text-secondary text-[1.25rem]">verified</span>
+      <span class="font-label-sm text-label-sm text-secondary font-semibold">Dr. Sarah Jenkins, MD • License #MD-99412-CA</span>
+    </div>
+  </div>
+  <div class="flex items-center justify-between pt-2">
+    <button type="button" onclick="goToStep(3)" class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-all">
+      <span class="material-symbols-outlined text-[1.125rem]">arrow_back</span>
+      <span>Back to Step 3</span>
+    </button>
+    <button type="button" id="card4-approve-btn" onclick="document.getElementById('submit-nomination-top-btn').click()" class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 shadow-md transition-all">
+      <span class="material-symbols-outlined text-[1.25rem]">check_circle</span>
+      <span>Authorize &amp; Submit Intake</span>
+    </button>
+  </div>
 </section>
 </div>
 <!-- RIGHT COLUMN (MedLens AI Copilot & Pre-Scan Intelligence Rail) -->
@@ -523,6 +608,44 @@
       toast.classList.remove('translate-y-0', 'opacity-100');
     }, 4000);
   }
+
+  // Stepper step progression controller
+  window.goToStep = function(stepNum) {
+    for (let i = 1; i <= 4; i++) {
+      const stepEl = document.getElementById(`stepper-step-${i}`);
+      const circleEl = document.getElementById(`stepper-circle-${i}`);
+      const statusEl = document.getElementById(`stepper-status-${i}`);
+      const cardEl = document.getElementById(`step-${i}-card`);
+
+      if (!stepEl || !circleEl || !statusEl) continue;
+
+      if (i === stepNum) {
+        stepEl.className = 'flex items-center gap-space-xs p-2 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-sm cursor-pointer transition-all';
+        circleEl.className = 'w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold font-label-md text-label-md';
+        circleEl.textContent = i;
+        statusEl.className = 'font-label-sm text-label-sm text-primary font-bold';
+        statusEl.textContent = `Step ${i} • Active`;
+        if (cardEl) {
+          cardEl.classList.add('ring-2', 'ring-primary/25');
+          cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } else if (i < stepNum) {
+        stepEl.className = 'flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all';
+        circleEl.className = 'w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0';
+        circleEl.innerHTML = '<span class="material-symbols-outlined text-[1.125rem]">check</span>';
+        statusEl.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+        statusEl.textContent = `Step ${i} • Completed`;
+        if (cardEl) cardEl.classList.remove('ring-2', 'ring-primary/25');
+      } else {
+        stepEl.className = 'flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-low opacity-80 hover:opacity-100 cursor-pointer transition-all';
+        circleEl.className = 'w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0 font-bold font-label-md text-label-md';
+        circleEl.textContent = i;
+        statusEl.className = 'font-label-sm text-label-sm text-on-surface-variant font-semibold';
+        statusEl.textContent = `Step ${i} • Pending`;
+        if (cardEl) cardEl.classList.remove('ring-2', 'ring-primary/25');
+      }
+    }
+  };
 
   // Pathway chip toggling
   const pathwayBtns = document.querySelectorAll('.pathway-btn');

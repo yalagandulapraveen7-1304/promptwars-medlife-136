@@ -39,8 +39,9 @@
     .dropdown-menu {
       opacity: 0;
       visibility: hidden;
-      transform: translateY(6px);
-      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(4px);
+      transition: all 0.12s ease-out;
+      pointer-events: none;
     }
     .dropdown:hover .dropdown-menu,
     .dropdown:focus-within .dropdown-menu,
@@ -48,17 +49,28 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
+      pointer-events: auto;
     }
-    /* Custom scrollbar for doc preview */
-    ::-webkit-scrollbar {
+    /* Strictly eliminate any scrolling or scrollbars in the navbar */
+    header nav, header nav * {
+      scrollbar-width: none !important;
+      -ms-overflow-style: none !important;
+    }
+    header nav::-webkit-scrollbar, header nav *::-webkit-scrollbar {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+    /* Custom scrollbar for directory overview and doc preview only */
+    #directory-view::-webkit-scrollbar, main::-webkit-scrollbar {
       width: 6px;
       height: 6px;
     }
-    ::-webkit-scrollbar-thumb {
+    #directory-view::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
       background: #cbd5e1;
       border-radius: 3px;
     }
-    ::-webkit-scrollbar-thumb:hover {
+    #directory-view::-webkit-scrollbar-thumb:hover, main::-webkit-scrollbar-thumb:hover {
       background: #94a3b8;
     }
   </style>
@@ -66,149 +78,68 @@
 <body class="h-full bg-slate-100 text-slate-800 font-sans antialiased flex flex-col overflow-hidden">
 
   <!-- TOP PRIMARY NAVIGATION BAR -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm flex-none">
-    <div class="w-full px-4 sm:px-6 h-14 flex items-center justify-between gap-2">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs flex-none">
+    <div class="w-full px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-4">
 
-      <!-- Brand Logo -->
-      <div class="flex items-center gap-3 shrink-0">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-500 to-secondary-500 flex items-center justify-center text-white shadow-md shadow-primary-500/20">
-          <span class="material-symbols-outlined text-xl">vital_signs</span>
+      <!-- Brand Logo (Left) -->
+      <div class="flex items-center gap-2.5 shrink-0">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary-600 to-teal-600 flex items-center justify-center text-white shadow-sm">
+          <span class="material-symbols-outlined text-lg">vital_signs</span>
         </div>
         <a href="javascript:void(0)" onclick="loadScreen('dashboard-desktop')" class="flex items-center gap-2 group">
-          <span class="font-heading font-extrabold text-lg text-slate-900 tracking-tight group-hover:text-primary-500 transition-colors">MedLens</span>
-          <span class="hidden sm:inline-block text-[10px] font-bold tracking-wider uppercase bg-primary-50 text-primary-500 px-2 py-0.5 rounded-full border border-primary-100">Suite</span>
+          <span class="font-heading font-bold text-base text-slate-900 tracking-tight group-hover:text-primary-600 transition-colors">MedLens</span>
+          <span class="hidden sm:inline-block text-[10px] font-semibold uppercase tracking-wider bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">Suite</span>
         </a>
       </div>
 
-      <!-- Center Navigation Links & Dropdowns -->
-      <nav class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto py-1 text-xs">
+      <!-- Navigation Options: Clean, simplified 4-option bar spread over defined limit, strictly no scrolling -->
+      <nav class="flex-1 max-w-xl lg:max-w-2xl mx-auto flex items-center justify-between sm:justify-around text-xs sm:text-sm font-medium">
 
-        <!-- 1. Dashboards Dropdown -->
-        <div class="relative dropdown">
-          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-dashboards">
-            <span class="material-symbols-outlined text-[16px] text-primary-500">dashboard</span>
-            <span>Dashboards</span>
-            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
-          </button>
-          <div class="dropdown-menu absolute left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
-            <a href="javascript:void(0)" onclick="loadScreen('dashboard-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="dashboard-desktop">
-              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">desktop_windows</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Doctor Dashboard</div>
-                <div class="text-[11px] text-slate-500">Desktop Clinical Workstation</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" onclick="loadScreen('dashboard-mobile')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="dashboard-mobile">
-              <span class="material-symbols-outlined text-lg text-slate-500 mt-0.5">smartphone</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Doctor Dashboard</div>
-                <div class="text-[11px] text-slate-500">Mobile Bedside Triage</div>
-              </div>
-            </a>
-          </div>
-        </div>
+        <!-- 1. Doctor Dashboard (Direct Link) -->
+        <button onclick="loadScreen('dashboard-desktop')" class="nav-trigger nav-direct flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" id="nav-btn-dashboards" data-screen-id="dashboard-desktop">
+          <span class="material-symbols-outlined text-[17px] text-primary-600">dashboard</span>
+          <span>Dashboard</span>
+        </button>
 
-        <!-- 2. Patient Intake Dropdown -->
+        <!-- 2. Patient Intake (Desktop Stepper & Demographic) -->
         <div class="relative dropdown">
-          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-intake">
-            <span class="material-symbols-outlined text-[16px] text-secondary-500">assignment</span>
+          <button onclick="loadScreen('nomination-desktop')" class="nav-trigger flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" id="nav-btn-intake">
+            <span class="material-symbols-outlined text-[17px] text-secondary-500">assignment</span>
             <span>Intake</span>
             <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
           </button>
-          <div class="dropdown-menu absolute left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
-            <a href="javascript:void(0)" onclick="loadScreen('demographic-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="demographic-desktop">
-              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">badge</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Demographic Intake</div>
-                <div class="text-[11px] text-slate-500">Desktop Section A &amp; EDI Payer</div>
-              </div>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 top-full mt-1 w-48 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
+            <a href="javascript:void(0)" onclick="loadScreen('nomination-desktop')" class="nav-item flex items-center gap-2 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors rounded-lg mx-1" data-screen-id="nomination-desktop">
+              <span class="material-symbols-outlined text-base text-secondary-500">clinical_notes</span>
+              <span class="font-medium text-xs">Nomination Stepper</span>
             </a>
-            <a href="javascript:void(0)" onclick="loadScreen('nomination-desktop')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="nomination-desktop">
-              <span class="material-symbols-outlined text-lg text-primary-500 mt-0.5">clinical_notes</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Nomination Intake</div>
-                <div class="text-[11px] text-slate-500">Desktop Stepper &amp; OCR Zone</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" onclick="loadScreen('nomination-mobile')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="nomination-mobile">
-              <span class="material-symbols-outlined text-lg text-slate-500 mt-0.5">smartphone</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Nomination Intake</div>
-                <div class="text-[11px] text-slate-500">Mobile Bedside Triage Nurse</div>
-              </div>
+            <a href="javascript:void(0)" onclick="loadScreen('demographic-desktop')" class="nav-item flex items-center gap-2 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors rounded-lg mx-1" data-screen-id="demographic-desktop">
+              <span class="material-symbols-outlined text-base text-slate-400">badge</span>
+              <span class="font-medium text-xs">Demographic Intake</span>
             </a>
           </div>
         </div>
 
         <!-- 3. Clinical Record (Direct Link) -->
-        <button onclick="loadScreen('record')" class="nav-trigger nav-direct flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-record" data-screen-id="record">
-          <span class="material-symbols-outlined text-[16px] text-teal-600">health_and_safety</span>
+        <button onclick="loadScreen('record')" class="nav-trigger nav-direct flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" id="nav-btn-record" data-screen-id="record">
+          <span class="material-symbols-outlined text-[17px] text-teal-600">health_and_safety</span>
           <span>Clinical Record</span>
         </button>
 
-        <!-- 4. Brand & Assets Dropdown -->
-        <div class="relative dropdown">
-          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-brand">
-            <span class="material-symbols-outlined text-[16px] text-purple-600">palette</span>
-            <span>Brand</span>
-            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
-          </button>
-          <div class="dropdown-menu absolute left-0 top-full mt-1 w-56 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
-            <a href="javascript:void(0)" onclick="loadScreen('logo')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="logo">
-              <span class="material-symbols-outlined text-lg text-purple-500 mt-0.5">token</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Clinical Logo</div>
-                <div class="text-[11px] text-slate-500">SVG &amp; Brand Typography</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" onclick="loadScreen('headshot')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="headshot">
-              <span class="material-symbols-outlined text-lg text-amber-500 mt-0.5">account_circle</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Physician Headshot</div>
-                <div class="text-[11px] text-slate-500">Dr. Sarah Jenkins Avatar</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- 5. Documentation Dropdown -->
-        <div class="relative dropdown">
-          <button class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-700 hover:text-primary-500 hover:bg-slate-50 transition-colors" id="nav-btn-docs">
-            <span class="material-symbols-outlined text-[16px] text-slate-600">menu_book</span>
-            <span>Docs</span>
-            <span class="material-symbols-outlined text-[14px] text-slate-400">expand_more</span>
-          </button>
-          <div class="dropdown-menu absolute right-0 sm:left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50">
-            <a href="javascript:void(0)" onclick="loadScreen('prd')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="prd">
-              <span class="material-symbols-outlined text-lg text-blue-500 mt-0.5">description</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Product Requirements (PRD)</div>
-                <div class="text-[11px] text-slate-500">HIPAA, SOC 2, FHIR R4 specs</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" onclick="loadScreen('architecture')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="architecture">
-              <span class="material-symbols-outlined text-lg text-teal-500 mt-0.5">account_tree</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">System Architecture</div>
-                <div class="text-[11px] text-slate-500">8 core architectural modules</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" onclick="loadScreen('design')" class="nav-item flex items-start gap-2.5 px-3 py-2 text-slate-700 hover:bg-primary-50 hover:text-primary-500 transition-colors" data-screen-id="design">
-              <span class="material-symbols-outlined text-lg text-purple-500 mt-0.5">palette</span>
-              <div>
-                <div class="font-semibold text-xs text-slate-900">Design System Tokens</div>
-                <div class="text-[11px] text-slate-500">Theme tokens &amp; typography scale</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- 6. Simple Directory Overview -->
-        <button onclick="toggleDirectoryView()" class="nav-trigger flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-colors" id="nav-btn-directory">
-          <span class="material-symbols-outlined text-[16px]">list_alt</span>
-          <span class="hidden sm:inline">All Pages</span>
+        <!-- 4. Clinical Logo (Direct Link) -->
+        <button onclick="loadScreen('logo')" class="nav-trigger nav-direct flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" id="nav-btn-brand" data-screen-id="logo">
+          <span class="material-symbols-outlined text-[17px] text-purple-600">palette</span>
+          <span>Clinical Logo</span>
         </button>
       </nav>
+
+      <!-- Right Header Status (Right) -->
+      <div class="hidden lg:flex items-center gap-2 shrink-0">
+        <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200 text-[11px] text-slate-600 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Live EHR Synced</span>
+        </div>
+      </div>
 
     </div>
 
@@ -303,6 +234,14 @@
         screenshot: 'screenshots/medlens_patient_nomination_intake_desktop.png',
         defaultVp: '100%'
       },
+      'intake': {
+        title: 'Patient Nomination Intake (Step 1)',
+        category: 'Intake',
+        badge: 'Desktop',
+        html: 'screens/medlens_patient_nomination_intake_desktop.html',
+        screenshot: 'screenshots/medlens_patient_nomination_intake_desktop.png',
+        defaultVp: '100%'
+      },
       'nomination-mobile': {
         title: 'Patient Nomination Intake',
         category: 'Intake',
@@ -380,20 +319,33 @@
       document.getElementById('current-badge').textContent = screen.badge;
 
       // Update Navigation Active State
+      const topCategoryMap = {
+        'nav-btn-dashboards': ['dashboard-desktop'],
+        'nav-btn-intake': ['demographic-desktop', 'nomination-desktop', 'intake'],
+        'nav-btn-record': ['record'],
+        'nav-btn-brand': ['logo']
+      };
+
+      for (const [btnId, screenIds] of Object.entries(topCategoryMap)) {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          if (screenIds.includes(id)) {
+            btn.classList.add('bg-primary-50', 'text-primary-700', 'font-semibold');
+            btn.classList.remove('text-slate-600');
+          } else {
+            btn.classList.remove('bg-primary-50', 'text-primary-700', 'font-semibold');
+            btn.classList.add('text-slate-600');
+          }
+        }
+      }
+
       document.querySelectorAll('.nav-item').forEach(el => {
         if (el.getAttribute('data-screen-id') === id) {
-          el.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+          el.classList.add('bg-primary-50', 'text-primary-700', 'font-semibold');
         } else {
-          el.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+          el.classList.remove('bg-primary-50', 'text-primary-700', 'font-semibold');
         }
       });
-
-      const directBtn = document.getElementById('nav-btn-record');
-      if (id === 'record') {
-        directBtn.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
-      } else {
-        directBtn.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
-      }
 
       // Hide or show screenshot toggle if not available (e.g. docs)
       const renderToggle = document.getElementById('render-mode-toggle');
@@ -565,25 +517,42 @@
             if (currentScreenId !== key) {
               currentScreenId = key;
               const screen = SCREENS[key];
-              document.getElementById('current-category').textContent = screen.category;
-              document.getElementById('current-title').textContent = screen.title;
-              document.getElementById('current-badge').textContent = screen.badge;
-              document.getElementById('open-external-btn').href = screen.html;
+              const catEl = document.getElementById('current-category');
+              if (catEl) catEl.textContent = screen.category;
+              const titleEl = document.getElementById('current-title');
+              if (titleEl) titleEl.textContent = screen.title;
+              const badgeEl = document.getElementById('current-badge');
+              if (badgeEl) badgeEl.textContent = screen.badge;
+              const extBtn = document.getElementById('open-external-btn');
+              if (extBtn) extBtn.href = screen.html;
+
+              const topCategoryMap = {
+                'nav-btn-dashboards': ['dashboard-desktop'],
+                'nav-btn-intake': ['demographic-desktop', 'nomination-desktop', 'intake'],
+                'nav-btn-record': ['record'],
+                'nav-btn-brand': ['logo']
+              };
+
+              for (const [btnId, screenIds] of Object.entries(topCategoryMap)) {
+                const btn = document.getElementById(btnId);
+                if (btn) {
+                  if (screenIds.includes(key)) {
+                    btn.classList.add('bg-primary-50', 'text-primary-700', 'font-semibold');
+                    btn.classList.remove('text-slate-600');
+                  } else {
+                    btn.classList.remove('bg-primary-50', 'text-primary-700', 'font-semibold');
+                    btn.classList.add('text-slate-600');
+                  }
+                }
+              }
 
               document.querySelectorAll('.nav-item').forEach(el => {
                 if (el.getAttribute('data-screen-id') === key) {
-                  el.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
+                  el.classList.add('bg-primary-50', 'text-primary-700', 'font-semibold');
                 } else {
-                  el.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
+                  el.classList.remove('bg-primary-50', 'text-primary-700', 'font-semibold');
                 }
               });
-
-              const directBtn = document.getElementById('nav-btn-record');
-              if (key === 'record') {
-                directBtn.classList.add('bg-primary-50', 'text-primary-600', 'font-semibold');
-              } else {
-                directBtn.classList.remove('bg-primary-50', 'text-primary-600', 'font-semibold');
-              }
 
               window.location.hash = key;
             }

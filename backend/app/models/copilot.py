@@ -2,7 +2,7 @@ from typing import List, Dict, Any, Optional
 from pydantic import BaseModel, Field
 
 class CopilotQueryRequest(BaseModel):
-    patient_id: str = Field(..., description="Target patient ID (e.g., 'PAT-00001' or 'ML-9420')")
+    patient_id: Optional[str] = Field(default=None, description="Target patient ID (e.g., 'PAT-00001' or 'ML-8841')")
     query: str = Field(..., description="Clinical inquiry or question from provider")
 
 class CopilotConflictDetail(BaseModel):
@@ -15,9 +15,9 @@ class CopilotConflictDetail(BaseModel):
     model_instruction: str
 
 class CopilotQueryResponse(BaseModel):
-    patient_id: str
+    patient_id: Optional[str] = Field(default=None, description="Patient ID associated with query")
     query: str
-    action: str = Field(..., description="'safe_answer_from_record', 'safe_redirect', or 'show_provenance'")
+    action: str = Field(..., description="'safe_answer_from_record', 'safe_redirect', 'out_of_domain', or 'show_provenance'")
     answer: str
     citations: List[str] = Field(default_factory=list)
     warnings: List[str] = Field(default_factory=list)

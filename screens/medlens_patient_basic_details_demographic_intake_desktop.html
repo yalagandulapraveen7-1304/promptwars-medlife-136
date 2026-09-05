@@ -153,24 +153,22 @@
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="first-name">Legal First Name *</label>
 <div class="relative">
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="first-name" required="" type="text" value="Eleanor"/>
-<span class="material-symbols-outlined text-secondary absolute right-2.5 top-2.5 text-[1.125rem]">check_circle</span>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="first-name" placeholder="e.g. Eleanor / John" required="" type="text" value=""/>
 </div>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="middle-name">Middle Name</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="middle-name" type="text" value="Grace"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="middle-name" placeholder="e.g. Grace (optional)" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="last-name">Legal Last Name *</label>
 <div class="relative">
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="last-name" required="" type="text" value="Vance"/>
-<span class="material-symbols-outlined text-secondary absolute right-2.5 top-2.5 text-[1.125rem]">check_circle</span>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="last-name" placeholder="e.g. Vance / Doe" required="" type="text" value=""/>
 </div>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="preferred-name">Preferred Name / Nickname</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="preferred-name" type="text" value="Ellie"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="preferred-name" placeholder="e.g. Ellie / Johnny" type="text" value=""/>
 </div>
 </div>
 <!-- DOB, Sex, Gender, MRN -->
@@ -178,14 +176,15 @@
 <div class="md:col-span-4">
 <div class="flex items-center justify-between mb-1">
 <label class="font-label-sm text-label-sm text-on-surface font-semibold" for="dob">Date of Birth *</label>
-<span class="font-label-sm text-label-sm font-semibold text-primary bg-primary-fixed px-2 py-0.2 rounded-full" id="calculated-age">58 yrs old</span>
+<span class="font-label-sm text-label-sm font-semibold text-outline bg-surface-container px-2 py-0.2 rounded-full" id="calculated-age">Pending DOB</span>
 </div>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="dob" required="" type="date" value="1968-04-18"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="dob" required="" type="date" value=""/>
 </div>
 <div class="md:col-span-4">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="legal-sex">Legal Sex at Birth *</label>
-<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="legal-sex">
-<option selected="" value="female">Female</option>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner text-on-surface" id="legal-sex">
+<option value="" disabled selected>Select legal sex at birth</option>
+<option value="female">Female</option>
 <option value="male">Male</option>
 <option value="intersex">Intersex</option>
 <option value="not_specified">Not Specified</option>
@@ -194,7 +193,8 @@
 <div class="md:col-span-4">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="pronouns">Gender Identity &amp; Pronouns</label>
 <select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="pronouns">
-<option selected="" value="she">She / Her / Hers</option>
+<option value="" disabled selected>Select pronouns</option>
+<option value="she">She / Her / Hers</option>
 <option value="he">He / Him / His</option>
 <option value="they">They / Them / Theirs</option>
 <option value="custom">Custom Identity</option>
@@ -207,24 +207,21 @@
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="mrn-id">Clinical MRN</label>
 <div class="flex items-center bg-surface-container-low rounded-lg px-3 py-2 text-body-md font-metric-value text-primary">
 <span class="material-symbols-outlined text-[1.125rem] mr-1.5 text-primary">tag</span>
-<span id="mrn-id">ML-9420-TX</span>
-<span class="ml-auto text-label-sm font-label-sm text-secondary bg-surface-container-lowest px-1.5 py-0.5 rounded">Auto-Assigned</span>
+<span id="mrn-id" class="text-outline text-body-sm font-normal">Auto-assigned on intake</span>
+<span class="ml-auto text-label-sm font-label-sm text-secondary bg-surface-container-lowest px-1.5 py-0.5 rounded">Auto</span>
 </div>
 </div>
 <div class="md:col-span-4">
 <div class="flex items-center justify-between mb-1">
 <label class="font-label-sm text-label-sm text-on-surface font-semibold" for="ssn-field">SSN / National ID</label>
-<button class="text-label-sm text-primary hover:underline flex items-center gap-0.5" id="toggle-ssn" type="button">
-<span class="material-symbols-outlined text-[0.875rem]">visibility</span>
-<span>View</span>
-</button>
 </div>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none shadow-inner tracking-wider" data-actual="482-19-4912" id="ssn-field" readonly="" type="text" value="***-**-4912"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none shadow-inner tracking-wider placeholder:text-outline" id="ssn-field" placeholder="e.g. 123-45-6789" type="text" value=""/>
 </div>
 <div class="md:col-span-4">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="primary-language">Primary Spoken Language</label>
 <select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="primary-language">
-<option selected="" value="en">English</option>
+<option value="" disabled selected>Select language</option>
+<option value="en">English</option>
 <option value="es">Spanish (Español)</option>
 <option value="zh">Mandarin (中文)</option>
 <option value="vi">Vietnamese (Tiếng Việt)</option>
@@ -261,46 +258,43 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="primary-phone">Primary Cell Phone *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="primary-phone" type="tel" value="(512) 892-3401"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="primary-phone" placeholder="e.g. (555) 000-0000" type="tel" value=""/>
 <div class="mt-2 flex items-center gap-2">
-<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="sms-consent" type="checkbox"/>
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="sms-consent" type="checkbox"/>
 <label class="text-[0.75rem] text-on-surface-variant font-medium" for="sms-consent">Consents to SMS reminders</label>
 </div>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="alt-phone">Alternate / Work Phone</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="alt-phone" type="tel" value="(512) 450-8119"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="alt-phone" placeholder="e.g. (555) 000-0001 (optional)" type="tel" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="email">Email Address *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="email" type="email" value="eleanor.vance@austinhealthnet.org"/>
-<span class="text-[0.75rem] text-secondary font-medium mt-1 inline-flex items-center gap-1">
-<span class="material-symbols-outlined text-[0.875rem]">mark_email_read</span> Verified Active
-              </span>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="email" placeholder="e.g. patient@example.com" type="email" value=""/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs">
 <div class="md:col-span-8">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="street-address">Residential Street Address *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="street-address" type="text" value="4428 Westlake Highlands Terrace"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="street-address" placeholder="e.g. 123 Healthway Boulevard" type="text" value=""/>
 </div>
 <div class="md:col-span-4">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="apt-suite">Apt / Suite / Unit</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="apt-suite" type="text" value="Building C, Suite 210"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="apt-suite" placeholder="e.g. Apt 4B, Suite 210 (optional)" type="text" value=""/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="city">City *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="city" type="text" value="Austin"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="city" placeholder="e.g. Austin" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="state-prov">State / Region *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="state-prov" type="text" value="Texas (TX)"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="state-prov" placeholder="e.g. Texas (TX)" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="zip">ZIP / Postal Code *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="zip" type="text" value="78746"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="zip" placeholder="e.g. 78746" type="text" value=""/>
 </div>
 </div>
 <!-- Preferred Contact Method Selector -->
@@ -337,12 +331,13 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-name">Contact Full Name *</label>
-<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="em-name" type="text" value="Marcus Vance"/>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm placeholder:text-outline" id="em-name" placeholder="e.g. Marcus Vance / Jane Doe" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-rel">Relationship *</label>
-<select class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="em-rel">
-<option selected="" value="spouse">Spouse / Partner</option>
+<select class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm text-on-surface" id="em-rel">
+<option value="" disabled selected>Select relationship</option>
+<option value="spouse">Spouse / Partner</option>
 <option value="adult_child">Adult Child</option>
 <option value="parent">Parent</option>
 <option value="sibling">Sibling</option>
@@ -352,7 +347,7 @@
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="em-phone">Contact Phone *</label>
-<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="em-phone" type="tel" value="(512) 892-3402"/>
+<input class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm placeholder:text-outline" id="em-phone" placeholder="e.g. (555) 000-0002" type="tel" value=""/>
 </div>
 </div>
 <!-- Health Proxy Toggle Banner -->
@@ -365,10 +360,7 @@
 </div>
 </div>
 <div class="flex items-center gap-space-xs">
-<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
-<span class="material-symbols-outlined text-[0.875rem]">attach_file</span> DPOA-Form-2025.pdf
-                </span>
-<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">Yes</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Optional</span>
 </div>
 </div>
 </div>
@@ -387,11 +379,11 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="ref-facility">Admitting / Referring Facility</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="ref-facility" type="text" value="St. Jude Health Clinic — Austin Campus"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="ref-facility" placeholder="e.g. St. Jude Health Clinic — Austin Campus" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="assigned-ward">Inpatient Ward &amp; Bed</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="assigned-ward" type="text" value="Cardiology &amp; Acute Vascular — Bed 412-B"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="assigned-ward" placeholder="e.g. Cardiology Unit 4B — Bed 412-B (optional)" type="text" value=""/>
 </div>
 <!-- Attending Doctor Details with Profile Avatar -->
 <div class="md:col-span-2 p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
@@ -410,7 +402,7 @@
 </div>
 <div class="md:col-span-2">
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="ext-pcp">Outside Primary Care Physician (PCP)</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="ext-pcp" type="text" value="Dr. Robert Vance, MD — Mercy Medical Group (NPI: #1982049182)"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="ext-pcp" placeholder="e.g. Dr. Robert Vance, MD — Mercy Medical Group (optional)" type="text" value=""/>
 </div>
 </div>
 </section>
@@ -426,33 +418,33 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant">Real-time eligibility check against clearinghouse</p>
 </div>
 </div>
-<span class="px-2 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
-<span class="material-symbols-outlined text-[0.875rem]">verified_user</span>
-              Active Coverage
+<span class="px-2 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">shield</span>
+              Awaiting Verification
             </span>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="payer-carrier">Primary Insurance Carrier *</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="payer-carrier" type="text" value="BlueCross BlueShield Premier PPO"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner placeholder:text-outline" id="payer-carrier" placeholder="e.g. BlueCross BlueShield / Aetna / Medicare" type="text" value=""/>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="member-id">Member / Policy ID *</label>
 <div class="relative">
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value" id="member-id" type="text" value="BC-88192-A"/>
-<span class="material-symbols-outlined text-secondary absolute right-2.5 top-2.5 text-[1.125rem]">check_circle</span>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value placeholder:text-outline" id="member-id" placeholder="e.g. BC-88192-A" type="text" value=""/>
 </div>
 </div>
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="group-num">Group Number</label>
-<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value" id="group-num" type="text" value="GRP-40291"/>
+<input class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner font-metric-value placeholder:text-outline" id="group-num" placeholder="e.g. GRP-40291 (optional)" type="text" value=""/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="policy-subscriber">Policy Subscriber Relationship</label>
-<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="policy-subscriber">
-<option selected="" value="self">Self (Patient is Subscriber)</option>
+<select class="w-full bg-surface rounded-lg px-3 py-2 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner text-on-surface" id="policy-subscriber">
+<option value="" disabled selected>Select relationship</option>
+<option value="self">Self (Patient is Subscriber)</option>
 <option value="spouse">Spouse</option>
 <option value="dependent">Dependent</option>
 </select>
@@ -460,8 +452,8 @@
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="copay-tier">Copay / Co-insurance Tier</label>
 <div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-sm">
-<span>Specialist Copay: $35.00</span>
-<span class="font-label-sm font-semibold text-secondary">Deductible Met ($3,200 / $3,200)</span>
+<span>Specialist Copay: Pending Verification</span>
+<span class="font-label-sm font-semibold text-outline">Deductible Pending</span>
 </div>
 </div>
 </div>
@@ -504,13 +496,13 @@
 <div class="space-y-2">
 <div class="flex justify-between items-center text-body-sm">
 <span class="text-on-surface-variant font-medium">Demographics Completeness</span>
-<span class="font-bold text-secondary">94%</span>
+<span class="font-bold text-outline" id="completeness-score">0%</span>
 </div>
 <!-- Progress Bar -->
 <div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
-<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 94%;"></div>
+<div class="bg-secondary h-full rounded-full transition-all duration-500" id="completeness-bar" style="width: 0%;"></div>
 </div>
-<p class="text-[0.75rem] text-on-surface-variant">15 of 16 required demographic attributes populated.</p>
+<p class="text-[0.75rem] text-on-surface-variant" id="completeness-desc">Ready for new patient intake entry.</p>
 </div>
 <!-- Provenance Audit Box -->
 <div class="p-space-sm rounded-lg bg-surface-container-low border-l-4 border-primary space-y-2">
@@ -519,7 +511,7 @@
 <span>Data Provenance Guarantee</span>
 </div>
 <p class="text-[0.8125rem] text-on-surface leading-relaxed">
-              Records synchronized via <strong class="text-on-surface">Austin Regional Health Exchange (HIE)</strong> on 12-Oct-2026 09:14 AM CST. Audit Hash: <code class="font-mono text-[0.7rem] bg-surface-container-lowest px-1 rounded">sha256:7f4c9...</code>
+              New patient intake record will be cryptographically hashed upon submission with full NIST-Level 3 audit trail.
 </p>
 </div>
 <!-- Fast Check Toggles -->
@@ -527,24 +519,24 @@
 <h4 class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Demographic Checklist</h4>
 <div class="flex items-center justify-between text-body-sm py-1">
 <span class="flex items-center gap-2 text-on-surface">
-<span class="material-symbols-outlined text-secondary text-[1.125rem]">check_circle</span>
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
                 Identity Match (NIST-Level 3)
               </span>
-<span class="text-label-sm text-secondary font-semibold">Passed</span>
+<span class="text-label-sm text-outline font-semibold">Pending Entry</span>
 </div>
 <div class="flex items-center justify-between text-body-sm py-1">
 <span class="flex items-center gap-2 text-on-surface">
-<span class="material-symbols-outlined text-secondary text-[1.125rem]">check_circle</span>
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
                 Insurance 270/271 Realtime EDI
               </span>
-<span class="text-label-sm text-secondary font-semibold">Active</span>
+<span class="text-label-sm text-outline font-semibold">Pending Entry</span>
 </div>
 <div class="flex items-center justify-between text-body-sm py-1">
 <span class="flex items-center gap-2 text-on-surface">
-<span class="material-symbols-outlined text-secondary text-[1.125rem]">check_circle</span>
+<span class="material-symbols-outlined text-outline text-[1.125rem]">pending</span>
                 DPOA Advance Directive Filed
               </span>
-<span class="text-label-sm text-secondary font-semibold">Verified</span>
+<span class="text-label-sm text-on-surface-variant font-medium">Optional</span>
 </div>
 <div class="flex items-center justify-between text-body-sm py-1">
 <span class="flex items-center gap-2 text-on-surface">
@@ -732,56 +724,90 @@
     }
   }
 
-  // Gather form values
+  // Gather form values for submission or draft
   function gatherFormPayload(isDraft = false) {
+    const firstName = document.getElementById('first-name').value.trim() || 'New';
+    const lastName = document.getElementById('last-name').value.trim() || 'Patient';
     const dobVal = document.getElementById('dob').value;
-    const ageVal = updateAgeFromDob(dobVal) || 58;
+    const ageVal = updateAgeFromDob(dobVal) || 0;
+    const generatedMrn = 'ML-' + Math.floor(1000 + Math.random() * 9000) + '-TX';
 
     return {
-      session_id: '#ENC-2026-8812',
+      session_id: '#ENC-' + Date.now().toString().slice(-4),
       demographics: {
-        first_name: document.getElementById('first-name').value.trim() || 'Eleanor',
-        middle_name: document.getElementById('middle-name').value.trim() || 'Grace',
-        last_name: document.getElementById('last-name').value.trim() || 'Vance',
-        preferred_name: document.getElementById('preferred-name').value.trim() || 'Ellie',
-        dob: dobVal || '1968-04-18',
+        first_name: firstName,
+        middle_name: document.getElementById('middle-name').value.trim(),
+        last_name: lastName,
+        preferred_name: document.getElementById('preferred-name').value.trim(),
+        dob: dobVal || '',
         age: ageVal,
-        legal_sex: document.getElementById('legal-sex').value || 'female',
-        pronouns: document.getElementById('pronouns').value || 'she',
-        mrn: MRN_DEFAULT,
-        ssn_masked: '***-**-4912',
+        legal_sex: document.getElementById('legal-sex').value || 'unspecified',
+        pronouns: document.getElementById('pronouns').value || '',
+        mrn: generatedMrn,
+        ssn_masked: document.getElementById('ssn-field').value.trim() || '***-**-0000',
         primary_language: document.getElementById('primary-language')?.value || 'en',
         interpreter_required: false
       },
       contact: {
-        phone: document.getElementById('primary-phone')?.value || '+1 (555) 234-8910',
-        email: document.getElementById('email')?.value || 'eleanor.vance@austinhealthnet.org',
-        street_address: document.getElementById('street-address')?.value || '4428 Westlake Highlands Terrace',
-        city: document.getElementById('city')?.value || 'Austin',
-        state: document.getElementById('state-prov')?.value || 'TX',
-        zip_code: document.getElementById('zip')?.value || '78746',
-        emergency_name: document.getElementById('em-name')?.value || 'Marcus Vance',
-        emergency_relation: document.getElementById('em-rel')?.value || 'Spouse',
-        emergency_phone: '+1 (555) 450-8119'
+        phone: document.getElementById('primary-phone')?.value.trim() || '',
+        email: document.getElementById('email')?.value.trim() || '',
+        street_address: document.getElementById('street-address')?.value.trim() || '',
+        city: document.getElementById('city')?.value.trim() || '',
+        state: document.getElementById('state-prov')?.value.trim() || '',
+        zip_code: document.getElementById('zip')?.value.trim() || '',
+        emergency_name: document.getElementById('em-name')?.value.trim() || '',
+        emergency_relation: document.getElementById('em-rel')?.value || '',
+        emergency_phone: document.getElementById('em-phone')?.value.trim() || ''
       },
       insurance: {
-        payer_name: 'BlueCross BlueShield Comprehensive PPO',
-        policy_id: 'BCBS-TX-981240',
-        group_num: 'GRP-44102',
-        subscriber_id: 'SUB-881924',
-        copay_tier: 'Tier 1 In-Network ($20 Specialist)'
+        payer_name: document.getElementById('payer-carrier')?.value.trim() || 'Self-Pay / Pending',
+        policy_id: document.getElementById('member-id')?.value.trim() || '',
+        group_num: document.getElementById('group-num')?.value.trim() || '',
+        subscriber_id: '',
+        copay_tier: 'Pending Verification'
       },
       clinical_triage: {
-        chief_complaint: 'Progressive exertional dyspnea (NYHA Class III) and bilateral peripheral edema.',
+        chief_complaint: 'New patient intake admission.',
         admission_date: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
-        urgency_tier: 'ACUTE_2H',
-        assigned_ward: 'Cardiology Unit 4B',
-        assigned_room: 'Room 412-B',
+        urgency_tier: 'ROUTINE',
+        assigned_ward: document.getElementById('assigned-ward')?.value.trim() || 'General Admission',
+        assigned_room: 'Triage Pending',
         attending_clinician: 'Dr. Sarah Jenkins, MD'
       },
       is_draft: isDraft
     };
   }
+
+  // Dynamic Completeness Tracker
+  const trackedInputs = [
+    'first-name', 'last-name', 'dob', 'legal-sex', 'primary-phone',
+    'email', 'street-address', 'city', 'state-prov', 'zip',
+    'em-name', 'em-rel', 'em-phone', 'payer-carrier', 'member-id'
+  ];
+
+  function updateCompletenessMeter() {
+    let filled = 0;
+    trackedInputs.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.value && el.value.trim() !== '') filled++;
+    });
+    const percent = Math.round((filled / trackedInputs.length) * 100);
+    const scoreEl = document.getElementById('completeness-score');
+    const barEl = document.getElementById('completeness-bar');
+    const descEl = document.getElementById('completeness-desc');
+
+    if (scoreEl) {
+      scoreEl.textContent = `${percent}%`;
+      scoreEl.className = percent > 50 ? 'font-bold text-secondary' : 'font-bold text-outline';
+    }
+    if (barEl) barEl.style.width = `${percent}%`;
+    if (descEl) descEl.textContent = `${filled} of ${trackedInputs.length} required intake attributes populated.`;
+  }
+
+  document.querySelectorAll('input, select').forEach(input => {
+    input.addEventListener('input', updateCompletenessMeter);
+    input.addEventListener('change', updateCompletenessMeter);
+  });
 
   // 1. Wristband Barcode Scan
   if (scanBtn) {
@@ -793,6 +819,7 @@
         if (res.ok) {
           const data = await res.json();
           populateForm(data);
+          updateCompletenessMeter();
           showToast('Wristband Scanned', `Matched MPI #${data.demographics.mrn} (${data.demographics.first_name} ${data.demographics.last_name}).`);
           scanBtn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem] text-secondary">check</span><span>Scanned</span>';
           setTimeout(() => { scanBtn.innerHTML = origHtml; }, 2000);
@@ -816,6 +843,7 @@
         if (res.ok) {
           const data = await res.json();
           populateForm(data);
+          updateCompletenessMeter();
           showToast('EHR Synced', `Pulled verified records from Epic/Cerner FHIR Gateway (99.4% confidence).`);
           epicBtn.innerHTML = '<span class="material-symbols-outlined text-[1.25rem]">done_all</span><span>EHR Synced</span>';
           setTimeout(() => { epicBtn.innerHTML = origHtml; }, 2000);
@@ -898,20 +926,9 @@
     }
   });
 
-  // Load existing draft from API on init
-  async function loadExistingIntakeDraft() {
-    try {
-      const res = await fetch(`${API_BASE}/${MRN_DEFAULT}`);
-      if (res.ok) {
-        const data = await res.json();
-        populateForm(data);
-      }
-    } catch (e) {
-      console.log('Running in offline demo mode.');
-    }
-  }
-
-  loadExistingIntakeDraft();
+  // Form begins completely clean with placeholders for new patient intake.
+  // Real-time completeness meter initialized:
+  updateCompletenessMeter();
 })();
 </script>
 </main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors group text-primary font-semibold [&amp;_span.material-symbols-outlined]:fill-1 [&amp;_div.indicator]:w-8 [&amp;_div.indicator]:bg-primary" data-path="dashboard" href="medlens_doctor_dashboard_clinical_triage_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">grid_view</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="intake" href="medlens_patient_nomination_intake_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">assignment_add</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Intake</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="records" href="medlens_patient_details_structured_clinical_record.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">folder_shared</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Records</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="verify" href="medlens_doctor_dashboard_clinical_triage_desktop.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">fact_check</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Verify</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="copilot" href="medlens_patient_details_structured_clinical_record.html"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[1.625rem] transition-transform group-hover:scale-105">psychology</span><div class="indicator h-0.5 w-0 rounded-full transition-all duration-300 mt-0.5"></div></div><span class="font-label-sm text-label-sm mt-0.5">Copilot</span></a></div></nav></body></html>

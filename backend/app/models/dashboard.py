@@ -1,4 +1,4 @@
-﻿from typing import List, Optional
+from typing import List, Optional
 from pydantic import BaseModel, Field
 
 class ClinicianProfile(BaseModel):
@@ -68,10 +68,17 @@ class PipelineStatus(BaseModel):
     is_active: bool = True
     last_sync_time: str = "10:42 AM (St. Jude Epic)"
 
+class FilterCounts(BaseModel):
+    all: int = 3
+    out_of_range: int = 1
+    conflicts: int = 1
+    pending_signoff: int = 1
+
 class DashboardOverviewResponse(BaseModel):
     clinician: ClinicianProfile
     metrics: KPIMetrics
     pipeline: PipelineStatus
+    filter_counts: FilterCounts = Field(default_factory=FilterCounts)
 
 class VerifyLabRequest(BaseModel):
     notes: Optional[str] = None
@@ -98,3 +105,34 @@ class EHRSyncResponse(BaseModel):
     patients_synced: int
     labs_updated: int
     message: str
+
+class FlagNurseRequest(BaseModel):
+    nurse_name: Optional[str] = "Nurse Kelly, RN"
+    reason: Optional[str] = "Bedside allergy re-check & scratch test protocol"
+    priority: Optional[str] = "URGENT"
+
+class FlagNurseResponse(BaseModel):
+    success: bool
+    flag_id: str
+    patient_mrn: str
+    patient_name: str
+    room_bay: str
+    nurse_name: str
+    reason: str
+    priority: str
+    status: str
+    message: str
+    timestamp: str
+
+class LabOverrideRequest(BaseModel):
+    result_value: str
+    unit: Optional[str] = None
+    reference_interval: Optional[str] = None
+    status: Optional[str] = None
+    override_reason: Optional[str] = None
+
+class LabOverrideResponse(BaseModel):
+    success: bool
+    message: str
+    updated_lab: dict
+
