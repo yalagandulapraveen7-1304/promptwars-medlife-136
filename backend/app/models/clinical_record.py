@@ -1,5 +1,11 @@
-﻿from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any
+from enum import Enum
 from pydantic import BaseModel, Field
+
+class DataProvenanceOrigin(str, Enum):
+    PATIENT_PROVIDED = "PATIENT PROVIDED"
+    EXTRACTED_FROM_REPORT = "EXTRACTED FROM REPORT"
+    AI_GENERATED = "AI GENERATED"
 
 class BiomarkerObservation(BaseModel):
     id: str
@@ -20,6 +26,10 @@ class BiomarkerObservation(BaseModel):
     verified: bool = False
     verified_by: Optional[str] = None
     verified_at: Optional[str] = None
+    provenance_origin: DataProvenanceOrigin = DataProvenanceOrigin.EXTRACTED_FROM_REPORT
+    document_source: str = "LabCorp CBC Report #LC-9941-A"
+    page_number: int = 1
+    extracted_value: Optional[str] = None
 
 class ActiveMedication(BaseModel):
     id: str
@@ -31,6 +41,9 @@ class ActiveMedication(BaseModel):
     adherence_status: str    # "ACTIVE_COMPLIANT", "DISCONTINUED", "HOLD_REQUIRED"
     prescriber: str
     warning_flag: Optional[str] = None
+    provenance_origin: DataProvenanceOrigin = DataProvenanceOrigin.EXTRACTED_FROM_REPORT
+    document_source: Optional[str] = "Mercy General Discharge Summary #MG-4011"
+    page_number: Optional[int] = 3
 
 class ClinicalPresentation(BaseModel):
     patient_mrn: str
@@ -39,6 +52,8 @@ class ClinicalPresentation(BaseModel):
     observations: str
     intake_nurse: str
     intake_timestamp: str
+    provenance_origin: DataProvenanceOrigin = DataProvenanceOrigin.PATIENT_PROVIDED
+    intake_source: str = "Bedside Electronic Intake Questionnaire (Self-Report)"
 
 class EvidenceLine(BaseModel):
     line_number: int
@@ -68,6 +83,9 @@ class ConflictItem(BaseModel):
     recommendation: str
     safety_hold_active: bool
     resolved: bool
+    current_source_origin: DataProvenanceOrigin = DataProvenanceOrigin.PATIENT_PROVIDED
+    historical_source_origin: DataProvenanceOrigin = DataProvenanceOrigin.EXTRACTED_FROM_REPORT
+    historical_page_number: int = 3
 
 class AuditEntry(BaseModel):
     timestamp: str
@@ -122,6 +140,8 @@ class CopilotQueryResponse(BaseModel):
     citations: List[str]
     warnings: List[str] = []
     confidence_score: float = 98.8
+    provenance_origin: DataProvenanceOrigin = DataProvenanceOrigin.AI_GENERATED
+    ground_truth_isolation: bool = True
 
 class PhysicianSignOffRequest(BaseModel):
     notes: Optional[str] = None

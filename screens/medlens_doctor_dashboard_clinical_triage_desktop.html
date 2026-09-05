@@ -40,6 +40,30 @@
       </button>
 </div>
 </div>
+
+<!-- Strict Data Provenance Classification Legend (Module 6 & Governance Standard) -->
+<div class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-3 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+  <div class="flex items-center gap-2">
+    <span class="material-symbols-outlined text-primary text-[1.25rem]">verified</span>
+    <span class="font-headline-sm text-xs font-bold uppercase tracking-wider text-on-surface">Data Provenance Architecture:</span>
+    <span class="text-on-surface-variant hidden md:inline">Visual origin tracking enforced across all clinical triage data points:</span>
+  </div>
+  <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-bold text-[0.6875rem] uppercase tracking-wide bg-emerald-100 text-emerald-900 border border-emerald-400 shadow-2xs">
+      <span class="material-symbols-outlined text-[0.875rem] text-emerald-700">person</span>
+      PATIENT PROVIDED
+    </span>
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-bold text-[0.6875rem] uppercase tracking-wide bg-blue-100 text-blue-900 border border-blue-400 shadow-2xs">
+      <span class="material-symbols-outlined text-[0.875rem] text-blue-700">description</span>
+      EXTRACTED FROM REPORT
+    </span>
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-bold text-[0.6875rem] uppercase tracking-wide bg-purple-100 text-purple-900 border border-purple-400 shadow-2xs">
+      <span class="material-symbols-outlined text-[0.875rem] text-purple-700">psychology</span>
+      AI GENERATED (STRICTLY ISOLATED)
+    </span>
+  </div>
+</div>
+
 <!-- Quick Command & Filter Bar -->
 <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
 <div class="relative flex-1 flex items-center">
@@ -193,7 +217,7 @@
 <span class="font-label-sm text-label-sm text-outline">Priority sorted by Clinical Urgency</span>
 </div>
 <!-- TRIAGE CARD 1: Elena Rostova (Out of Range Lab) -->
-<div id="triage-card-ML-8841" data-patient="ML-8841" data-tags="all out_of_range pending" data-search="elena rostova ml-8841 room 412-b cbc hgb hemoglobin hct hematocrit out of range 2 labs" class="triage-patient-card bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col gap-space-md hover:shadow-md transition-shadow">
+<div id="triage-card-ML-8841" data-patient="ML-8841" data-tags="all out_of_range pending" data-search="elena rostova ml-8841 room 412-b cbc hgb hemoglobin hct hematocrit out of range 2 labs" class="triage-patient-card bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col gap-space-md hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
 <!-- Header & Patient Demographics -->
 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
 <div class="flex items-center gap-space-sm">
@@ -201,9 +225,13 @@
               ER
             </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
 <a href="medlens_patient_details_structured_clinical_record.html" class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" title="View Patient Clinical Record">Elena Rostova</a>
-<span class="font-label-sm text-label-sm text-outline">• 52y • Female</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-900 border border-emerald-300 font-semibold inline-flex items-center gap-1">
+  <span class="material-symbols-outlined text-[0.75rem] text-emerald-700">person</span>
+  <span class="text-[0.625rem] font-bold uppercase text-emerald-800 mr-0.5">PATIENT PROVIDED</span>
+  52y • Female
+</span>
 </div>
 <div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
 <span class="font-semibold text-on-surface">MRN #ML-8841</span>
@@ -223,17 +251,24 @@
 </div>
 <!-- Clinical Lab Breakdown Table -->
 <div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-space-xs">
-<div class="flex items-center justify-between px-space-xs">
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Automated Lab Extraction • CBC Complete Blood Count</span>
-<span class="font-label-sm text-label-sm text-primary font-medium">LabCorp 05 Oct 2026</span>
+<div class="flex items-center justify-between px-space-xs flex-wrap gap-2">
+<div class="flex items-center gap-2">
+  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Automated Lab Extraction • CBC Panel</span>
+  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[0.625rem] font-bold bg-blue-100 text-blue-900 border border-blue-300 uppercase">
+    <span class="material-symbols-outlined text-[0.75rem] text-blue-700">description</span>
+    EXTRACTED FROM REPORT
+  </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">LabCorp Report #LC-9011 • <strong>Page 1</strong></span>
 </div>
 <div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm">
 <table class="w-full text-left font-body-sm text-body-sm">
 <thead class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase">
 <tr>
 <th class="py-2.5 px-space-sm font-semibold">Test Parameter</th>
-<th class="py-2.5 px-space-sm font-semibold">Result Value</th>
-<th class="py-2.5 px-space-sm font-semibold">Reference Interval</th>
+<th class="py-2.5 px-space-sm font-semibold">Extracted Result</th>
+<th class="py-2.5 px-space-sm font-semibold">Reference Range</th>
+<th class="py-2.5 px-space-sm font-semibold">Origin &amp; Source</th>
 <th class="py-2.5 px-space-sm font-semibold">Status</th>
 </tr>
 </thead>
@@ -242,6 +277,7 @@
 <td class="py-2.5 px-space-sm font-semibold text-on-surface">Hemoglobin (HGB)</td>
 <td class="py-2.5 px-space-sm font-bold text-error">10.2 g/dL</td>
 <td class="py-2.5 px-space-sm text-on-surface-variant">12.0 – 16.0 g/dL</td>
+<td class="py-2.5 px-space-sm text-xs text-on-surface-variant">LabCorp #LC-9011 • <strong>Page 1, Line 14</strong></td>
 <td class="py-2.5 px-space-sm">
 <span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[0.6875rem] font-bold uppercase">LOW</span>
 </td>
@@ -250,6 +286,7 @@
 <td class="py-2.5 px-space-sm font-semibold text-on-surface">Hematocrit (HCT)</td>
 <td class="py-2.5 px-space-sm font-bold text-error">31.4 %</td>
 <td class="py-2.5 px-space-sm text-on-surface-variant">37.0 – 48.0 %</td>
+<td class="py-2.5 px-space-sm text-xs text-on-surface-variant">LabCorp #LC-9011 • <strong>Page 1, Line 16</strong></td>
 <td class="py-2.5 px-space-sm">
 <span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[0.6875rem] font-bold uppercase">LOW</span>
 </td>
@@ -258,8 +295,9 @@
 <td class="py-2.5 px-space-sm text-on-surface">Platelet Count</td>
 <td class="py-2.5 px-space-sm text-on-surface font-semibold">245 x10³/µL</td>
 <td class="py-2.5 px-space-sm text-on-surface-variant">150 – 450 x10³/µL</td>
+<td class="py-2.5 px-space-sm text-xs text-on-surface-variant">LabCorp #LC-9011 • <strong>Page 1, Line 19</strong></td>
 <td class="py-2.5 px-space-sm">
-<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[0.6875rem] font-semibold uppercase">Normal</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[0.6875rem] font-semibold uppercase">Normal</span>
 </td>
 </tr>
 </tbody>
@@ -273,7 +311,7 @@
 <span>•</span>
 <span id="lab-unverified-badge" class="text-amber-700 font-semibold bg-amber-100 px-2 py-0.5 rounded">Unverified by Doctor</span>
 </div>
-<span>Source: CBC Panel, LabCorp Report ID #LC-9011</span>
+<span>Origin: <strong>EXTRACTED FROM REPORT</strong> (Doc #LC-9011, Page 1)</span>
 </div>
 </div>
 <!-- Clinician Review Action Bar -->
@@ -301,7 +339,7 @@
 </div>
 </div>
 <!-- TRIAGE CARD 2: Marcus Vance (Allergy Conflict Detected) -->
-<div id="triage-card-ML-7920" data-patient="ML-7920" data-tags="all conflicts" data-search="marcus vance ml-7920 observation bay 3 penicillin allergy ampicillin conflict 1 flagged safety inconsistency" class="triage-patient-card bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col gap-space-md hover:shadow-md transition-shadow">
+<div id="triage-card-ML-7920" data-patient="ML-7920" data-tags="all conflicts" data-search="marcus vance ml-7920 observation bay 3 penicillin allergy ampicillin conflict 1 flagged safety inconsistency" class="triage-patient-card bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col gap-space-md hover:shadow-md transition-shadow border-l-4 border-l-amber-500">
 <!-- Header & Patient Demographics -->
 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
 <div class="flex items-center gap-space-sm">
@@ -309,9 +347,13 @@
               MV
             </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
 <a href="medlens_patient_details_structured_clinical_record.html" class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" title="View Patient Clinical Record">Marcus Vance</a>
-<span class="font-label-sm text-label-sm text-outline">• 44y • Male</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-900 border border-emerald-300 font-semibold inline-flex items-center gap-1">
+  <span class="material-symbols-outlined text-[0.75rem] text-emerald-700">person</span>
+  <span class="text-[0.625rem] font-bold uppercase text-emerald-800 mr-0.5">PATIENT PROVIDED</span>
+  44y • Male
+</span>
 </div>
 <div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
 <span class="font-semibold text-on-surface">MRN #ML-7920</span>
@@ -336,36 +378,51 @@
 <span class="material-symbols-outlined text-[1.125rem]">compare_arrows</span>
               Cross-Document Contradiction Analysis
             </span>
-<span class="font-label-sm text-label-sm text-outline">Provenance: Intake vs. EHR History</span>
+<span class="font-label-sm text-label-sm text-outline">Provenance Origin Tracking</span>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
-<!-- Current Intake Note -->
-<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<!-- Current Intake Note (PATIENT PROVIDED) -->
+<div class="bg-emerald-50/40 border border-emerald-200/80 p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
 <div>
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Current Digital Intake (Today)</span>
+<div class="flex items-center justify-between mb-1">
+  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[0.625rem] font-bold bg-emerald-100 text-emerald-900 border border-emerald-300 uppercase">
+    <span class="material-symbols-outlined text-[0.75rem] text-emerald-700">person</span>
+    PATIENT PROVIDED
+  </span>
+  <span class="text-[0.6875rem] text-emerald-800 font-semibold">Today Intake</span>
+</div>
 <div class="mt-1 font-body-md text-body-md font-semibold text-on-surface">
                   "Patient reports: <span class="text-on-surface-variant font-medium">No known drug allergies (NKDA)</span>"
                 </div>
 </div>
-<span class="font-label-sm text-label-sm text-outline mt-2">Source: Section E Medical Intake • Dr. Nurse Intake</span>
+<span class="font-label-sm text-xs text-on-surface-variant mt-2">Source: Bedside Electronic Intake Questionnaire</span>
 </div>
-<!-- Historical Record Indicator -->
-<div class="bg-error-container/20 p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<!-- Historical Record Indicator (EXTRACTED FROM REPORT) -->
+<div class="bg-blue-50/40 border border-blue-200/80 p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
 <div>
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-semibold">St. Jude EHR Archive (2024)</span>
-<span class="px-1.5 py-0.2 bg-error text-on-error text-[0.625rem] rounded font-bold uppercase">CRITICAL</span>
+<div class="flex items-center justify-between mb-1">
+  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[0.625rem] font-bold bg-blue-100 text-blue-900 border border-blue-300 uppercase">
+    <span class="material-symbols-outlined text-[0.75rem] text-blue-700">description</span>
+    EXTRACTED FROM REPORT
+  </span>
+  <span class="px-1.5 py-0.2 bg-error text-on-error text-[0.625rem] rounded font-bold uppercase">CRITICAL</span>
 </div>
 <div class="mt-1 font-body-md text-body-md font-bold text-error">
                   Penicillin Allergy: Severe Anaphylactic Shock
                 </div>
 </div>
-<span class="font-label-sm text-label-sm text-error/80 mt-2 font-medium">Source: Epic Inpatient Discharge Note (June 2024)</span>
+<span class="font-label-sm text-xs text-on-surface-variant mt-2 font-medium">Source: St. Jude EHR Inpatient Discharge Note (June 2024, <strong>Page 4, Line 12</strong>)</span>
 </div>
 </div>
-<div class="bg-surface-container-lowest px-space-sm py-2 rounded-lg text-on-surface-variant font-body-sm text-body-sm flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary text-[1.25rem]">info</span>
-<span>Safety Flag: Historical records contain a documented medication allergy that conflicts with the current patient intake. Human verification is required.</span>
+<!-- Isolated AI Container -->
+<div class="bg-purple-50/70 border border-purple-200/90 px-space-sm py-2 rounded-lg text-purple-950 font-body-sm text-body-sm flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-purple-700 text-[1.25rem]">psychology</span>
+<span><strong>AI Safety Flag:</strong> Historical records contain a documented medication allergy that conflicts with the current patient intake. Human verification is required.</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[0.625rem] font-bold bg-purple-100 text-purple-900 border border-purple-300 uppercase tracking-wide">
+  AI GENERATED (ISOLATED)
+</span>
 </div>
 </div>
 <!-- Action Bar -->

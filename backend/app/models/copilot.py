@@ -1,5 +1,11 @@
 from typing import List, Dict, Any, Optional
+from enum import Enum
 from pydantic import BaseModel, Field
+
+class DataProvenanceOrigin(str, Enum):
+    PATIENT_PROVIDED = "PATIENT PROVIDED"
+    EXTRACTED_FROM_REPORT = "EXTRACTED FROM REPORT"
+    AI_GENERATED = "AI GENERATED"
 
 class CopilotQueryRequest(BaseModel):
     patient_id: Optional[str] = Field(default=None, description="Target patient ID (e.g., 'PAT-00001' or 'ML-8841')")
@@ -25,6 +31,8 @@ class CopilotQueryResponse(BaseModel):
     confidence_score: float = 98.5
     source_grounded: bool = True
     safety_rule_applied: Optional[str] = None
+    provenance_origin: DataProvenanceOrigin = DataProvenanceOrigin.AI_GENERATED
+    ground_truth_isolation: bool = True
 
 class SafetyCheckRequest(BaseModel):
     query: str
